@@ -65,3 +65,5 @@ El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat
   * [Zentyal com a controlador de domini](uf4.-integracio-de-sistemes-operatius/gestio-dominis/zentyal.md)
 * [Qüestionari](uf4.-integracio-de-sistemes-operatius/uf4-questionari.md)
 
+![](.gitbook/assets/llibre3d.jpg)
+
