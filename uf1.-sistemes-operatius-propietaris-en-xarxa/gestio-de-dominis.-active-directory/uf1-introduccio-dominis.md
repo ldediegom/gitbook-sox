@@ -64,7 +64,7 @@ El **AD** és la eina que permet organitzar, controlar i administrar de forma ce
 
 Quan instal·lem el **Directori Actiu \[**_**Active Directory**_**\]** convertim aquest equip **controladors de domini** .
 
-![Active Directory](../../.gitbook/assets/activedirectory.png)
+![Active Directory](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/activedirectory.png)
 
 ## Noms de domini
 
@@ -96,11 +96,11 @@ L’estructura del servei de directori està constituïda per diferents elements
 
 La següent imatge representa un arbre que conté un domini principal \(sapa.cat\) i subdominis \( www.sapa.cat, ftp.sapa.cat\).
 
-![](../../.gitbook/assets/arbredomini.svg)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/arbredomini.svg)
 
 * **Bosc \(**_**Forest**_**\)**: Si el conjunt de dominis no comparteixen un nom d’arrel comú, s’anomena bosc. Per tant, un bosc és un conjunt d’arbres de domini.
 
-![](../../.gitbook/assets/boscdomini.svg)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/boscdomini.svg)
 
 ## Documentació i recursos
 

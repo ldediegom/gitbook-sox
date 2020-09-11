@@ -150,7 +150,7 @@ Per obrir la interfície gràfica cal executar la següent comanda:
 
 `sudo /opt/pbis/bin/domainjoin-gui`
 
-![](../../.gitbook/assets/pbis-domini.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/pbis-domini.png)
 
 * Nom del domini: `adxxx.local`
 * Deshabilitar l'opció _**Enable default user name prefix**_
@@ -225,7 +225,7 @@ sudo login usuari@adxxx.local
 
 En el diàleg que apareixerà, només cal comprovar que les dades siguin correctes \(nom de la màquina i el domini\) i clicar el botó **Leave Domain**.
 
-![](../../.gitbook/assets/pbis-nodomini.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/pbis-nodomini.png)
 
 **Amb comandes**
 

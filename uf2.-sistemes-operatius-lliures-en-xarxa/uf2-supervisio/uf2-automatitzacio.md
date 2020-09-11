@@ -56,9 +56,9 @@ La primera vegada què es posi en marxa, demanarà amb quin editor es vol modifi
 
 Els camps què s'han de posar a cada línia són els següents:
 
-**&lt; minut &gt; &lt; hora&gt; &lt; diaMes&gt; &lt; mes&gt;    &lt; diaSetmana&gt;          &lt; usuari&gt; &lt; comanda&gt;**
+**&lt; minut &gt; &lt; hora&gt; &lt; diaMes&gt; &lt; mes&gt; &lt; diaSetmana&gt; &lt; usuari&gt; &lt; comanda&gt;**
 
-   \(0-59\)     \(0-23\)     \(1-31\)      \(1-12\)   \(0 o 7=diumenge - 6\)
+\(0-59\) \(0-23\) \(1-31\) \(1-12\) \(0 o 7=diumenge - 6\)
 
 * **minut \(0-59\)**: en quin minut o minuts s'ha d'executar la comanda.
 * **hora \(0-23\)**: en quina o quines hores s'ha d'executar la comanda.
@@ -81,13 +81,13 @@ Els camps què s'han de posar a cada línia són els següents:
 
 **Exercici**
 
-![](../../.gitbook/assets/us-automatitzacio1.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio1.PNG)
 
 **Solució**
 
-![](../../.gitbook/assets/us-automatitzacio2.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio2.PNG)
 
-![](../../.gitbook/assets/us-automatitzacio3.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio3.PNG)
 
 ## Amb entorn gràfic
 

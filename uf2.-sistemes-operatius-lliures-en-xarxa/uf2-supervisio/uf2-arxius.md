@@ -10,7 +10,7 @@ El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegi
 
 **ZIP** és la forma de cmpressió més popular en Windows.
 
-![](../../.gitbook/assets/uf2-zip.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-zip.png)
 
 **Paràmetres:**
 
@@ -34,7 +34,7 @@ El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegi
 
 Si volem **comprimir més d'un arxiu** en un sol arxiu `.gz` necessitarem l'ajuda d'una altre comanda com per exemple `tar`.
 
-![](../../.gitbook/assets/uf2-gzip.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-gzip.png)
 
 **Paràmetres:**
 
@@ -45,7 +45,7 @@ Si volem **comprimir més d'un arxiu** en un sol arxiu `.gz` necessitarem l'ajud
 
 `gzip -c document`
 
-**Per descomprimir un arxiu:** 
+**Per descomprimir un arxiu:**
 
 `gunzip -c document.gz`
 
@@ -55,7 +55,7 @@ Si volem **comprimir més d'un arxiu** en un sol arxiu `.gz` necessitarem l'ajud
 
 La comanda **tar** serveix per empaquetar/desempaquetar un conjunt d'arxius \(sense comprimir-los\).
 
-![](../../.gitbook/assets/uf2-tar.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-tar.png)
 
 **Opcions d'empaquetat:**
 
@@ -77,7 +77,7 @@ Si a més es vol **comprimir/descomprimir** utilitzant el format **.gz** cal afe
 
 * `-z` comprimir / descomprimir amb algoritme gzip.
 
-![](../../.gitbook/assets/uf2-tar2.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-tar2.png)
 
 Per **comprimir tot un directori**:
 

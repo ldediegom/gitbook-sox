@@ -17,7 +17,7 @@ En el cas de **Windows 10**, la versió nova no serveix i cal descarregar una ve
 
 Un cop instal·lades, activarem a _**Características de Windows**_ les eines d’administració necessàries \(Remote Server Administration Tools\)
 
-![](../../.gitbook/assets/rsat1.jpg)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/rsat1.jpg)
 
 Un cop activades les eines, **iniciem sessió amb l'usuari administrador** del domini i obrim _**Administrador del servidor &gt; Herramientas administrativas &gt; Usuarios y equipos de Active Directory**_ i podrem **gestionar el domini** tal i com realitzaven amb Windows Server.
 

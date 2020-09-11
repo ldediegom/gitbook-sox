@@ -60,7 +60,7 @@ sudo pam-auth-update
 
 > En la **tercera comanda** s'ha de marcar l'opció _**Create home directory on login**_. Si no se selecciona, no es crearà automàticament el directori de l'usuari i no podrà iniciar sessió \(en el mode gràfic\) o no tindrà un directori on guardar els seus arxius.
 
-![](../../.gitbook/assets/uf2-nsspam.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-nsspam.png)
 
 L'execució d'aquestes comandes, modifica la configuració de [**NSS \(**_**Name Service Switch**_**\)**](https://es.wikipedia.org/wiki/Name_Service_Switch) en el fitxer `/etc/nsswitch.conf`.
 

@@ -1,4 +1,4 @@
-# Introducció
+# Presentació
 
 ## Introducció
 
@@ -12,7 +12,7 @@ El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat
   * [Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/uf1-windowsserver.md)
   * [Instal·lació Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/uf1-instalacio-windowsserver.md)
 * [Supervisió en Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-supervisio.md)
-* [Gestió de dominis. Active Directory](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/)
+* [Gestió de dominis. Active Directory](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory)
   * [Introducció als dominis](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/uf1-introduccio-dominis.md)
   * [Relacions de confiança](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/relacions-de-confianca.md)
   * [Instal·lació d'un controlador de domini en Active Directory](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/instalacio-ad.md)
@@ -65,5 +65,5 @@ El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat
   * [Zentyal com a controlador de domini](uf4.-integracio-de-sistemes-operatius/gestio-dominis/zentyal.md)
 * [Qüestionari](uf4.-integracio-de-sistemes-operatius/uf4-questionari.md)
 
-![](.gitbook/assets/llibre3d.jpg)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/llibre3d.jpg)
 

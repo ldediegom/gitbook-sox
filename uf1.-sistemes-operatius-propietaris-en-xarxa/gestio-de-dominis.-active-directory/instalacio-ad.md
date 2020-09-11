@@ -1,10 +1,10 @@
 # Instal·lació d'un controlador de domini en Active Directory
 
-![Active Directory](../../.gitbook/assets/activedirectory%20%281%29.png)
+![Active Directory](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/activedirectory%20%281%29.png)
 
 ## Configuració prèvia
 
- **Configurar el nom del servidor**
+**Configurar el nom del servidor**
 
 El nom ha de ser `wsxxx` \(`xxx` són les inicials del vostre nom i cognoms\).
 
@@ -14,15 +14,15 @@ El nom ha de ser `wsxxx` \(`xxx` són les inicials del vostre nom i cognoms\).
 
 1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
 
-   ![](../../.gitbook/assets/ad_afegir.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)
 
 2. Triem l'opció _**Instalación basada en características o en roles**_.
 
-   ![](../../.gitbook/assets/ad_ins2.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins2.png)
 
-3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_  fins a la llista de possibles funcions per instal·lar en el sistema.
+3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_ fins a la llista de possibles funcions per instal·lar en el sistema.
 
-   ![](../../.gitbook/assets/ad_ins3.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins3.png)
 
 4. Marcar l'opció _**Serveis de Domini d'Active Directory \(AD DS\)**_ i _**DNS Server**_ i prémer el botó de _**Següent**_.
 
@@ -30,7 +30,7 @@ El nom ha de ser `wsxxx` \(`xxx` són les inicials del vostre nom i cognoms\).
 
 5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
 
-   ![](../../.gitbook/assets/ad_ins4.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins4.png)
 
 ## Promocionar el servidor a controlador de domini i creació del domini
 
@@ -38,7 +38,7 @@ Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari com
 
 En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una confinguració del AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
 
-![](../../.gitbook/assets/ad_ins5.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins5.png)
 
 Després de la pantalla d'inici de l’assistent hi ha tres opcions:
 
@@ -52,7 +52,7 @@ A continuació has d'introduir el nom complet del domini arrel. Aquest nom ha de
 
 El domini no existirà realment a Internet, per tant serà de tipus **.local**.
 
-![](../../.gitbook/assets/ad_ins6.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins6.png)
 
 Després ens demana el nivell de funcionalitat del sistema. Sempre escollirem el més alt, a no ser que calgui garantir la compatibilitat amb altres dominis gestionats per versions inferior.
 
@@ -62,11 +62,11 @@ L'assistent ens demana ara una **contrasenya** per poder administrar el **Direct
 
 Introdueix doncs la contrasenya de l'administrador i prem _**Següent**_.
 
-![](../../.gitbook/assets/ad_ins7.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins7.png)
 
 A continuació indicarà que no troba un servidor DNS, però **no cal fer res**; automàticament s'instal·larà el servei de DNS en aquest mateix servidor doncs **cal tenir instal·lat el servei de resolució de noms per al correcte funcionament del Directori Actiu**.
 
-La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà  el nom del domini en majúscules i sense .local.
+La finestra següent, demanarà el **nom NetBIOS** del domini. Es pot deixar el què proposa per defecte, que serà el nom del domini en majúscules i sense .local.
 
 Després s'ha d'indicar la localització dels arxius bàsics que utilitzarà el Directori Actiu: la carpeta per a base de dades, la carpeta d'arxius de registre i la carpeta SYSVOL que conté els arxius públics del domini que han de ser compartits. Podem deixar les opcions per defecte.
 

@@ -16,7 +16,7 @@ Existeix 3 tipus d'usuaris:
    * Cada usuari té la seva carpeta personal.
    * El seu directori arrel és `/home/<username>`.
    * Exemples: raul, sergi, mrodriguez, etc. 
-2.  **Usuaris de Sistema**
+2. **Usuaris de Sistema**
    * Són usuaris propis del sistema necessaris per algunes tasques que ha de realitzar el SO.
    * Aquest tipus d'usuari no pot ingressar al sistema amb un login normal. 
    * Exemples: mail, ftp, bin, sys, proxy, etc. 

@@ -6,7 +6,7 @@ En el fitxer de configuració del NFS hem d'indicar en aquest ordre...Amb qui, c
 
 En Sistemes Linux, en quin fitxer es configura el muntatge automàtic?/etc/shares/etc/mount/etc/exports/etc/fstab
 
-En Windows, per connetar-se a una unitat de xarxa el recurs compartit Dades del servidor 192.168.1.10, cal executar:net use z: \\192.168.1.10\Dadesnet share \\192.168.1.10\Dadesmount \\192.168.1.10\Dadesmount z: \\192.168.1.10\Dades
+En Windows, per connetar-se a una unitat de xarxa el recurs compartit Dades del servidor 192.168.1.10, cal executar:net use z: \192.168.1.10\Dadesnet share \192.168.1.10\Dadesmount \192.168.1.10\Dadesmount z: \192.168.1.10\Dades
 
 En Windows, com podem compartir de manera oculta una carpeta?Posant $ a l'inici del seu nom.Posant $ al final del seu nom.Posant % a l'inici del seu nom.Posant % al final del seu nom.
 

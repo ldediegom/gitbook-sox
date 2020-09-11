@@ -47,7 +47,7 @@ Cal planificar la utilització del disc, decidir les particions necessàries i e
 
 Abans de confirmar, comprovar les particions creades:
 
-![](../../.gitbook/assets/us-instalacio-particions.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-instalacio-particions.png)
 
 ### Altres paràmetres
 

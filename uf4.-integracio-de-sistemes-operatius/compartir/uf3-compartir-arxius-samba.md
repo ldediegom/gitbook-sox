@@ -278,7 +278,7 @@ Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següen
 
 Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la valla i els permisos locals la porta de casa.
 
-![](../../.gitbook/assets/samba-permisos.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba-permisos.png)
 
 ## Accedir a recursos compartit Samba des de Windows
 

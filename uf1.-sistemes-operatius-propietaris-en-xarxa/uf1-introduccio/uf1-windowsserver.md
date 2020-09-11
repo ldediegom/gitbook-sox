@@ -14,7 +14,7 @@ Aquest controlador centralitza la funció d’autenticar l’accés al domini
 
 Actualment la versió més recent és la **Microsoft Windows Server 2019** llançada comercialment l'any 2018. La versió anterior era el **Microsoft Windows Server 2016** .
 
-![](../../.gitbook/assets/windowsserver2016.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/windowsserver2016.png)
 
 Els trets diferenciadors que cal destacar en aquest sistema operatiu són els següents:
 
@@ -62,7 +62,7 @@ Aquestes 3 edicions principals es complementen amb 3 opcions més:
 * **Microsoft Hyper-V Server Edition**
   * Edició gratuïta del hipervisor de Microsoft _**Hyper-V**_.
 
-![](../../.gitbook/assets/windows2016_edicions.JPG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/windows2016_edicions.JPG)
 
 ## Documentació i recursos
 

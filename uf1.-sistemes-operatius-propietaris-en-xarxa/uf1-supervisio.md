@@ -32,7 +32,7 @@ El sistema operatiu Microsoft Windows Server us proporciona una sèrie d’**ein
 
 L'**Administrador del servidor** permet veure, en una única pantalla, la informació del sistema, opcions de configuració de seguretat i els seus possibles problemes de configuració.
 
-![](../.gitbook/assets/servermanager.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/servermanager.png)
 
 L'**Administrador del servidor**, amb una única eina, permet als administradors:
 
@@ -54,7 +54,7 @@ Disposa de cinc pestanyes. Aquestes pestanyes us ajudaran a administrar **proces
 * **Serveis** _**\[Services\]**_: quins serveis estan engegats o aturats. Permet aturar o iniciar serveis. També es pot obrir l'administrador de serveis per gestionar els serveis de forma més detallada.
 * **Rendimient** _**\[Performance\]**_: veure la utilització global de la CPU, la memòria i la xarxa. Des d'aquest apartat es pot obrir el Monitor de recursos, que permet veure amb més detall la utilització de la CPU, la memòria, la xarxa i els discos.
 
-![](../.gitbook/assets/taskmanager.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/taskmanager.png)
 
 Teniu **quatre vies per accedir** a l’administrador de tasques:
 
@@ -73,7 +73,7 @@ L'eina _**Serveis**_ mostra l'estat dels serveis i permet gestionar-los.
 
 Cada servei el podem configurar: Ens posem a sobre &gt; boto dret ratolí &gt; propietats:
 
-![](../.gitbook/assets/services.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/services.png)
 
 #### Configuració d'inici d'un servei
 
@@ -81,7 +81,7 @@ Cada servei el podem configurar: Ens posem a sobre &gt; boto dret ratolí &gt; p
 
 > Que un servei estigui instal·lat no vol dir que s'estigui executant.
 
-![](../.gitbook/assets/sevicesstart.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/sevicesstart.png)
 
 Existeixen quatre **tipus d’arrencada d’un servei**:
 
@@ -96,7 +96,7 @@ Existeixen quatre **tipus d’arrencada d’un servei**:
 
 El sistema Microsoft Windows Server permet fer accions si detecta que un servei específic falla.
 
-![](../.gitbook/assets/serveisrecuperacio.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/serveisrecuperacio.png)
 
 Existeixen tres opcions de **recuperació d’un servei**:
 
@@ -108,7 +108,7 @@ Existeixen tres opcions de **recuperació d’un servei**:
 
 L'**administrador de discs** permet administrar els discs, particions i volums.
 
-![](../.gitbook/assets/wsdiskmanagement.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/wsdiskmanagement.png)
 
 ### Registre d’esdeveniments _\[Event Viewer\]_
 
@@ -124,7 +124,7 @@ Els principals són:
 * Registres d'aplicacions i serveis
   * Esdeveniments de hardware
 
-![](../.gitbook/assets/eventviewer.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/eventviewer.png)
 
 ## Actualitzacions
 
@@ -136,7 +136,7 @@ En **versions anteriors de Windows Server 2016**, les actualitzacions venien des
 
 En el **Windows Update** \(en Windows Server 2012 i Windows 8\) existeixen **quatre configuracions** possibles:
 
-![](../.gitbook/assets/windowsupdate.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/windowsupdate.png)
 
 * **Instal·lar actualitzacions automàticament \(recomenat\)**.
   * Les actualitacions requereix reiniciar, per aquesta, raó si triem l'opció automàtica, **configurarem el dia i la hora** que no afecti al funcionanament de l'empresa o als processos del servidor o sistema informàtic. 
@@ -150,9 +150,9 @@ En el **Windows Update** \(en Windows Server 2012 i Windows 8\) existeixen **qua
 
 En el **Windows Update** \(en Windows Server 2016 i Windows 10\) podem configurar:
 
-![](../.gitbook/assets/win2016-updates.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win2016-updates.png)
 
-* **Canviar hores actives**  Un cop instal·lades actualitzacions, si és necessari reiniciar, tenim dos opcions:
+* **Canviar hores actives** Un cop instal·lades actualitzacions, si és necessari reiniciar, tenim dos opcions:
   * reiniciar el servidor manualment 
   * esperar un reinici automàtic fora de les hores de major activitat del sistema.
 
@@ -170,7 +170,7 @@ Per això, quan un pedaç de seguretat crític és emès pels servidors d'actual
 
 Tot això ho farà sense demanar consentiment a l'usuari i, si ens descuidem, ens reiniciarà el sistema sense tenir en compte el que estiguem fent en aquell moment.
 
-![](../.gitbook/assets/new-upgrade-ui.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/new-upgrade-ui.png)
 
 En el nostre cas una actualització forçada ens podria destorbar durant la realització d'alguna pràctica o control. Per això, farem servir algunes eines administratives per impedir-ho.
 
@@ -178,9 +178,9 @@ En el nostre cas una actualització forçada ens podria destorbar durant la real
 
 El servei responsable de les actualitzacions de Windows s'anomena _**wuausrv**_ però en l'_Administrador de serveis_ el podrem trobar com _**Windows Update**_. A partir d'aquí només haurem de deshabilitar el servei.
 
-_**Administrador de serveis &gt; "Windows Update" &gt; Propietats &gt; Tipus d'inici &gt; Escollir Deshabilitat**_ _**Administrador de serveis &gt; "Windows Update" &gt; Propietats &gt; Estat del servei &gt; Detenir**_ 
+_**Administrador de serveis &gt; "Windows Update" &gt; Propietats &gt; Tipus d'inici &gt; Escollir Deshabilitat**_ _**Administrador de serveis &gt; "Windows Update" &gt; Propietats &gt; Estat del servei &gt; Detenir**_
 
-![](../.gitbook/assets/uf1_wuauserv.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf1_wuauserv.PNG)
 
 #### B\) Deshabilitar la directiva de grup \(GPO\) responsable de les actualitzacions
 
@@ -201,7 +201,7 @@ A la dreta, trobarem un llarg llistat de regles. Entre elles, **deshabilitarem**
 * _Configurar Actualitzacions automàtiques_ 
 * _No reiniciar automàticament amb usuaris que hagin iniciat sessions en instal·lacions d'actualitzacions automàtiques_
 
-![](../.gitbook/assets/uf1_gpo_editor.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf1_gpo_editor.PNG)
 
 Per forçar l'aplicació de directives editades haurem d'executar \[Win + R\]: `gpupdate /force /boot /logoff`
 

@@ -91,11 +91,11 @@ Les dades que cal introduir són les següents \(es pot confirmar l'opció per d
 * **DNS forwarder IP address** \(Reenviador de DNS\): **8.8.8.8** \(servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o un altre servidor extern\). 
 * **Administrator password** \(Contrasenya per l'usuari _Administrator_\): **\*\*\*\*\*\*** \(ha de complir els criteris de complexitat de Windows\)
 
-![](../../.gitbook/assets/saba-domain.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/saba-domain.png)
 
 Si el procés s'ha realitzat **correctament**, ens apareixerà un missatge domant informació del domini creat.
 
-![](../../.gitbook/assets/saba-domain2.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/saba-domain2.png)
 
 Si es produeix un algun **error** en la creació del domini, cal esborrar l'arxiu de configuració de Samba.
 
@@ -213,7 +213,7 @@ Instal·larem els **client kerberos** al sevidor per poder comprovar si funciona
 
 En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini _**SAMBAXXX.LOCAL**_ . **Molt important en MAJÚSCULES!!**
 
-![](../../.gitbook/assets/kerberos1.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/kerberos1.png)
 
 Finalment, fem la comprovació del servei kerberos.
 
@@ -269,13 +269,13 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 1. Si el client està unit a un domini, primer cal desconnectar-lo del domini i reiniciar.
 2. A la configuració de xarxa, canviar els servidors DNS posant com a **DNS principal** la IP del servidor de domini.
 
-   ![](../../.gitbook/assets/samba4_unir_client1.jpg)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba4_unir_client1.jpg)
 
 3. Connectar-lo al nou domini: _**Panel de control &gt; Sistema &gt; Cambiar configuración &gt; Dominio**_
 
    Caldrà posar el nom del domini \(_SAMBAXXX_ o _sambaxxx.local_\) i quan demani un usuari, s'ha de posar _**Administrator**_, que és l'usuari administrador del domini fet amb Samba.
 
-   ![](../../.gitbook/assets/samba4_unir_client2.jpg)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba4_unir_client2.jpg)
 
 ## Possibles errors
 

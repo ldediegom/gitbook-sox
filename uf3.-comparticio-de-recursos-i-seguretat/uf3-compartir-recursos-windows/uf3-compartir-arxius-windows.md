@@ -49,7 +49,7 @@ Quan es crea una carpeta, aquesta **hereta els permisos de la carpeta pare**, pe
 
 Per configurar els permisos locals cal anar a les **propietats de la carpeta** i entrar a la pestanya _**Seguridad**_.
 
-![](../../.gitbook/assets/win-permisos-locals.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-locals.png)
 
 ### Gestionar els usuaris
 
@@ -65,7 +65,7 @@ Per defecte, si no està marcada la casella _**Permitir**_, implica que no es t�
 
 Amb el botó _**Opciones avanzadas**_ es poden canviar algunes propietats avançades:
 
-![](../../.gitbook/assets/win-pemisos-avansats.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-pemisos-avansats.png)
 
 #### Canviar el propietari
 
@@ -82,7 +82,7 @@ En el cas de deshabilitar l'herència es pot triar entre dues opcions:
 
 Seleccionant un usuari o grup, es poden afegir, eliminar o editar els permisos avançats:
 
-![](../../.gitbook/assets/win-permisos-avansats-afegir.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-avansats-afegir.png)
 
 ## Gestió de permisos de compartició
 
@@ -90,7 +90,7 @@ Abans de configurar els permisos de compartició que assegurar-se que s'ha [acti
 
 A continuació, per configurar els permisos de compartició cal anar a les **propietats de la carpeta** i entrar a la pestanya _**Compartir**_.
 
-![](../../.gitbook/assets/win-permisos-compartits.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-compartits.png)
 
 > Un cop s'hagi compartit la carpeta, la ruta que s'ha d'utilitzar per accedir de forma remota és la que apareix a _**Ruta de acceso de red:**_ `\\WIN-SOX\Compartida`.
 
@@ -99,13 +99,13 @@ A continuació, per configurar els permisos de compartició cal anar a les **pro
 Amb el botó _**Compartir**_, s'accedeix a les opcions per compartir la carpeta de forma senzilla.  
 Només es poden afegir o eliminar **usuaris i grups**, i assignar-los permisos de **Lectura** o de **Lectura i escriptura**.
 
-![](../../.gitbook/assets/win-permisos-compartits-simple.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-compartits-simple.png)
 
 ### Compartició avançada
 
 Amb el botó _**Uso compartido avanzado**_, s'accedeix a les opcions per compartir la carpeta de forma avançada.
 
-![](../../.gitbook/assets/win-permisos-compartits-avansats1.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-compartits-avansats1.png)
 
 En aquest cas es disposa de més opcions per configurar la compartició:
 
@@ -114,7 +114,7 @@ En aquest cas es disposa de més opcions per configurar la compartició:
 * Es pot establir el **nombre màxim d'usuaris** que poden utilitzar la carpeta simultàniament.
 * Els **permisos** que es poden assignar són diferents: _**Llegir, Canviar i Control total**_.
 
-![](../../.gitbook/assets/win-permisos-compartits-avansats2.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-compartits-avansats2.png)
 
 > Es pot simplificar la configuració de permisos de compartició posant **Control total** a _**Compartició**_ i gestionar els permisos locals més detalladament a la pestanya _**Seguretat**_.
 
@@ -130,7 +130,7 @@ Aquesta finestra permet comprovar quins permisos té un usuari i, en cas que no 
 
 Primer cal **triar l'usuari o grup** i després clicar el botó _**Ver acceso efectivo**_.
 
-![](../../.gitbook/assets/win-permisos-efectius.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-permisos-efectius.png)
 
 En les **dues primeres columnes** s'indica si l'usuari o grup té o no un permís determinat.  
 En cas que no el tingui, en la **tercera columna** s'indica el motiu:
@@ -156,7 +156,7 @@ Es pot **accedir a un recurs compartit ocult** si es conneix tota la ruta.
 
 Es poden veure tot el relacionat amb els recursos que està compartint la màquina a _**Administración de equipos \[Computer Management\]**_, dins l'apartat _**Herramientas del sistema &gt; Carpetas compartidas**_.
 
-![](../../.gitbook/assets/win-recursos-compartits.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-recursos-compartits.png)
 
 **Recursos compartits**
 
@@ -184,9 +184,9 @@ Mostra els arxius compartits que s'estan utilitzant i, si cal, es poden tancar.
 
 ### A través del Administrador del servidor
 
-En l'_**Administrador del servidor \[Server Manager\]**_, dins de l'apartat  _**Servicios de archivos i de almacenamiento \[File and Storage Services &gt; Shares\]**_.
+En l'_**Administrador del servidor \[Server Manager\]**_, dins de l'apartat _**Servicios de archivos i de almacenamiento \[File and Storage Services &gt; Shares\]**_.
 
-![](../../.gitbook/assets/win-recursos-compartits2.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-recursos-compartits2.png)
 
 * **Nom del recurs compartit:** és el nom del recurs compartit.
 * **Ruta local:** és la ruta completa de la carpeta en el sistema local.
@@ -198,13 +198,13 @@ En l'_**Administrador del servidor \[Server Manager\]**_, dins de l'apartat  _**
 
 Executant la a comanda `net share` permet veure les unitats que tenim compartides en l’equip actual.
 
-![](../../.gitbook/assets/win-netshare.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-netshare.png)
 
 ## Accedir a carpetes compartides
 
 Una forma fàcil d'accedir a les carpetes compartides en una màquina és a través de l'explorador d'arxius.
 
-A l'apartat _**Red**_  es poden veure les màquines de la mateixa xarxa.
+A l'apartat _**Red**_ es poden veure les màquines de la mateixa xarxa.
 
 Seleccionant qualsevol d'elles es veuran les carpetes que comparteixen.
 
@@ -265,5 +265,5 @@ Per activar l´ús compartit d'arxius i impressores cal el següent:
 
 Quan s'activa l’opció _**Ús compartit d’arxius i impressores**_, els usuaris de la xarxa podran tenir accés als arxius i impressores compartits en aquest equip.
 
-![](../../.gitbook/assets/win-activar-us-compartit.PNG)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-activar-us-compartit.PNG)
 

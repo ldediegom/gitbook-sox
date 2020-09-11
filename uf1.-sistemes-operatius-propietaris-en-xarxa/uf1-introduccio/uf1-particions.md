@@ -28,13 +28,13 @@ Però també es poden trobar altres programes, fins i tot gratuïts, amb altres 
 
   Una de les particions primàries es pot marcar com a **partició activa**. Si hi ha diversos sistemes operatius, arrencarà el que es trobi en aquesta partició.
 
-![](../../.gitbook/assets/uf1-mbr.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf1-mbr.png)
 
 Per superar la **limitació de 4 particions** és possible fer que una d'aquestes 4 sigui una partició estesa.
 
 La **partició estesa \(**_**extended partition**_**\)** serveix per contenir **particions lògiques**, tantes com es vulgui.
 
-![](../../.gitbook/assets/uf1-mbr2.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf1-mbr2.png)
 
 ### Particionat GPT
 
@@ -45,7 +45,7 @@ La **partició estesa \(**_**extended partition**_**\)** serveix per contenir **
   * En els altres 32 sectors hi ha la informació de les 128 particions.
 * Totes les particions són primàries \(**no hi ha particions esteses ni lògiques**\).
 
-![](../../.gitbook/assets/uf1-gpt.svg)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf1-gpt.svg)
 
 En l'espai lliure encara es poden crear moltes particions més.
 

@@ -12,7 +12,7 @@ La gran majoria de distribucions GNU/Linux utilitzen el CUPS com a sistema d’i
 
 Quan el **CUPS** es fa servir amb el **Samba**, les impressores també es poden utilitzar en ordinadors **Windows** remots per imprimir per mitjà de la xarxa.
 
-![](../../.gitbook/assets/cupslogo.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/cupslogo.png)
 
 ### Instal·lació del servei d'impressió CUPS
 
@@ -76,7 +76,7 @@ El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fi
 
 Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció **Add printer** de la pestanya **Administration**.
 
-![](../../.gitbook/assets/cupsadministration.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/cupsadministration.png)
 
 1. Seleccionem la impressora a instal·lar. Per exemple l’impressora local **CUPS-PDF \(Virtual PDF Printer\)**.
 2. Cal posar un nom a la impressora, i si es vol, una descripció i lloc on es troba la impressora. 

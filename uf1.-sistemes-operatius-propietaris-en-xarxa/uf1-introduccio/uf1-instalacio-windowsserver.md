@@ -44,7 +44,7 @@ Windows Server permet instal·lar-se en dues versions diferents:
 * **Opció** _**Windows Server 2016 Standard \(Desktop Experience\)**_
   * Instal·lació del Servidor amb **GUI** _**\[Grafic User Interface\]**_
   * S’instal·la la interfície gràfica d'usuari amb totes les eines d'administració del servidor.
-* **Opció** _**Windows Server 2016 Standard \(Core\).**_ ****
+* **Opció** _**Windows Server 2016 Standard \(Core\).**_ _\*\*_
   * No s’instal·la la interfície gràfica d’usuari estàndard i el servidor s’administra amb la línia de comandes \(Windows PowerShell\) o bé remotament.
   * És l’opció predeterminada i recomanada per Microsoft. 
   * **Avantatges**: requereix menys espai de disc \(uns 4GB menys\), és més eficient i augmenta la seguretat.
@@ -68,7 +68,7 @@ D'aquesta forma els possibles errors del sistemes operatiu no afectaran tant dir
 * Utilitzar l'espai restant per crear una altra partició.
 * Seleccionar la partició de 20 GB per instal·lar el sistema i continuar endavant.
 
-![](../../.gitbook/assets/wsinst07-particionat.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/wsinst07-particionat.png)
 
 #### Assignar contrasenya de l'usuari Administrador
 

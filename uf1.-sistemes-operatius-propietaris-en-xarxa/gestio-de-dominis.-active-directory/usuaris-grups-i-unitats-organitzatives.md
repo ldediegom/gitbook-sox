@@ -30,7 +30,7 @@ Per accedir-hi cal anar a _**Administrador del servidor &gt; Herramientas &gt; C
 
 En aquesta pantalla podrem administrar els usuaris globals, grups i equips del domini.
 
-![](../../.gitbook/assets/ad_centre_administracio.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_centre_administracio.png)
 
 ## Equips
 
@@ -101,7 +101,7 @@ A l'inici de sessió en qualsevol **equip del domini** utilitzant un compte d'us
 1. Ves a l’_**Administrador del servidor &gt; Herramientas &gt; Centro de administración de Active Directory**_
 2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear l'usuari i en el menú de la dreta selecciona l'opció **Nou &gt; Usuari**.
 
-![](../../.gitbook/assets/ad_usuri_nou.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_usuri_nou.png)
 
 Les dades d'un usuari es divideixen en diferents seccions:
 
@@ -129,7 +129,7 @@ Altres opcions de la compte d'usuari:
 
   * Permet definir els dies i hores en els que pot iniciar sessió.  
 
-  ![](../../.gitbook/assets/ad_usuari_hores.png)
+  ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_usuari_hores.png)
 
 També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-lo, restablir contrassenya, etc.
 
@@ -160,7 +160,7 @@ Només es veuen algunes seccions de la compte d'ususari perquè no es poden canv
 
 Per poder canviar una propietat, abans cal seleccionar la casella que hi ha al davant. Després, els canvis que es facin en aquesta propietat s'aplicaran a tots els usuaris seleccionats, mentre que les que no s'hagin marcat quedaran sense modificar \(cada usuari mantindrà les que tenia\).
 
-![](../../.gitbook/assets/ad_usuaris_varis.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_usuaris_varis.png)
 
 ## Grups
 
@@ -213,7 +213,7 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
 2. Situa't **sobre l'arrel del domini o una unitat organitzativa** on vulguis crear grup i al menú de la dreta selecciona l'opció **Nou &gt; Grup**. 
 3. Ara has d'**introduir el nom del grup** i seleccionar l'**àmbit** i el **tipus** de grup.
 
-![](../../.gitbook/assets/adnewgroup.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adnewgroup.png)
 
 ### Gestió de grups
 
@@ -222,7 +222,7 @@ Les opcions més importatns que podem fer amb un grup, a part de poder esborrar 
 * **Miembros:** en aquesta secció es poden veure els membres que pertanyen a aquest grup i també es poden afegir altres membres o treure'ls del grup.
 * **Miembro de:** serveix per veure a quins grups pertany aquest grup i afegir-lo a altres grups o treure'l.
 
-![](../../.gitbook/assets/adnewgroupmember.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adnewgroupmember.png)
 
 ## Unitats Organitzatives \(UO\)
 

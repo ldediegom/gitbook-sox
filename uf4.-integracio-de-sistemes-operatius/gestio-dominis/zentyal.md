@@ -30,7 +30,7 @@ Una de les primeres operacions que necessites fer en el teu domini és crear un 
 * Creem un usuari administrador
 * Afegim l'usuari al grup _**Domain Admins**_.
 
-![](../../.gitbook/assets/zentyal-users.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/zentyal-users.png)
 
 ## Unir un client Windows al domini Zentyal
 
@@ -39,13 +39,13 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 1. Si el client està unit a un domini, primer cal desconnectar-lo del domini i reiniciar.
 2. A la configuració de xarxa, canviar els servidors DNS posant com a **DNS principal** la IP del servidor de domini.
 
-   ![](../../.gitbook/assets/samba4_unir_client1.jpg)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba4_unir_client1.jpg)
 
 3. Connectar-lo al nou domini: _**Panel de control &gt; Sistema &gt; Cambiar configuración &gt; Dominio**_
 
    Caldrà posar el nom del domini \(_ELTEUNOM_ o _elteunom.local_\) i quan demani un usuari, s'ha de posar l'usuari _**Domain Admin**_ que hem creat prèviament i és l'usuari administrador del domini.
 
-   ![](../../.gitbook/assets/samba4_unir_client2.jpg)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba4_unir_client2.jpg)
 
 4. Reiniciem la màquina i ja tenim l’equip afegit al domini. El nostre client Windows apareixerà a l'arbre d'LDAP sota la Unitat Organitzativa _**Computers**_.
 
@@ -53,7 +53,7 @@ Es fa de la mateixa forma que per unir-lo a un domini Windows:
 
 Un perfil és un entorn personalitzat especialment per a un usuari. El perfil conté la configuració de l’escriptori i dels programes de l’usuari. Cada usuari té un perfil, tant si l’administrador ho configura com si no, perquè el perfil es crea automàticament per a cada usuari quan s’inicia sessió en un equip.
 
-Podem configurar els **perfils mòbils** per tal que els usuaris tinguin els mateix escriptori i accés als seus documents i configuracions des de qualsevol equip on es connectin. Trobem l’opció de configuració de perfils mòbils a  _**Domain &gt; Settings &gt; Marcar “enable roaming profiles”**_ .
+Podem configurar els **perfils mòbils** per tal que els usuaris tinguin els mateix escriptori i accés als seus documents i configuracions des de qualsevol equip on es connectin. Trobem l’opció de configuració de perfils mòbils a _**Domain &gt; Settings &gt; Marcar “enable roaming profiles”**_ .
 
 El servidor Zentyal guarda els perfils mòbils a /home/samba/profiles
 

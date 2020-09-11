@@ -10,7 +10,7 @@ Aquestes dades inclouen:
   * Fons de l'escriptori, mida de les icones, la lletra del sistema, configuració del teclat i ratoli...
   * **Accés ràpid**: arxius que l'usuari guarda a l'escriptori, arxius descarregats d'Internet, música, fotos i vídeos.
 
-    ![](../../.gitbook/assets/adperfil_accesrapid.png)
+    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfil_accesrapid.png)
 * En quina **carpeta privada** on es guarden els seus arxius personals. Només ell hi podrà accedir.
 * Quin **script s'executarà cada cop que l'usuari iniciï sessió**. Algunes de les coses que es poden programar son:
   * Sincronitzar la data i hora del client amb el servidor.
@@ -67,27 +67,26 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
 3. Si cal, canviar el propietari pel grup _**Administradores**_
 4. Clicar el botó Deshabilitar herencia i seleccionar _**Quitar todos los permisos heredados...**_
 5. Afegir els següents usuaris i donar-los els permisos necessaris clicant el botó _**Agregar &gt; Seleccionar una entidad de seguridad**_:
-   * **Administadors \(Administrators\)** 
+   * **Administadors \(Administrators\)**
      * Aplicar permisos sobre _**"Esta carpeta, subcarpetas y archivos"**_.
      * Marcar la casella **control total**.
 
-       ![](../../.gitbook/assets/adpermisosadmin.png)
+       ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisosadmin.png)
+6. **Propietari \(CREATOR OWNER\)**:
+   * Aplicar permisos sobre _**"Solo subcarpetas y archivos"**_ .
+   * Marcar la casella **control total**.
 
-* **Propietari \(CREATOR OWNER\)**: 
-  * Aplicar permisos sobre _**"Solo subcarpetas y archivos"**_ .
-  * Marcar la casella **control total**.
+     ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisoscreator.png)
+7. **Usuaris del domini \(Domain Users\)**:
 
-    ![](../../.gitbook/assets/adpermisoscreator.png)
-* **Usuaris del domini \(Domain Users\)**:
+   * Aplicar permisos a _**"Solo esta carpeta"**_.
+   * Clicar _**Mostrar permisos avanzados**_:
+     * Permís per _**Travessar aquest directori/executar arxius**_.
+     * Permís per _**Mostrar carpeta / llegir dades**_.
+     * Permís per _**Crear carpetes / adjuntar dades**_.
+     * _**Permisos de lectura**_.
 
-  * Aplicar permisos a _**"Solo esta carpeta"**_.
-  * Clicar _**Mostrar permisos avanzados**_:
-    * Permís per _**Travessar aquest directori/executar arxius**_.
-    * Permís per _**Mostrar carpeta / llegir dades**_.
-    * Permís per _**Crear carpetes / adjuntar dades**_.
-    * _**Permisos de lectura**_.
-
-  ![](../../.gitbook/assets/adpermisosusuaris.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisosusuaris.png)
 
 ### Creació de la carpeta per posar les carpetes privades
 
@@ -106,23 +105,23 @@ Les carpetes anteriors \(_**perfils**_ i _**privades**_\) s'han de compartir de 
 * Marcar la casella _**Compartir esta carpeta**_ i clicar el botó _**Permisos**_
 * Seleccionar l'usuari _**Todos \(Everyone\)**_ i marcar l'opció _**Control Total**_
 
-![](../../.gitbook/assets/adperfilspermisoscomparticio.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilspermisoscomparticio.png)
 
 La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat _**Propiedades &gt; Compartir &gt; Ruta de acceso a la red**_.
 
-![](../../.gitbook/assets/adperfilsrutacompartida.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilsrutacompartida.png)
 
 El nom de la ruta només hauria de contenir el nom del servidor \(`\\WSXXX`\) i el nom de la carpeta compartida \(`\Perfils`\). Si surt una ruta més llarga, segurament és perquè s'ha utilitzat el botó _**Compartir...**_ en lloc de _**Uso compartido avanzado...**_.
 
 ### Configuració del perfil d'usuari
 
-Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el botó secundari, es tria l'opció _**Propiedades**_  i anar a la secció _**Perfil**_.
+Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el botó secundari, es tria l'opció _**Propiedades**_ i anar a la secció _**Perfil**_.
 
 * _**Ruta de acceso al perfil**_: ha de ser la carpeta que s'ha compartit per guardar els perfils més l'identificador de l'usuari o `%username%`.
 
-  * Per exemple: 
+  * Per exemple:
 
-    `\\WSXXX\Perfils\%username%` o bé 
+    `\\WSXXX\Perfils\%username%` o bé
 
     `\\IP_SERVIDOR\Perfils\%username%`
 
@@ -130,7 +129,7 @@ Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el bo
   >
   > **MAI** s'ha de posar la ruta local \(`C:\...`\).
 
-  ![](../../.gitbook/assets/adperfilsperfilruta.png)
+  ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilsperfilruta.png)
 
   > La **carpeta de perfil mòbil** de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 
@@ -140,7 +139,7 @@ Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el bo
 
     També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
 
-    ![](../../.gitbook/assets/adperfilprivada.png)
+    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilprivada.png)
 
   > La **carpeta privada** de cada usuari es crearà dins de `Privades`en quant es faci clic a _**Aceptar**_.
 
@@ -152,7 +151,7 @@ En el **client**, iniciar sessió amb un usuari del domini a qui se li ha config
 
 Podria ser que surtís un error indicant que s'ha creat un perfil temporal.
 
-![](../../.gitbook/assets/adperfiltemporal.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfiltemporal.png)
 
 Els possibles motius són:
 
@@ -187,7 +186,7 @@ Aquesta carpeta pot tenir la extensió _**.V6**_ depenent de la versió de siste
 
 Un cop iniciada la sessió en el **client**, l'usuari ha de veure una unitat de xarxa \(la que s'hagi configurat en el perfil\) i ha de poder entrar, crear, esborrar i modificar arxius i carpetes.
 
-![](../../.gitbook/assets/adcarpetaprivada.png)
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adcarpetaprivada.png)
 
 Alguns errors que es poden produir són:
 

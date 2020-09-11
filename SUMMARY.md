@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducció](README.md)
+* [Presentació](README.md)
 
 ## UF1. Sistemes operatius propietaris en xarxa
 
@@ -44,7 +44,7 @@
   * [Perfils mòbils](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-perfils-mobils.md)
   * [Gestió avançada de LDAP](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-ldap-gestio-avansada.md)
 * [Qüestionari](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-questionari.md)
-* [Activitats](uf2-activitats/README.md)
+* [Activitats](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-activitats/README.md)
   * [Task 1. Installation and monitoring of Ubuntu Server](https://docs.google.com/document/d/1FEF6Lwhx1gBTquaueCxxP8tsCwCrZjjinXufxtjQz1E/edit?usp=sharing)
   * [Task 2. Users and groups administration](https://docs.google.com/document/d/1kjiAiGS4XTSVwp8VL9g23Tp2bsWy0rgtnY7ueO7dDKE/edit?usp=sharing)
   * [Task 3. Monitoring and task automation](https://docs.google.com/document/d/1gEU1VATekXAd67NTZOiwI9LIbnVt68Meq2Mr5MSEKus/edit?usp=sharing)
@@ -61,7 +61,7 @@
   * [Compartir arxius i carpetes amb NFS](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/uf3-compartir-arxius-linux-nfs.md)
   * [Compartir impressores amb CUPS](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/uf3-compartir-impressores-cups.md)
 * [Qüestionari](uf3.-comparticio-de-recursos-i-seguretat/uf3-questionari.md)
-* [Activitats](uf3-activitats/README.md)
+* [Activitats](uf3.-comparticio-de-recursos-i-seguretat/uf3-activitats/README.md)
   * [Activitat 1. Compartir recursos i seguretat en Windows](https://docs.google.com/document/d/1pAmK7k5k4E8RfdJMY5JtkYPQHS3MnSXRif_j_-WEMfE/edit?usp=sharing)
   * [Activitat 2. Compartir carpetes en GNU/Linux amb NFS](https://docs.google.com/document/d/1rhndBqwGHlEeQAqH_YffvbTO3Xy77_z_FqqXNp2DWyg/edit?usp=sharing)
   * [Activitat 3. Compartir impressores en GNU/Linux amb CUPS](https://docs.google.com/document/d/1JLT5b6rdPAaFzbdeYJCli48qAQLooiDyhcrfd1Favwk/edit?usp=sharing)
@@ -79,10 +79,10 @@
   * [Perfils mòbils en un domini Samba AD](uf4.-integracio-de-sistemes-operatius/gestio-dominis/perfils-mobils-sambaad.md)
   * [Zentyal com a controlador de domini](uf4.-integracio-de-sistemes-operatius/gestio-dominis/zentyal.md)
 * [Qüestionari](uf4.-integracio-de-sistemes-operatius/uf4-questionari.md)
-* [Activitats](uf4-activitats/README.md)
+* [Activitats](uf4.-integracio-de-sistemes-operatius/uf4-activitats/README.md)
   * [Activitat 1. Compartir recursos amb Windows i accedir des de Linux](https://docs.google.com/document/d/1KDLMK1oI_3DBKD2G8YdXofjKtSx51vbF1XcLiZ_nPHo/edit?usp=sharing)
   * [Activitat 2. Compartir recursos amb Samba](https://docs.google.com/document/d/1YPA6u2vNXcuZ4WO0kzYZPs_MVBPQzZpaOOce2bKWHZA/edit?usp=sharing)
   * [Activitat 3. Unir un client Linux a un domini Windows](https://docs.google.com/document/d/1V4aPQy2GKtNZtHiSlvXqdzxrRb8hojm1E86clAJAJ7A/edit?usp=sharing)
   * [Activitat 4. Samba 4 com a controlador primari de domini \(AD DC\)](https://docs.google.com/document/d/11F9Rsqkry8bO31QAJ8B5DJWzd8ZZF7k7AazVZMlD9ZY/edit?usp=sharing)
-* [Activitat 4. Zentyal com a controlador primari de domini](act4.md)
+* [Activitat 4. Zentyal com a controlador primari de domini](uf4.-integracio-de-sistemes-operatius/act4.md)
 
