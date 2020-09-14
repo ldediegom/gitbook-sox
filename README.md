@@ -1,3 +1,9 @@
+---
+description: >-
+  Aquest document ha estat creat per Sergi Coll amb col·laboració de Luis De
+  Diego. Espai original: https://sergi-coll.gitbook.io/sox/
+---
+
 # Presentació
 
 ## Introducció
