@@ -35,7 +35,7 @@ Cada directriu de grup \(**GPO**\) conté la configuració del **equip** i d'**u
 
 Cadascuna d’aquestes es divideix en arbres iguals.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/directrius_edicio.png)
+![](../../.gitbook/assets/directrius_edicio.png)
 
 Hi ha polítiques que estan als dos subarbres però amb significats i/o paràmetres diferents. Per exemple:
 
@@ -69,21 +69,18 @@ Per introduir-nos a les directives de grup el millor és començar amb un exempl
    * Els comptes i equips que estan dins del contenidor reben automàticament les polítiques que estiguin configurades en el GPO.
 6. Fem botó dret sobre de la política que acabem de crear i escollim _**Editar...**_.
 7. S’obrirà l’**Editor de directrius** de la GPO.
-8. Anem a _**Configuració d'usuari &gt; Directives &gt; Plantilles administratives &gt; Desktop &gt; Desktop &gt; Tapiz del escritorio**_.
+8. Anem a _**Configuració d'usuari &gt; Directives &gt; Plantilles administratives &gt; Desktop &gt; Desktop &gt; Tapiz del escritorio**_.  ![](../../.gitbook/assets/directriu_escriptori.png) 
+9. **Habilitem la directriu**, posem el camí de la imatge `\\NomServidor\wallpaper\imatge.jpg`
+10. Tornem a la finestra de _**Administració de directives de grup**_ i fem clic a la nostra directiva i anem a la pestanya "Detalles" aquí escollim en _**Estado de GPO**_ l'opció _**Configuració d'equip deshabilitada**_ ja que ens interessa que estigui habilitat per usuari, no per equip.
+11. Per **actualitzar les directrius**, anem a la línia de comandes i executem:
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/directriu_escriptori.png)
+    `gpupdate /force`
 
-1. **Habilitem la directriu**, posem el camí de la imatge `\\NomServidor\wallpaper\imatge.jpg`
-2. Tornem a la finestra de _**Administració de directives de grup**_ i fem clic a la nostra directiva i anem a la pestanya "Detalles" aquí escollim en _**Estado de GPO**_ l'opció _**Configuració d'equip deshabilitada**_ ja que ens interessa que estigui habilitat per usuari, no per equip.
-3. Per **actualitzar les directrius**, anem a la línia de comandes i executem:
+12. I per últim, podem **mostrar les directrius** aplicades executant:
 
-   `gpupdate /force`
+    `gpresult /r`
 
-4. I per últim, podem **mostrar les directrius** aplicades executant:
-
-   `gpresult /r`
-
-5. Ara ja podem **comprovar** que funciona, aneu al vostre equip del domini Windows 7 i comprova que s'ha canviat el fons de pantalla.
+13. Ara ja podem **comprovar** que funciona, aneu al vostre equip del domini Windows 7 i comprova que s'ha canviat el fons de pantalla.
 
 ## Aplicació de directrius
 
@@ -106,7 +103,7 @@ Les directrius són **heretables** i **acumulatives**:
 * Aquests, més el vinculats al domini són heretats per les OU de primer nivell.
 * Tots els anteriors més les GPO de les OU primer nivell són heretats per les OU de segon nivell, etc. 
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/directrius_herencia.png)
+![](../../.gitbook/assets/directrius_herencia.png)
 
 Pot ser que hi hagi comptes usuari o equip, amb **duplicitat de polítiques**.
 
