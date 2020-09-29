@@ -12,23 +12,20 @@ El nom ha de ser `wsxxx` \(`xxx` són les inicials del vostre nom i cognoms\).
 
 ## Instal·lació del Directori Actiu
 
-1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
+1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.   
 
-   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)![](../../.gitbook/assets/ad_afegir%20%281%29.png)
 
 2. Triem l'opció _**Instalación basada en características o en roles**_.
 
-   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins2.png)
+   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins2.png) ![](../../.gitbook/assets/ad_ins2.png) 
 
-3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_ fins a la llista de possibles funcions per instal·lar en el sistema.
-
-   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins3.png)
-
+3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_ fins a la llista de possibles funcions per instal·lar en el sistema. ![](../../.gitbook/assets/ad_ins3.png) 
 4. Marcar l'opció _**Serveis de Domini d'Active Directory \(AD DS\)**_ i _**DNS Server**_ i prémer el botó de _**Següent**_.
 
    Donat que es fan servir noms de domini caldrà instal·lar i configurar al servidor el servei de DNS per tal que resolgui els noms de domini que es fan servir.
 
-5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
+5. Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_. ![](../../.gitbook/assets/ad_ins4.png) 
 
    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins4.png)
 
