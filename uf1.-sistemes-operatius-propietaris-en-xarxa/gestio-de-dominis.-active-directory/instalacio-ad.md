@@ -1,6 +1,6 @@
 # Instal·lació d'un controlador de domini en Active Directory
 
-![Active Directory](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/activedirectory%20%281%29.png)
+![](../../.gitbook/assets/activedirectory.png)
 
 ## Configuració prèvia
 
@@ -12,9 +12,9 @@ El nom ha de ser `wsxxx` \(`xxx` són les inicials del vostre nom i cognoms\).
 
 ## Instal·lació del Directori Actiu
 
-1. La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
+1. `La instal·lació del` **`Directori Actiu`** `és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des l’`_**`Administrador del servidor`**_ `i seleccionar l'opció` _**`Agregar roles y características`**_ `que obrirà l'assistent per afegir funcions.`
 
-   ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)
+   \`\`![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)
 
 2. Triem l'opció _**Instalación basada en características o en roles**_.
 
