@@ -102,6 +102,58 @@ La següent imatge representa un arbre que conté un domini principal \(sapa.cat
 
 ![](../../.gitbook/assets/boscdomini.svg)
 
+## Objectes d'Active Directory
+
+Els objectes d'Active Directory, i en conseqüència de LDAP, són els components bàsics d’una estructura lògica. Un usuari, una carpeta compartida, una impressora, un equip, etc.
+
+Aquest objectes a part d'unes característiques predefinides pel protocol LDAP, a més del nom i localització, poden incorporar certa informació definida per l'usuari administrador. Tota aquesta informació s'anomena **atributs** i defineixen la informació-propietats d’un objecte.
+
+#### Tipus d'objectes
+
+Els diversos tipus d'objectes que podem utilitzar al crear la nostra estructura a LDAP i Active Directory són:
+
+* **Domini \(dc\):** L’objecte arrel del domini. 
+* **Unitat Organitzativa \(ou\):** contenidor jeràrquic d’objectes. 
+* **Usuari \(u, cn,...\):** Representa un usuari de la xarxa i funciona com un magatzem d'informació de 
+* identificació i autenticació 
+* **Equip:** Representa un equip de la xarxa i proporciona el compte de màquina necessària perquè el sistema entreu en el domini . 
+* **Contacte:** usuari extern al domini 
+* **Grup \(cn\):** poden contenir objectes de diferents unitats organitzatives i dominis 
+* **Carpeta compartida:** Proporciona accés de xarxa en AD a una carpeta compartida en un sistema Windows. 
+* **Impressora compartida:** Proporciona accés de xarxa en AD a una impressora compartida en un sistema Windows. 
+* **Contenidor:** una OU al que no se l’hi pot aplicar directives.  
+
+## **Entrades**
+
+Tot objecte ha de poder ser referenciat dins l'estructura d'un domini, arbre o bosc de manera inequívoca. Per poder-ho fer, els tipus d'objectes s'identifiquen amb una etiqueta clau com són _**ou**_ per les unitats organitzatives, _**dc**_ pel nom del domini, o _**cn**_ pels usuaris.
+
+Com passa amb els fitxers i directoris en un sistema operatiu, es poden indicar el lloc on es guarden a través indicant la serva ruta relativa \(relativa al lloc on ens trobem - _directori1/fitxer.txt_\) o bé indicant la seva ruta absoluta \(tenint en compte l'arrel del disc _c:/directori0/directori1/fitxer.txt_\). A LDAP tenim el **RDN** \(o referència relativa\) i el **DN** \(Nom Distingit\). 
+
+#### Què és un RDN?  
+
+Noms de Referència Relativa. És la part del nom d’un objecte. És el fragment de DN anterior al primer OU. Distingeix l’objecte dins de l’OU pare.  
+
+_**CN=Ned Stark**,OU=People,DC=gamesofthrones,DC=north._ 
+
+#### Què és un DN?  
+
+És nom simbòlic que identifica l’objecte de manera inequívoca dins del domini, utilitzat la ruta completa de l’arbre. 
+
+_**CN=Ned Stark,OU=People,DC=gamesofthrones,DC=north**_ 
+
+#### En què es diferencien? 
+
+* GUID i DN distingeixen inequívocament un objecte dins del domini. El primer, però, és inalterable tot i fent canvis de localització dins de l’arbre. 
+* RDN distingeix l’objecte només dins del contenidor OU pare. 
+
+#### Exemple
+
+![](../../.gitbook/assets/dn_ad.png)
+
+* **Base →** “dc=Empresa,dc=com”
+* **DN d'un dels clients →**  "cn=Aina Mas,ou=Clients,dc=Empresa,dc=com”
+* **RDN de la persona dins la OU=Clients→** "cn=Aina Mas" 
+
 ## Documentació i recursos
 
 * **Introducció al dominis**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=0.1.12)

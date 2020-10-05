@@ -66,7 +66,7 @@ Al Windows Server els usuaris poden ser de dos tipus:
 
 * **Usuaris globals o usuaris de domini:** Comptes d'usuari creades mitjançant el Directori Actiu. 
   * Les dades d’una compte d’usuari global, es guarden en el Directori Actiu i, per tant, són coneguts per tots els equips del domini.
-  * Qualsevol ordinador de fa de DC - Domain Controller, pot crear comptes d’usuari de domini.
+  * Qualsevol ordinador de fa de DC - _Domain Controller_, pot crear comptes d’usuari de domini.
 
 > Amb **usuaris de domini**, una persona pot validar-se amb el mateix compte d’usuari des de qualsevol ordinador integrat al domini i accedir als recursos de tot el domini.
 
@@ -121,7 +121,7 @@ Altres opcions de la compte d'usuari:
 
 * **L’usuari ha de canviar la contrasenya en el següent inici de sessió**. 
   * Si activem aquesta opció, quan l’usuari es connecti per primera vegada li exigirà un canvi obligatori de contrasenya. Li demanarà la contrasenya anterior \(per tant l’haurà de conèixer i la nova.
-* **L'usuari no pot canviar la contrassenya**.
+* **L'usuari no pot canviar la contrasenya**.
   * A diferència del cas anterior, ara l’administrador sí que coneix la clau d’accés del nou usuari. En el cas anterior, l’administrador coneixerà la primera clau \(l’haurà donada ell\) però quan el usuari la canviï no coneixerà el nou password. Aquest fet no afecta per res a la gestió que l’administrador faci de les contrasenyes, ja que, encara que no la conegui, la podrà modificar i fins i tot esborrar. 
 * **La contrasenya mai caduca**.
   * Si no marquem aquesta casella, la contrasenya caducarà, per defecte, al cap de 42 dies.
@@ -133,11 +133,11 @@ Altres opcions de la compte d'usuari:
 
 ![](../../.gitbook/assets/ad_usuari_hores.png)
 
-També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-lo, restablir contrassenya, etc.
+També podem realitzar **tasques** en un compte, com eliminar-lo, deshabilitar-lo, restablir contrasenya, etc.
 
 * **Tasques &gt; Deshabilitar**. 
   * Serveix per deshabilitar una compte temporalment. Permet que un usuari no es pugui connectar sense haver d’esborrar el compte amb totes les dades que contenia. 
-* **Tasques &gt; Restablir contrassenya**
+* **Tasques &gt; Restablir contrasenya**
   * Serveix per canviar la contrasenya a un usuari. Es sol utilitzar quan un usuari no recorda la seva contrasenya. 
 
 > Les **contrasenyes** en **Windows Server** han de tenir un mínim de 7 caràcters amb al menys una lletra majúscula, una minúscula i un número.
@@ -176,7 +176,7 @@ Els **membres d’un grup d’usuaris** poden ser:
 * Equips 
 * Altres grups d’usuaris
 
-Windows Server té creats una sèrie de **grups d’usuaris predefenits** \(_**Tots**_, _**Administradors**_, _**Equips del domini**_, etc.\)
+Windows Server té creats una sèrie de **grups d’usuaris predefinits** \(_**Tots**_, _**Administradors**_, _**Equips del domini**_, etc.\)
 
 > Un usuari ha de pertànyer com a mínim a un grup, però pot pertànyer a més d'un.
 
@@ -219,7 +219,7 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
 
 ### Gestió de grups
 
-Les opcions més importatns que podem fer amb un grup, a part de poder esborrar o moure un grup, es troben a **Propiedades**:
+Les opcions més importants que podem fer amb un grup, a part de poder esborrar o moure un grup, es troben a **Propiedades**:
 
 * **Miembros:** en aquesta secció es poden veure els membres que pertanyen a aquest grup i també es poden afegir altres membres o treure'ls del grup.
 * **Miembro de:** serveix per veure a quins grups pertany aquest grup i afegir-lo a altres grups o treure'l.
@@ -238,7 +238,7 @@ En una UO podem posar-hi:
 
 * Equips
 * Grups
-* Impresores
+* Impressores
 * Usuaris
 * Altres Unitats Organitzatives \(UO\)
 
@@ -276,4 +276,5 @@ La creació d'unitats organitzatives és molt senzilla:
 ## Documentació i recursos
 
 * **MSDN: Ámbito de grupo.**  [https://msdn.microsoft.com/es-es/library/cc755692.aspx](https://msdn.microsoft.com/es-es/library/cc755692.aspx)
+* **PowerShell Active Directory reference:** [https://docs.microsoft.com/en-us/powershell/module/addsadministration/?view=win10-ps](https://docs.microsoft.com/en-us/powershell/module/addsadministration/?view=win10-ps)
 
