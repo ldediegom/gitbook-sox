@@ -267,3 +267,40 @@ Quan s'activa l’opció _**Ús compartit d’arxius i impressores**_, els usuar
 
 ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/win-activar-us-compartit.PNG)
 
+### S'han canviat els permisos del fitxer o carpeta compartida però l'usuari continua amb el mateixos permisos al accedir des del client
+
+Quan establim una connexió amb algun dispositiu de la xarxa el sistema operatiu guarda les dades de la connexió \(IP, port, MAC,...\). Si a més és una connexió a un recurs al que s'ha accedit amb usuari i contrasenya \(_credencials_\), a més de les dades de connexió es guardaran aquestes credencials.
+
+_**Problema**_**:** Amb a la sessió d'un usuari en un client, provem d'accedir a un carpeta compartida pel servidor i diu que no té permisos. Modifiquem els permisos d'accés al servidor i tornem a provar l'accés però continua sense poder entrar. _\(això mateix pot ser al revés: l'usuari pot accedir/modificar/crear i ho volem impedir\)_
+
+_**Què està passant?**_**:** \(Si hem comprovat que els permisos son correctes\) En el perfil d'usuari estan guardats els permisos antics o de sessió.
+
+_**Solució 1 \(poc efectiu\)**_**:** Tancar sessió, tornar a obrir sessió i provar-ho novament.
+
+_**Solució 2 \(massa radical\)**_**:** Reiniciar el sistema operatiu, tornar a obrir sessió i provar-ho novament. \(molt radical\)
+
+_**Solució 3**_**:** Esborrar les credencials de usuari-contrasenya de la connexió feta al servidor.
+
+1. Amb les tecles _Windows + R_ obrir la finestra de dialeg per executar: _`rundll32.exe keymgr.dll, KRShowKeyMgr`_     ![](../../.gitbook/assets/image%20%283%29.png)  
+2. Buscar la lP del l'ordinador on hi ha el recurs compartit i eliminar-la del llistat.    ![](../../.gitbook/assets/image%20%282%29.png) 
+
+_**Solució 4**_**:** Esborrar les credencials usuari-contrasenya de l'accés al recurs compartit amb _net use._
+
+1. Obrim un _cmd_  ![](../../.gitbook/assets/image.png)  __
+2. Mirem les connexions guardades i localitzem la que volem eliminar: 
+
+   `net use`   
+
+3. Tenim dues opcions:
+
+* _Opció 1: Eliminar la credencials de la connexió al recurs compartit._  
+  `net use \\IP_server\recurs_compartit /delete`
+
+  
+  __`klist purge`  
+  __
+
+* _Opció 2: Eliminar totes les credencials de totes les connexions._
+
+  _`net use * /d`_
+
