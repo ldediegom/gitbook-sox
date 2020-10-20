@@ -158,7 +158,7 @@ Les **plantilles de comptes d’usuaris** ens ajuden en aquesta tasca ja que só
 
 Algunes opcions de les propietats d'un usuari es poden modificar en diversos usuaris simultàniament. Per fer-ho només cal seleccionar tots els usuaris en els que es vulgui canviar algun paràmetre, i amb el botó secundari triar l'opció _**Propiedades**_.
 
-Només es veuen algunes seccions de la compte d'ususari perquè no es poden canviar totes les propietats per diversos usuaris simultàniament \(algunes propietats, com per exemple el nom, identificador... no es poden repetir en més d'un usuari\).
+Només es veuen algunes seccions de la compte d'usuari perquè no es poden canviar totes les propietats per diversos usuaris simultàniament \(algunes propietats, com per exemple el nom, identificador... no es poden repetir en més d'un usuari\).
 
 Per poder canviar una propietat, abans cal seleccionar la casella que hi ha al davant. Després, els canvis que es facin en aquesta propietat s'aplicaran a tots els usuaris seleccionats, mentre que les que no s'hagin marcat quedaran sense modificar \(cada usuari mantindrà les que tenia\).
 
