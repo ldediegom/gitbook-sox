@@ -56,9 +56,20 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 
 Si es vol configurar els **perfils mòbils**, primer de tot cal crear en el **servidor** la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
 
+{% hint style="danger" %}
+Compte a la **ubicació de la carpeta**! Com totes les carpetes compartides, és adequat crear-la en un espai poc propens a atacs o en tot cas, on s'eviti mals majors en cas d'atac. Ubicacions adequades serien: 
+
+* A una unitat o volum secundaris del sistema; per exemple: _**D:\, E:\,...**_
+* En cas de no disposar d'un altre lloc, a l'arrel del sistema: unitat _**C:\**_
+{% endhint %}
+
 > En el **nom carpeta** dels perfils, és convenient no posar espais, accents, ñ, ç o altres símbols prohibits \(\*, ?\) o que puguin dificultar l'accés a aquestes carpetes des d'altres sistemes operatius. El millor és utilitzar exclusivament lletres, números i/o guió baix \(\_\).
 >
 > A més, **si es canvia el nom de la carpeta**, caldrà tornar-la a compartir, i si canvia el nom de recurs compartit s'hauran de tornar a configurar els perfils!
+
+{% hint style="info" %}
+A continuació es mostra un exemple d'implementació, en pots trobar més a la Documentació i recursos d'aquest mateix capítol
+{% endhint %}
 
 Un cop creada la carpeta cal posar els **permisos** adequats:
 
@@ -198,6 +209,8 @@ Alguns errors que es poden produir són:
 
 ## Documentació i recursos
 
+* **Apunts d'Oriol Torres:** "How enable roaming profiles" \([https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing](https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing)\)
+* **Microsoft**: "Deploy Roaming User Profiles" \([https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles)\)
 * **Font d'informació:**  Apunts SOX Pere Sánchez \([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17)\)
 * **Somebooks:** Crear un perfil mòbil \([http://somebooks.es/5-7-crear-un-perfil-movil/](http://somebooks.es/5-7-crear-un-perfil-movil/)\)
 
