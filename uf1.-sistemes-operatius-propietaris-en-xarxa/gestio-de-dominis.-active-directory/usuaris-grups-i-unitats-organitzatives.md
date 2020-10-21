@@ -255,10 +255,10 @@ Les seves principals **funcions** són :
 
 Les principals unitats organitzatives que ja estan creades són:
 
-* **Builtin:** conté els grups locals
-* **Computers:** les màquines unides al domini
-* **Domain Controllers:** els controladors de domini
-* **Users:** usuaris i grups per defecte del domini
+* **Builtin:** contenidor que inclou els usuaris i grups de seguretat predeterminats d'àmbit local del domini.
+* **Computers:** contenidor on s'afegeixen automàticament les màquines unides al domini
+* **Domain Controllers:** contenirdor on es mostren els controladors de domini
+* **Users:** molt semblant al _Builtin_, contenidor que inclou usuaris i grups de seguretat per defecte de l'àmbit de domini global i domini local. Els grups i usuaris solen ser membres de grups inclosos al contenidor _Builtin_.
 
 Per evitar barrejar els usuaris i grups de l'empresa amb els que ja té Windows per defecte, pot ser convenient crear una unitat organitzativa en el primer nivell \(just per sota de l'arrel del domini\) i crear a dins les nostres pròpies unitats organitzatives \(Grups i Usuaris\).
 
