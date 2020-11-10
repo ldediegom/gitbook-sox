@@ -20,7 +20,7 @@ Per **accedir només cal obrir un navegador** en el client, utilitzar https i po
 
 Possiblement indicarà què s'està accedint a un lloc segur sense certificació reconeguda però s'ha de permetre l'accés. Finalment demanarà un usuari administrador \(que pugui fer sudo\) i la seva contrasenya.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-webmin.png)
+![](../../.gitbook/assets/uf2-webmin.png)
 
 [http://www.webmin.com/](http://www.webmin.com/)
 
@@ -38,7 +38,7 @@ Per **accedir a través d'un navegador web** cal escriure l'adreça del servidor
 
 L'usuari administrador de **Ntopng** per defecte es diu _**admin**_ i la contrassenya és _**admin**_.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-ntop.png)
+![](../../.gitbook/assets/uf2-ntop.png)
 
 ## Nagios
 

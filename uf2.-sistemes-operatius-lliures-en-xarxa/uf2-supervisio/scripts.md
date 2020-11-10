@@ -68,7 +68,67 @@ Per comprovar que l'script funsció correctament, es pot executar l'script **pas
 bash -x crea_directoris.sh
 ```
 
-## Cometes
+## Variables
+
+Com en qualsevol llenguatge de programació, les variables s'utilitzen per **poder guardar informació** i a partir d'aquesta poder prendre decisions o realitzar operacions. 
+
+És important posar un nom a la variables que descrigui el seu ús. El seu nom no pot ser cap de les  paraules reservades \(exemple: _echo_\). 
+
+Hi ha dues formes diferents d'utilitzar-la depenent de si volem assignar-li un valor o utilitzar-la \(realitzar una operació\). A continuació veurem un exemple en el qual se li assigna a la variable nombre un valor i després es mostra per pantalla.
+
+```bash
+#!/bin/bash
+numero=5
+echo "el valor de la variable és "$numero
+```
+
+Com es pot veure en l'exemple quan es vol accedir a la valor de la variable s'utilitza el símbol **$**.
+
+## Paràmetres
+
+Sovint cal que els nostres scripts rebin paràmetres des de la línia d'ordres per fer-los més versàtils. Aquest és el cas de la comanda `ls` en que li podem passar el paràmetre _-l_ per modificar la sortida de dades `ls -l`
+
+Els paràmetres es poden usar dins de l'script com qualsevol altra variable de _Shell_. Els paràmetres dins el shell script són accessibles utilitzant les variables: **$0** és el nom de el programa, **$1** és el primer paràmetre, **$2**, és el segon paràmetre, etc. A més, s'utilitza la variable **$\#** que estableix el nombre de paràmetres que ha rebut el shell. A continuació veurem un exemple:
+
+```bash
+#!/bin/bash
+echo "El nom del programa és "$0
+echo "El primer paràmetre rebut és "$1
+echo "El segon paràmetre rebut és "$2
+echo "..."
+echo "En total s'han rebut "$#" paràmetres"
+```
+
+Si l'executem:
+
+```
+bash param_expl.sh 3 5
+```
+
+Obtenim la sortida:
+
+`El nom del programa és param_expl.sh  
+El primer paràmetre rebut és 3  
+El segon paràmetre rebut és 5  
+...  
+En total s'han rebut 2 paràmetres`
+
+| Paràmetre | Descripció | Valor rebut |
+| :--- | :--- | :--- |
+| $0 | Nom del programa | param\_expl.sh |
+| $1 | Primer paràmetre | 3 |
+| $2 | Segon paràmetre | 5 |
+| $\# | Números de paràmetres | 2 |
+| $@ | Valors dels paràmetres passats \(valors separats: "1" "2" ...\) | 3 5 |
+| $\* | Valors dels paràmetres passats \(valors en bloc: "1 2"...\) | 3 5 |
+
+## Entrada i sortida de dades
+
+### E/S per consola
+
+### **Redirecció de l'E/S**
+
+### **Comentes**
 
 En els scripts s’utilitzen **tres tipus de cometes**:
 
@@ -76,7 +136,7 @@ En els scripts s’utilitzen **tres tipus de cometes**:
 | :--- | :---: | :---: | :---: |
 | **Cometes simples \(' '\)** | Estan a sota l'interrogant ? | Literal | S'interpreta de forma literal, sense substituir camp variable. |
 | **Cometes dobles \(" "\)** | Shift + Tecla 2 | Substitució de variables | Es substitueixen les variables. |
-| **Cometes invertides \(\` \`\)** | Tecla accent obert + Espai | Execució de comanda o expressió | S'executen les línies de comandes o expresions. |
+| **Cometes invertides \(\` \`\)** | Tecla accent obert + Espai | Execució de comanda o expressió | S'executen les línies de comandes o expressions. |
 
 **Exemples**:
 
@@ -110,11 +170,9 @@ Hola Jordi
 
 * La primera línia `echo 'Hola $NOM'` amb cometes simples no s'ha substituït el valor de la variable.
 * La segona línia `echo "Hola $NOM"` amb cometes dobles s'ha substituït la variable NOM per Jordi.
-* La tercera línia echo  \`Hola $NOM\` amb cometes invertides dóna un error al executar-se perquè s'intenta executar una comanda però _**Hola**_ no és una comanda.
+* La tercera línia ``echo `Hola $NOM``` amb cometes invertides dona un error al executar-se perquè s'intenta executar una comanda però _**Hola**_ no és una comanda.
 
-## Variables
-
-## Paràmetres
+\*\*\*\*
 
 ## Comandes interessants
 

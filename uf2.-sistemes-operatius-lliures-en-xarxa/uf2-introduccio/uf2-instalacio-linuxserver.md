@@ -17,7 +17,7 @@ S'ha de crear una màquina virtual amb les característiques recomanades per ins
 * El nom de la màquina pot ser _**SOX Ubuntu Server**_.
 * Es recomana que l'espai del disc es reservi de forma dinàmica.
 * Es pot posar més d'un processador.
-* Connecta la MV a la [ **xarxa NAT SOX**](http://moodlecf.sapalomera.cat/apunts/smx/sox/uf0/A012-VBoxPlus.html#config_nat_network).
+* Connecta la MV a la [ **xarxa NAT SOX**](https://www.virtualbox.org/manual/ch06.html).
 
 Després de la instal·lació, la memòria RAM es pot reduir fins a 512 MB.
 
@@ -47,7 +47,7 @@ Cal planificar la utilització del disc, decidir les particions necessàries i e
 
 Abans de confirmar, comprovar les particions creades:
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-instalacio-particions.png)
+![](../../.gitbook/assets/us-instalacio-particions.png)
 
 ### Altres paràmetres
 

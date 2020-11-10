@@ -81,13 +81,13 @@ Els camps què s'han de posar a cada línia són els següents:
 
 **Exercici**
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio1.PNG)
+![](../../.gitbook/assets/us-automatitzacio1.png)
 
 **Solució**
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio2.PNG)
+![](../../.gitbook/assets/us-automatitzacio2.png)
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/us-automatitzacio3.PNG)
+![](../../.gitbook/assets/us-automatitzacio3.png)
 
 ## Amb entorn gràfic
 
