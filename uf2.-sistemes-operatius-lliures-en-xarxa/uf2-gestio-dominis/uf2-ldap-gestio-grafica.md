@@ -4,7 +4,7 @@
 
 ### phpLDAPadmin
 
-![phpLDAPadmin](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/phpldapadmin.jpg)
+![](../../.gitbook/assets/phpldapadmin.jpg)
 
 #### Instal·lació phpLDAPAdmin
 
@@ -63,7 +63,7 @@ Des de l’ubuntu desktop o qualsevol altre client, aneu a un **navegador web** 
 
 Us demanarà l'usuari \(hauria de ser `cn=admin,dc=ldapxxx,dc=local`\) i la seva contrasenya.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-phpldapadmin-login.png)
+![](../../.gitbook/assets/uf2-phpldapadmin-login.png)
 
 > Si les dades que apareixen al _login_ no són correctes, cal revisar els canvis fets a l'arxiu `/etc/phpldapadmin/config.php`
 
@@ -101,7 +101,7 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **Grups**: _Generico: Grupo Posix_
 * **Usuaris**: _Generico: Cuenta usuario_
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf2-crearobjectesldap.png)
+![](../../.gitbook/assets/uf2-crearobjectesldap.png)
 
 **Dades de l'usuari**:
 
@@ -162,7 +162,7 @@ Per posar-lo en marxa és preferible fer-ho des de la consola:
 
 Al posar-lo en marxa demanarà amb quin servidor LDAP es vol connectar:
 
-![LAT](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/lat.png)
+![](../../.gitbook/assets/lat.png)
 
 ## Documentació i recursos
 

@@ -13,7 +13,7 @@ El programa OpenLDAP s'instal·la com a servei amb el paquet _**slapd**_.
 
 Durant l’instal·lació, només us demana que introduïu una **contrasenya de l’administrador** del servei LDAP.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/slapd_instalacio.png)
+![](../../.gitbook/assets/slapd_instalacio.png)
 
 ## Configuració servidor LDAP
 
