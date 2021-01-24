@@ -64,6 +64,19 @@ sudo pam-auth-update
 
 L'execució d'aquestes comandes, modifica la configuració de [**NSS \(**_**Name Service Switch**_**\)**](https://es.wikipedia.org/wiki/Name_Service_Switch) en el fitxer `/etc/nsswitch.conf`.
 
+**AJUDA!!:**
+
+Si no es pot fer servir la comanda **`auth-client-config`**, s'ha de configurar el fitxer de manera manual. S'ha d'afegir el protocol `ldap` als fitxers `passwd` i `group`.
+
+El fitxer `/etc/nsswitch.conf` hauria de quedar així:
+
+```text
+passwd:         files systemd ldap
+group:          files systemd ldap
+shadow:         files
+gshadow:        files
+```
+
 > A partir ara, quan s'engegui la màquina, buscarà el servidor LDAP per validar els usuaris, per tant:
 >
 > * **Cal tenir engegat el servidor** abans d'engegar el client.
