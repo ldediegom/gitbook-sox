@@ -4,7 +4,7 @@
 
 Com ja hem comentat anteriorment, una de les utilitats més importants d'un servidor LDAP és com a servidor d'**autenticació**.
 
-**Autentificar** és necessari per entrar en un sistema linux .
+**Autentificar** és necessari per entrar en un sistema GNU/Linux .
 
 També per accedir a alguns serveis com un **servidor FTP** o a **pàgines web privades** en un servidor web.
 
