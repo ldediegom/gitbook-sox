@@ -86,6 +86,8 @@ Un servidor ha de tenir una **adreça estàtica** ja que els clients l'han de co
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina.
 
+**Cas 1: Una interfície amb IP estàtica.**
+
 En _**Ubuntu Server**_, la xarxa es configura editant l'arxiu `/etc/netplan/01-netcfg.yaml`.
 
 * **Adreça IP**: `172.30.A.20` \(_**A**_ és el teu número d'alumne\)
@@ -106,6 +108,29 @@ network:
 ```
 
 **Reiniciar la targeta** perquè agafi la nova configuració:
+
+```text
+sudo netplan apply
+```
+
+**Cas 2: Dues interfícies, una amb connexió a internet i l'altra a xarxa LAN.**
+
+Un cas clàssic en les pràctiques amb màquines virtuals és aconseguir que dues màquines, un servidor i un client, tinguin connexió entre elles i connexió a Internet. Si volem poder treballar a classe i a casa descarta l'ús de fer un _Bridge_ ja que el servidor sempre ha de tenir a la xarxa interna una _IP estàtica_.  
+
+Aquesta és una configuració senzilla sense ús d'enrutament manual. Una interfície en NAT \(ens33\) i una en xarxa interna \(ens38\):
+
+```text
+network:
+    version: 2
+    renderer: networkd
+    ethernets:
+        ens33:
+            dhcp4: true
+        ens38:
+            addresses: [172.30.0.20/16]
+```
+
+I comprovem la configuració:
 
 ```text
 sudo netplan apply
