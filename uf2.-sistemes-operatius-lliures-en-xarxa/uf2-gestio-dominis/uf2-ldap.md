@@ -79,6 +79,21 @@ dn: dc=ldapxxx,dc=local
 dn: cn=admin,dc=ldapxxx,dc=local
 ```
 
+On:
+
+* `-x` : tipus d'autenticació amb el servidor LDAP
+* `-LLL` : mostra les dades sense comentaris, en versió 1 i sense mostrar la versió del document
+* `dn`: Només mostrarà la línia del _distinguished name_ - dn de cada objecte.
+
+També podem fer servir:
+
+```text
+usuari@usxxx:~$ ldapsearch -x -b dc=ldapxxx,dc=local dn
+dn: dc=ldapxxx,dc=local
+
+dn: cn=admin,dc=ldapxxx,dc=local
+```
+
 Sense la configuració prèvia de l'arxiu `/etc/ldap/ldap.conf`, la comanda hauria de ser:
 
 ```text
@@ -87,4 +102,32 @@ dn: dc=ldapxxx,dc=local
 
 dn: cn=admin,dc=ldapxxx,dc=local
 ```
+
+També podem fer servir:
+
+```text
+usuari@usxxx:~$ ldapsearch -x -H ldap://172.30.0.20 -b dc=ldapxxx,dc=local dn
+dn: dc=ldapxxx,dc=local
+
+dn: cn=admin,dc=ldapxxx,dc=local
+```
+
+Si mirem d'entendre la comanda, veure que podem obtenir la informació que necessitem de la nostra estructura LDAP.
+
+L'estructura bàsica de la comanda és:
+
+```text
+ldapsearch <previous_options> "(object_type)=(object_value)"
+```
+
+On:
+
+* _&lt;previous\_options&gt;_: són els arguments com 
+  * `-x` : tipus d'autenticació amb el servidor LDAP\)
+  * `-LLL` : mostra les dades sense comentaris, en versió 1 i sense mostrar la versió del document\)
+  * `-H` : serveix per indicar l'URI del servidor \(IP o nom, amb o sense port del servei\) --&gt;  _ldap://172.30.0.20_ ó _ldap://servidorLDAP_ ó _ldap://172.30.0.20:389_ ó   _ldap://servidorLDAP:389_
+  * `-b` : és la base de cerca. Per exemple `dc=ldapxxx,dc=local` __iniciaria la cerca des de l'arrel del domini i `ou=persones,dc=ldapxxx,dc=local` iniciaria la cerca des de la unitat organitzativa _persones_
+* _\(object\_type\)=\(object\_value\)_ on:
+  * object\_type: és el tipus d'objecte que es vol cercar com _objectClass, cn, uid, uidNumber,..._
+  * object\_value: és el valor que cerquem, per exemple `objectClass=posixAccount` ens mostraria tot els usuaris, `uid: pau` mostraria la informació de l'usuari _pau_, i \* mostraria tots els objectes \(exemple: `uid:*` --&gt; tots els usuaris\)
 
