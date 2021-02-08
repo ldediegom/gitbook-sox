@@ -14,7 +14,7 @@ Només cal que tingui instal·lats els **programes** adequats:
 
 **Exemple:**
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-servidorclient.svg)
+![](../../.gitbook/assets/uf3-servidorclient.svg)
 
 **PC1** comparteix la carpeta C1 i per tant actua com a servidor, però a la vegada accedeix a la carpeta C2 compartida en PC2, per tant també actua com a client. En canvi, el **Windows Server** només actua com a client, i el **PC2** només actua com a servidor.
 
@@ -41,7 +41,7 @@ Es poden assignar diferents **permisos de compartició** per usuaris i grups. Aq
 
 ### Taula de permisos efectius quan s'accedeix a un arxiu o carpeta de forma remota
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-taula-permisos-remots.PNG)
+![](../../.gitbook/assets/uf3-taula-permisos-remots.png)
 
 ## Documentació i recursos
 
