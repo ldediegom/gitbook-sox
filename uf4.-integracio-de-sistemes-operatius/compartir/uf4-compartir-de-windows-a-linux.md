@@ -4,7 +4,7 @@
 
 ### Compartir arxius i carpetes en Windows
 
-[Apunts sobre compartició d'arxius i carpetes en Windows](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#compartici%C3%B3-de-carpetes)
+[Apunts sobre compartició d'arxius i carpetes en Windows](../../uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-arxius-windows.md)
 
 ### Preparar Linux per accedir a carpetes compartides en Windows
 
