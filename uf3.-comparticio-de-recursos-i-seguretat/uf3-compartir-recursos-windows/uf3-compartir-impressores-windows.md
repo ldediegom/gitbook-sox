@@ -19,7 +19,7 @@ Per instal·lar el **Servidor d'impressió** en el servidor, cal afegir el rol d
 
 Un cop instal·lat l’_**Administrador del Servidor**_, podem obrir l'administrador d'impressió anant a _**Eines &gt; Administrador d'impressió**_.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-win-print-management.png)
+![](../../.gitbook/assets/uf3-win-print-management.png)
 
 En el panell esquerra, dins la categoria de _**Serveis d'impressió**_ trobem:
 
@@ -40,7 +40,7 @@ Podem afegir un nou controlador fent _**Botó dret de ratolí &gt; Afegir contro
 
 Per compartir una impressora cal anar l'_**Administració d'impressió**_, seleccionar una impressora i anar a _**Administrar ús compartit**_ o bé a les _**propietats de la impressora**_ i entrar a la pestanya _**Compartir**_.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-compartir-impressora-general.png)
+![](../../.gitbook/assets/uf3-compartir-impressora-general.png)
 
 * Marquem l'opció _**Compartir aquesta impressora**_
 * **Nom del recurs compartit**: nom amb què es veurà la impressora a la xarxa.
@@ -53,7 +53,7 @@ Si compartim aquesta impressora amb usuaris que tinguin altres versions de Windo
 
 La pestanya _**Seguretat**_ s'accedeix a les opcions per configurar els permisos de compartició de la impressora.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-compartir-impressora.png)
+![](../../.gitbook/assets/uf3-compartir-impressora.png)
 
 > Cal treure el grup _**Tots \[Everyone\]**_ per tal que només puguin utilitzar la impressora els usuaris que indiquem a continuació.
 
@@ -93,7 +93,7 @@ Amb el botó _**Opciones avanzadas**_ es poden canviar algunes propietats avanç
 
 Obrir l'_**Administrador d'impressió**_ anant a _**Eines &gt; Administrador d'impressió**_, fer botó dret del ratolí i escollir _**Afegir impressora...**_ &gt;
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-afegir-impressora-buscar.png)
+![](../../.gitbook/assets/uf3-afegir-impressora-buscar.png)
 
 Podem instal·lar una impressora de xarxa varies formes en funció de si coneixem la IP o nom de la impressora o sinó tenim cap informació.
 
@@ -103,9 +103,13 @@ Podem instal·lar una impressora de xarxa varies formes en funció de si coneixe
 
 * Opció _**Afegir impressora TCP/IP escrivint la direcció IP o nom de host**_
 
-  A continuació caldrà posar la IP o nom de la impressora
+  A continuació caldrà posar la IP o nom de la impressora  
 
-  ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-afegir-impressora-ip.png)
+![](../../.gitbook/assets/uf3-afegir-impressora-ip.png)
+
+
+
+![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-afegir-impressora-ip.png)
 
 ### Instal·lar controlador
 
