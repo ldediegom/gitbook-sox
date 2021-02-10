@@ -10,7 +10,7 @@ En general, la creació de [**perfils mòbils**](https://github.com/seicoll/sox/
 
 Primer es creen les carpetes de:
 
-* **perfils**: on aniran les carpetes \(documents, escriptori, videos, imatges, …\) dels usuaris. 
+* **perfils**: on aniran les carpetes \(documents, escriptori, vídeos, images, …\) dels usuaris. 
 * **privades**: on aniran les carpetes personals dels usuaris.
 * **compartida**: carpeta que es compartirà amb diversos usuaris o grups de domini.
 
@@ -63,7 +63,7 @@ Eliminem tots els permisos que apareguin i configurem només els permisos següe
 * Per als usuaris del domini \(**Domain users**\) o altres grups: els següents permisos avançats **només sobre aquest directori**.
   * Permís per travessar aquest directori / executar arxius.
   * Permís per mostrar carpeta / llegir dades.
-  * Permís per crear carpetes / adjuntar dades.
+  * Permís per crear carpetes / adjuntar dades. ![](../../.gitbook/assets/perfils1.jpg) ![](../../.gitbook/assets/perfils2.jpg) 
 
 ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/perfils1.jpg) ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/perfils2.jpg)
 
@@ -95,7 +95,7 @@ Seleccionem un usuari \(o uns quants a la vegada\), obrim la configuració del p
 
 > Podem utilitzem la variable `%username%` que es substitueix automàticament pel nom de l'usuari.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/perfils3.jpg)
+![](../../.gitbook/assets/perfils3.jpg)
 
 ## Comprovació dels perfils mòbils
 
@@ -108,7 +108,7 @@ Seleccionem un usuari \(o uns quants a la vegada\), obrim la configuració del p
 * Guarda un document amb el seu nom a l'escriptori.
 * Accedeix a la seva carpeta privada a través de la unitat de xarxa on es troba i guarda un arxiu amb el seu nom.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/perfils4.jpg)
+![](../../.gitbook/assets/perfils4.jpg)
 
 * Accedeix a la carpeta compartida amb altres usuaris a través de la unitat de xarxa on es troba i guarda un arxiu amb el seu nom si té permisos per llegir i escriure, o comprova si pot veure els arxius que han creat altres usuaris.
 * Tanca la sessió.

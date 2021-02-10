@@ -91,11 +91,11 @@ Les dades que cal introduir són les següents \(es pot confirmar l'opció per d
 * **DNS forwarder IP address** \(Reenviador de DNS\): **8.8.8.8** \(servidor DNS al que es preguntarà quan no es pugui resoldre un nom, posem el de Google, el del centre o un altre servidor extern\). 
 * **Administrator password** \(Contrasenya per l'usuari _Administrator_\): **\*\*\*\*\*\*** \(ha de complir els criteris de complexitat de Windows\)
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/saba-domain.png)
+![](../../.gitbook/assets/saba-domain.png)
 
 Si el procés s'ha realitzat **correctament**, ens apareixerà un missatge domant informació del domini creat.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/saba-domain2.png)
+![](../../.gitbook/assets/saba-domain2.png)
 
 Si es produeix un algun **error** en la creació del domini, cal esborrar l'arxiu de configuració de Samba.
 
@@ -213,7 +213,7 @@ Instal·larem els **client kerberos** al sevidor per poder comprovar si funciona
 
 En el procés d'instal·lació ens demana el nom del Real, on cal introduir el que hem utilitzat per el nostre domini _**SAMBAXXX.LOCAL**_ . **Molt important en MAJÚSCULES!!**
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/kerberos1.png)
+![](../../.gitbook/assets/kerberos1.png)
 
 Finalment, fem la comprovació del servei kerberos.
 

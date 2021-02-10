@@ -8,8 +8,8 @@ Per crear en Linux un domini similar a Active Directory, per connectar-hi tant c
 
 ## Continguts
 
-* [Samba 4 com a controlador de domini \(DC\)](https://github.com/seicoll/sox/tree/0d2f60ffb695541608217beec864370e547005e0/UF4/UF4/controlador-domini-samba.md)
-* [Administrar el directori actiu de Samba 4](https://github.com/seicoll/sox/tree/0d2f60ffb695541608217beec864370e547005e0/UF4/UF4/administrar-sambaAD.md)
+* [Samba 4 com a controlador de domini \(DC\)](controlador-domini-samba.md)
+* [Administrar el directori actiu de Samba 4](administrar-sambaad.md)
 * [Perfils mòbils en un domini Samba AD](perfils-mobils-sambaad.md)
-* [Zentyal com a controlador de domini](https://github.com/seicoll/sox/tree/0d2f60ffb695541608217beec864370e547005e0/UF4/UF4/zentyal.md)
+* [Zentyal com a controlador de domini](zentyal.md)
 

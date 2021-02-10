@@ -276,9 +276,9 @@ Per **determinar els permisos que tindrà l'usuari**, Samba realitza les següen
 
 > Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el **més restrictiu**.
 
-Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la valla i els permisos locals la porta de casa.
+Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la tanca i els permisos locals la porta de casa.
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/samba-permisos.png)
+![](../../.gitbook/assets/samba-permisos.png)
 
 ## Accedir a recursos compartit Samba des de Windows
 

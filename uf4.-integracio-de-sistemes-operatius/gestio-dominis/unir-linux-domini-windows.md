@@ -150,7 +150,7 @@ Per obrir la interfície gràfica cal executar la següent comanda:
 
 `sudo /opt/pbis/bin/domainjoin-gui`
 
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/pbis-domini.png)
+![](../../.gitbook/assets/pbis-domini.png)
 
 * Nom del domini: `adxxx.local`
 * Deshabilitar l'opció _**Enable default user name prefix**_
@@ -201,7 +201,7 @@ Els usuaris i grups del domini apareixen amb el nom NetBIOS del domini al davant
 
 ### Validar usuaris del domini Windows
 
-Per poder validar usuaris des de l'**entorn gràfic** escrivint el seu identificador, cal [configurar **LightDM**](https://seicoll.gitbooks.io/sox/content/UF2/uf2-auteticacio-ldap.html#validar-usuaris-amb-entorn-gr%C3%A0fic).
+Per poder validar usuaris des de l'**entorn gràfic** escrivint el seu identificador, cal [configurar **LightDM**](../../uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-auteticacio-ldap.md#validar-usuaris-amb-entorn-grafic).
 
 Es poden utilitzar els mateixos formats que s'utilitzen en Windows:
 
