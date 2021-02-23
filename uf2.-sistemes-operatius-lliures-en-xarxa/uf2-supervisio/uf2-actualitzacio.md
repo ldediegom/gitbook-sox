@@ -2,7 +2,7 @@
 
 ## Instal·lació de paquets
 
-### Intoducció
+### Introducció
 
 #### Paquets de programari
 
@@ -138,5 +138,5 @@ Permet **comprovar manualment si hi ha actualitzacions** i triar quins paquets e
 
 ## Documentació i altres recursos
 
-* **Apunts SOX Pere Sànchez**: Instal·lació i actualització del sistema i altre programari [http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9)
+* **Apunts SOX Pere Sánchez**: Instal·lació i actualització del sistema i altre programari [http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9](http://moodlecf.sapalomera.cat/apunts/smx/sox/?cap=1.5.9)
 

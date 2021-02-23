@@ -8,7 +8,7 @@
 
 El nom de l'arxiu comprimit és el mateix que el de l'arxiu original però afegint l'extensió **.zip**.
 
-**ZIP** és la forma de cmpressió més popular en Windows.
+**ZIP** és la forma de compressió més popular en Windows.
 
 ![](../../.gitbook/assets/uf2-zip.png)
 

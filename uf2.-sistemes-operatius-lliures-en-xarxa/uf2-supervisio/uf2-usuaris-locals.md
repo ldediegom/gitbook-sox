@@ -23,7 +23,7 @@ Existeix 3 tipus d'usuaris:
 3. **Usuari root \(superusuari\)**
    * Tot sistema operatiu GNU/Linux té un superusuari.
    * Té els màxims privilegis que li permetran efectuar qualsevol operació sobre el sistema.
-   * És més segur treballar habitulament amb un usuari normat.
+   * És més segur treballar habitualment amb un usuari normal.
    * El seu directori **arrel** és `/root` i el seu número d’usuari \(_**UID**_\) és 0.
 
 ## Creació d'usuaris

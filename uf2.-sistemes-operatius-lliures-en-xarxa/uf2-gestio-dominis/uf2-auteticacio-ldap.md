@@ -10,7 +10,7 @@ També per accedir a alguns serveis com un **servidor FTP** o a **pàgines web p
 
 En aquest tema veurem les modificacions que cal realitzar en un sistema Linux perquè autentifiqui als usuaris en un **servidor LDAP** en lloc d'utilitzar els clàssics arxius `/etc/passwd`, `/etc/group` i `/etc/shadow`.
 
-## PAM \(_pluggable autentication module_\)
+## PAM \(_pluggable authentication module_\)
 
 El **PAM** és un mecanisme que les aplicacions fan servir per a l’autenticació d’usuaris.
 

@@ -36,7 +36,7 @@ Per **accedir a través d'un navegador web** cal escriure l'adreça del servidor
 
 `http://IP_servidor:3000`
 
-L'usuari administrador de **Ntopng** per defecte es diu _**admin**_ i la contrassenya és _**admin**_.
+L'usuari administrador de **Ntopng** per defecte es diu _**admin**_ i la contrasenya és _**admin**_.
 
 ![](../../.gitbook/assets/uf2-ntop.png)
 

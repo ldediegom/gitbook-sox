@@ -62,7 +62,7 @@ També es pot executar amb la comanda **bash**. En aquest cas no caldria canviar
 bash crea_directoris.sh
 ```
 
-Per comprovar que l'script funsció correctament, es pot executar l'script **pas a pas** amb el paràmetre `-x`.
+Per comprovar que l'script funció correctament, es pot executar l'script **pas a pas** amb el paràmetre `-x`.
 
 ```text
 bash -x crea_directoris.sh

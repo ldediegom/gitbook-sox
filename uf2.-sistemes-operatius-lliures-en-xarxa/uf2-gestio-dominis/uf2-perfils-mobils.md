@@ -14,7 +14,7 @@ En **Linux**, per poder utilitzar perfils mòbils cal fer els següents passos:
 
 1. Crear una **carpeta** en el servidor on es guardaran els **perfils dels usuaris** del domini.
 2. **Compartir** aquesta carpeta de forma que s'hi pugui accedir des dels clients.
-3. En els **clients**, s'ha de fer que **montin automàticament aquesta carpeta** remota cada cop que arrenqui el sistema.
+3. En els **clients**, s'ha de fer que **muntin automàticament aquesta carpeta** remota cada cop que arrenqui el sistema.
 
 ## Configuració del servidor
 
@@ -37,7 +37,7 @@ Si en **LDAP** s'ha configurat que el directori dels usuaris del domini sigui `/
 
 `sudo mkdir -p /srv/nfs/ldapxxx`
 
-**Nota**: El paràmetre _**-p**_ crea tots els directoris anidats si no existeixen.
+**Nota**: El paràmetre _**-p**_ crea tots els directoris niats si no existeixen.
 
 > Si el **directori dels usuaris LDAP** no és `/home/ldapxxx`, cal modificar-lo amb algun dels programes de gestió de LDAP com per exemple phpLDAPadmin.
 

@@ -140,7 +140,7 @@ Per veure la **informació detallada** de tots els processos: `ps aux`
 Per obtenir informació sobre la configuració de la xarxa, es poden utilitzar les següents comandes:
 
 * **ipconfig** mostra l'adreça IP, la màscara \(i altres, com per exemple l'adreça MAC\).
-* **route** permet veure la porta porta d'enllaç.
+* **route** permet veure la porta d'enllaç.
 * **cat /etc/resolv.conf** serveix per saber quins servidors DNS s'han configurat.
 
 Per comprovar la connectivitat:
