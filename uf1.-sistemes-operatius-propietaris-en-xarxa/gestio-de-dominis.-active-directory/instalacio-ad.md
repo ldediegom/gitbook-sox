@@ -140,8 +140,6 @@ Pots seguir els següents passos per unir un domini d'un bosc a un altre bosc: [
 
 
 
-
-
 ## Documentació i recursos
 
 * **Controlador de domini**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=16](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=16)
