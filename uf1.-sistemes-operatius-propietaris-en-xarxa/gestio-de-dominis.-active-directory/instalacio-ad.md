@@ -127,7 +127,23 @@ Un cop desconnectat el client del domini, cal posar com a servidor primari de DN
 
 Després repetirem els passos per unir el client a un domini posant el nom del nou domini.
 
+### Connectar un domini a un bosc diferent
+
+En algunes ocasions pot ser necessari unir un domini, un arbre o un bosc sencer a una altre bosc existent.   Aquests casos es presenten quan s'uneixen dues empreses o s'havia fet configuracions totalment independents en el seu inici.
+
+És imprescindible que els dos servidors tinguin connexió entre ells. De manera directa o indirecta han de poder veure's entre els seus serveis DNS. Això es configura:
+
+* Opció 1: afegint la IP del DNS de l'altre servidor a la interfície de xarxa.
+* Opció 2: afegint una regla al servei de DNS. _Tens un manual_ [_aquí_](http://somebooks.es/relaciones-confianza-dominios-otros-bosques-windows-server-2016-parte-2/).
+
+Pots seguir els següents passos per unir un domini d'un bosc a un altre bosc: [http://somebooks.es/relaciones-confianza-dominios-otros-bosques-windows-server-2012-r2-parte-3/](http://somebooks.es/relaciones-confianza-dominios-otros-bosques-windows-server-2012-r2-parte-3/)
+
+
+
+
+
 ## Documentació i recursos
 
 * **Controlador de domini**. Apunts de Pere Sánchez: [http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=16](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=16)
+* **Relaciones de confianza con dominios de otros bosques en Windows Server 2016.** De somebook.es: [http://somebooks.es/relaciones-confianza-dominios-otros-bosques-windows-server-2016-parte-1/](http://somebooks.es/relaciones-confianza-dominios-otros-bosques-windows-server-2016-parte-1/)
 
