@@ -1,7 +1,7 @@
 ---
 description: >-
-  Aquest document ha estat creat per Sergi Coll amb col·laboració de Luis De
-  Diego. Espai original: https://sergi-coll.gitbook.io/sox/
+  Aquest document ha estat creat pels docents del mòdul 4 de Sistemes Operatius
+  en Xarxa com a recurs de referència del INS Bosc de la Coma.
 ---
 
 # Presentació
