@@ -14,7 +14,7 @@ Es pot trobar tota la documentació sobre PBIS a la [web de Beyond Trust](https:
 
 > **ATENCIÓ**: en Ubuntu, quan es vol connectar amb un domini de tipus _**.local**_, s'ha de canviar una línia del fitxer `/etc/avahi/avahi-daemon.conf`:
 
-```text
+```
 #domain-name=local
 domain-name=.alocal
 ```
@@ -27,7 +27,7 @@ I reiniciem el servei:
 
 Per motius de seguretat, el programa PBIS Open utilitza ssh per comunicar-se amb el servidor de forma encriptada, i necessita que estigui instal·lat el servei de **ssh** en el client:
 
-`sudo apt install openssh-server`
+`sudo apt install ssh`
 
 ## Instal·lació del programa PBIS Open en el client Linux
 
@@ -35,15 +35,15 @@ Per motius de seguretat, el programa PBIS Open utilitza ssh per comunicar-se amb
 
 En un client Linux, descarregar el paquet PBIS Open que es pot trobar en aquesta web: [https://github.com/BeyondTrust/pbis-open/wiki](https://github.com/BeyondTrust/pbis-open/wiki).
 
-Descarrega el paquet PBIS Open del repositori de [GitHub](https://github.com/BeyondTrust/pbis-open/releases) \(32 o 64 bits\):
+Descarrega el paquet PBIS Open del repositori de [GitHub](https://github.com/BeyondTrust/pbis-open/releases) (32 o 64 bits) - escull segons versió de GNU/Linux - :
 
-* [https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86.deb.sh](https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86.deb.sh)
-* [https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86\_64.deb.sh](https://github.com/BeyondTrust/pbis-open/releases/download/8.5.7/pbis-open-8.5.7.385.linux.x86_64.deb.sh)
+* [https://github.com/BeyondTrust/pbis-open/releases/download/9.1.0/pbis-open-9.1.0.551.linux.x86\_64.deb.sh](https://github.com/BeyondTrust/pbis-open/releases/download/9.1.0/pbis-open-9.1.0.551.linux.x86\_64.deb.sh)
+* [https://github.com/BeyondTrust/pbis-open/releases/download/9.1.0/pbis-open-9.1.0.551.linux.x86.deb.sh](https://github.com/BeyondTrust/pbis-open/releases/download/9.1.0/pbis-open-9.1.0.551.linux.x86.deb.sh)
 
-**Si no es disposa d'un entorn gràfic** amb navegador, també es pot descarregar mirant l'adreça de l'enllaç adequat i utilitzant la comanda wget:
+**Si no es disposa d'un entorn gràfic** amb navegador, també es pot descarregar mirant l'adreça de l'enllaç adequat i utilitzant la comanda wget - canvia els X.X.X per número adequat -:
 
-```text
-wget https://github.com/BeyondTrust/pbis-open/releases/download/8.5.2/pbis-open-8.5.2.265.linux.x86_64.deb.sh
+```
+wget https://github.com/BeyondTrust/pbis-open/releases/download/X.X.X/pbis-open-X.X.X.X.linux.x86_64.deb.sh
 ```
 
 També es pot **instal·lar PBIS Open mitjançant APT** seguin les següents instruccions:
@@ -54,15 +54,15 @@ També es pot **instal·lar PBIS Open mitjançant APT** seguin les següents ins
 
 Per instal·lar-lo, primer se li han de donar permisos d'execució a l'arxiu descarregat.
 
-`chmod a+x pbis-open-8.5.2.265.linux.x86_64.deb.sh`
+`chmod a+x pbis-open-X.X.X.X.linux.x86_64.deb.sh`
 
-Després ja es pot executar amb la següent comanda \(cal respondre sempre yes\):
+Després ja es pot executar amb la següent comanda (cal respondre sempre yes):
 
-`sudo ./pbis-open-8.5.2.265.linux.x86_64.deb.sh`
+`sudo ./pbis-open-X.X.X.X.linux.x86_64.deb.sh`
 
 > **ATENCIÓ**: encara que s'obri una finestra per connectar al domini, abans s'ha de comprovar que el servei **lwsmd** es reinicia correctament, i després reiniciar el sistema:
 
-```text
+```
 sudo service lwsmd restart
 sudo reboot
 ```
@@ -71,9 +71,8 @@ sudo reboot
 
 Amb la comanda **pbis status** es pot comprovar l'estat del servei:
 
-```text
+```
 usuari@ucxxx:~$ pbis status
-...
 [Authentication provider: lsa-activedirectory-provider]
     Status:        Online
     Mode:          Un-provisioned
@@ -92,6 +91,15 @@ usuari@ucxxx:~$ pbis status
 ...
 ```
 
+Amb la comanda **domainjoin-cli query** per verificar, de manera més simple, l'arrel d'accés al domini del client connectat:
+
+```
+usuari@ucxxx:~$ pbis status
+Name = ucxxx
+Domain = adxxx.local
+Distinguished Name = CN=ucxxx,CN=Computers,DC=adxxx,DC=local
+```
+
 ## Configuració dels paràmetres bàsics
 
 ### Comanda per configurar PBIS
@@ -100,7 +108,7 @@ Per canviar la configuració de PBIS s'utilitza la comanda **/opt/pbis/bin/confi
 
 Amb els paràmetres **--list** i **--dump** es poden veure tot els paràmetres que es poden configurar i quins valors tenen actualment:
 
-```text
+```
 usuari@ucxxx:~$ /opt/pbis/bin/config --dump
 AllowDeleteTo ""
 AllowReadTo ""
@@ -128,7 +136,7 @@ Local_SkeletonDirs "/etc/skel"
 
 ### Configuracions bàsiques
 
-**Canviar el shell \(intèrpret de comandes\) per defecte que utilitzaran els usuaris**
+**Canviar el shell (intèrpret de comandes) per defecte que utilitzaran els usuaris**
 
 `sudo /opt/pbis/bin/config LoginShellTemplate /bin/bash`
 
@@ -142,9 +150,15 @@ Amb la següent comanda s'aconsegueix que el directori personal d'un usuari del 
 
 `sudo /opt/pbis/bin/config AssumeDefaultDomain false`
 
+**Forçar la creació del directori d'usuari**
+
+Com passa quan al configurar-lo per un sistema amb LDAP a GNU/Linux, farem servir la comanda:
+
+`sudo pam-auth-update`
+
 ## Unir el client Linux a un domini Windows
 
-### Utilitzant la interfície gràfica
+### Utilitzant la interfície gràfica (_deprecated_)
 
 Per obrir la interfície gràfica cal executar la següent comanda:
 
@@ -155,9 +169,9 @@ Per obrir la interfície gràfica cal executar la següent comanda:
 * Nom del domini: `adxxx.local`
 * Deshabilitar l'opció _**Enable default user name prefix**_
 
-Quan es faci clic a l'opció _**Join Domain**_ demanarà el nom d'un usuari que pugui unir màquines al domini \(normalment l'administrador del domini\) i la seva contrasenya.
+Quan es faci clic a l'opció _**Join Domain**_ demanarà el nom d'un usuari que pugui unir màquines al domini (normalment l'administrador del domini) i la seva contrasenya.
 
-> **ATENCIÓ**: si no es desmarca l'opció _**Enable default user name prefix**_ es podran validar usuaris sense haver de posar el prefix **ADXXX\** o el sufix **@adxxx.local**, però pot portar a confusió si existeixen usuaris locals amb el mateix nom que usuaris del domini.
+> **ATENCIÓ**: si no es desmarca l'opció _**Enable default user name prefix**_ es podran validar usuaris sense haver de posar el prefix **ADXXX\\** o el sufix **@adxxx.local**, però pot portar a confusió si existeixen usuaris locals amb el mateix nom que usuaris del domini.
 
 Ha de sortir el missatge _**SUCCESS**_ si s'ha unit correctament al domini.
 
@@ -177,7 +191,7 @@ Cal **reiniciar el sistema** per poder validar usuaris de l'Active Directory.
 
 Comprovar que el sistema pot mostrar els usuaris del domini Amb les comandes **getent passwd** i **getent group** es poden veure els usuaris del sistema:
 
-```text
+```
 usuari@ucxxx:~$ getent passwd
 root:x:0:0:root:/root:/bin/bash
 usuari:x:1000:1000:usuari,,,:/home/usuari:/bin/bash
@@ -208,9 +222,9 @@ Es poden utilitzar els mateixos formats que s'utilitzen en Windows:
 * **ADXXX\usuari**
 * **usuari@adxxx.local**
 
-Si s'utilitza la primera forma quan es valida des de la **consola**, és possible que calgui posar **doble contrabarra** \(\\) entre el nom del domini i el nom d'usuari:
+Si s'utilitza la primera forma quan es valida des de la **consola**, és possible que calgui posar **doble contrabarra** (\\) entre el nom del domini i el nom d'usuari:
 
-```text
+```
 sudo login ADXXX\\usuari
 sudo login usuari@adxxx.local
 ```
@@ -219,13 +233,11 @@ sudo login usuari@adxxx.local
 
 ### Desconnectar la màquina client del domini
 
-**Mode gràfic**
+**Mode gràfic (**_**deprecated**_**)**
 
 `sudo /opt/pbis/bin/domainjoin-gui leave`
 
-En el diàleg que apareixerà, només cal comprovar que les dades siguin correctes \(nom de la màquina i el domini\) i clicar el botó **Leave Domain**.
-
-![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/pbis-nodomini.png)
+En el diàleg que apareixerà, només cal comprovar que les dades siguin correctes (nom de la màquina i el domini) i clicar el botó **Leave Domain**.
 
 **Amb comandes**
 
@@ -237,7 +249,7 @@ Per desinstal·lar el programa després de desconnectar la màquina del domini:
 
 `sudo /opt/pbis/bin/uninstall.sh uninstall`
 
-> **ATENCIÓ**: abans d'utilitzar la comanda anterior, s'ha d'haver desconnectat la màquina del domini. A més, s'ha d'executar des de qualsevol carpeta que no sigui \(o estigui dins de\) la carpeta de pbis per tal que el programa de desinstal·lació pugui esborrar la carpeta.
+> **ATENCIÓ**: abans d'utilitzar la comanda anterior, s'ha d'haver desconnectat la màquina del domini. A més, s'ha d'executar des de qualsevol carpeta que no sigui (o estigui dins de) la carpeta de pbis per tal que el programa de desinstal·lació pugui esborrar la carpeta.
 
 ### Desconnectar i desinstal·lar simultàniament
 
@@ -249,5 +261,4 @@ Si cal, també s'hauran de canviar els servidors DNS i eliminar el domini de cer
 
 ## Documentació i recursos
 
-* **Font d'informació**: [Apunts SOX \(Pere Sánchez\)](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=3.5.0)
-
+* **Font d'informació**: [Apunts SOX (Pere Sánchez)](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=3.5.0)
