@@ -10,5 +10,4 @@ En Windows, per connetar-se a una unitat de xarxa el recurs compartit Dades del 
 
 Per unir un client Linux a un domini Windows, quin paquet hem utilitzat que s'encarrega de la major part de la configuració del sistema?smbclientdomain-joinpbis-opensamba
 
-Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és:El permís SambaEl permís GNU/LinuxEl més restrictiuEl més permissiu
-
+Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és: El permís Samba El permís GNU/LinuxEl més restrictiuEl més permissiu

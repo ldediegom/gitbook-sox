@@ -280,7 +280,7 @@ Podem fer un símil amb l'accés a una vivenda. Els permisos de Samba serien la 
 
 ### Accedir a carpetes compartides de forma gràfica
 
-Es fa de la mateixa forma que per accedir a una carpeta compartida en un altre Windows: [Com accedir a una carpeta compartida](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#accedir-a-carpetes-compartides)
+Es fa de la mateixa forma que per accedir a una carpeta compartida en un altre Windows: [Com accedir a una carpeta compartida](../../uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-arxius-windows.md)
 
 > Quan es creen arxius o carpetes des del client, en el servidor es crearan amb l'usuari Linux relacionat amb l'usuari Samba.
 
@@ -288,7 +288,7 @@ Es fa de la mateixa forma que per accedir a una carpeta compartida en un altre W
 
 Es fa de la mateixa forma que per connectar una carpeta compartida en un altre Windows:
 
-[Com connectar una unitat de xarxa a una carpeta compartida](https://seicoll.gitbooks.io/sox/content/UF3/uf3-compartir-arxius-windows.html#connectar-una-unitat-de-xarxa-a-trav%C3%A9s-de-comandes)
+[Com connectar una unitat de xarxa a una carpeta compartida](uf3-compartir-arxius-samba.md#accedir-connectant-una-unitat-de-xarxa-a-traves-de-comandes)
 
 ## Accedir a recursos compartits Samba des de Linux
 
