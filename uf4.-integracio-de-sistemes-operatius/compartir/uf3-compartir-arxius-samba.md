@@ -292,7 +292,7 @@ Es fa de la mateixa forma que per connectar una carpeta compartida en un altre W
 
 ## Accedir a recursos compartits Samba des de Linux
 
-[Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](https://seicoll.gitbooks.io/sox/content/UF4/uf4-compartir-de-windows-a-linux.html)
+[Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](../../uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-arxius-windows.md)
 
 ## Documentació i recursos
 
