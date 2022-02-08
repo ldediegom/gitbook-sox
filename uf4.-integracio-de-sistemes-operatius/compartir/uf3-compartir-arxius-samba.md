@@ -256,6 +256,28 @@ write list = @profes, root
 >
 > Quan s'accedix a un recurs compartit amb Samba, cal utilitzar l'identificador i la contrasenya configurats en la base de dades d'usuaris de Samba, no amb usuaris locals.
 
+### Comprovació de Samba
+
+#### Versió de Samba
+
+Per comprovar la versió instal·lada del paquet Samba podem executar:
+
+`smbd –V`
+
+#### Connexions establertes a les carptetes compartides
+
+Si bé podriem comprovar les connexions entrants als ports **139** (diàlegs NetBios) i **445** (Samba), el paquet samba disposa de la comanda **`smbstatus`**. Una eina que proporciona informació clara i precisa de les connexions actuals.
+
+![](https://lh6.googleusercontent.com/7-QX4nYxVjQXm1\_qyGLtSeCCH\_BJHRJtlGMbrkUy4QrA4-nKssM3BhupggWwR1uzzK6bTrmv9InaeUw8BksRp8uw8PL4WuaeBg2tI8cK295RWk\_0sCe-SlWe6znWn4hZkcuSv\_yf)
+
+#### Testejar el fitxer de configuració
+
+En comú trovar comandes per testejar fitxers de configuració de Linux. No son garantia del bon funcionament, però poden mostrar-nos errors sintactics que podem ajudar-nos a evitar errors.
+
+Per testejar el fitxer de configuració **** de samba **smb.conf** podem fer servir:
+
+`testparm -s smb.conf`
+
 ### Determinar els permisos efectius
 
 Ens podem trobar que els **permisos GNU/Linux** es contradiguin amb els **permisos Samba**.
