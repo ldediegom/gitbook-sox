@@ -314,7 +314,21 @@ Es fa de la mateixa forma que per connectar una carpeta compartida en un altre W
 
 ## Accedir a recursos compartits Samba des de Linux
 
+### Acés per comandes
+
+Mitjnaçant l'aplicació `smbclient`podrem accedir a un recurs del servidor com si es tractés d’una mena d’accés FTP. Per exemple per llistar les secursos compartits d'un servidor:&#x20;
+
+`smbclient -L`` `_`servidorsamba`_
+
+### Accés gràfic
+
+L’Ubuntu ens permet accedir gràficament als recursos disponibles dels grups de treball del Samba amb el navegador Nautilus, per mitjà del menú Llocs > Xarxa.
+
+### Altres
+
 [Apunts accedir a recursos compartits amb Windows o Samba (mitjançant el protocol SMB/CIFS).](../../uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-arxius-windows.md)
+
+
 
 ## Documentació i recursos
 
