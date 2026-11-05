@@ -1,73 +1,48 @@
 ---
 description: >-
   Aquest document ha estat creat pels docents del mòdul 4 de Sistemes Operatius
-  en Xarxa com a recurs de referència del INS Bosc de la Coma.
+  en Xarxa com a recurs de referència del INS Bosc de la Coma, i actualitzat a
+  INS El Pla de l'Estany.
 ---
 
 # Presentació
 
 ## Introducció
 
-El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat als alumnes del _CFGM de Sistemes Microinformàtics i Xarxes_. En ell es desenvolupen els continguts del mòdul professional de _Sistemes Operatius en Xarxa_ i s’hi proposen activitats i qüestionaris d’autoavaluació.
+El llibre de _**Sistemes Operatius en Xarxa**_ és un material didàctic enfocat als alumnes del _CFGM de Sistemes Microinformàtics i Xarxes_. En ell es desenvolupen els continguts del mòdul professional de _Sistemes Operatius en Xarxa_.
 
 ## Continguts
 
-### UF1. Sistemes operatius propietaris en xarxa
+### 1. Sistemes operatius propietaris en xarxa
 
-* [Introducció als sistemes operatius en xarxa](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/)
-  * [Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/uf1-windowsserver.md)
-  * [Instal·lació Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/uf1-instalacio-windowsserver.md)
-* [Supervisió en Windows Server](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-supervisio.md)
-* [Gestió de dominis. Active Directory](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory)
-  * [Introducció als dominis](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/uf1-introduccio-dominis.md)
-  * [Relacions de confiança](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/relacions-de-confianca.md)
-  * [Instal·lació d'un controlador de domini en Active Directory](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/instalacio-ad.md)
-  * [Usuaris, grups i unitats organitzatives](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/usuaris-grups-i-unitats-organitzatives.md)
-  * [Perfils d'usuaris](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/perfils-usuari.md)
-  * [Directives de grup](uf1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/directives-de-grup.md)
-* [Qüestionari](uf1.-sistemes-operatius-propietaris-en-xarxa/uf1-questionari.md)
+* [Introducció als sistemes operatius en xarxa](1.-sistemes-operatius-propietaris-en-xarxa/uf1-introduccio/)
+* [Supervisió en Windows Server](1.-sistemes-operatius-propietaris-en-xarxa/uf1-supervisio.md)
+* [Gestió de dominis. Active Directory](1.-sistemes-operatius-propietaris-en-xarxa/gestio-de-dominis.-active-directory/)
 
-### UF2. Sistemes operatius lliures en xarxa
+### 2. Sistemes operatius lliures en xarxa
 
-* [Introducció als sistemes operatius Linux](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-introduccio/)
-  * [Instal·lació Linux Server](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-introduccio/uf2-instalacio-linuxserver.md)
-* [Administració i supervisió](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/)
-  * [Gestió d'arxius](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-arxius.md)
-  * [Gestió d'usuaris i grups](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-usuaris-locals.md)
-  * [Instal·lació de paquets i actualització](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-actualitzacio.md)
-  * [Monitorització](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-monitoritzacio.md)
-  * [Administració web](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-adm-web.md)
-  * [Scripts](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/scripts.md)
-  * [Automatització de tasques](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-automatitzacio.md)
-* [Gestió de dominis](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/)
-  * [Introducció als dominis en Linux](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-dominis-linux.md)
-  * [Instal·lació d'un controlador de domini LDAP](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-ldap.md)
-  * [Gestionar LDAP amb interfície gràfica](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-ldap-gestio-grafica.md)
-  * [Autenticació LDAP](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-auteticacio-ldap.md)
-  * [Perfils mòbils](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/uf2-perfils-mobils.md)
-* [Qüestionari](uf2.-sistemes-operatius-lliures-en-xarxa/uf2-questionari.md)
+* [Introducció als sistemes operatius Linux](2.-sistemes-operatius-lliures-en-xarxa/uf2-introduccio/)
+* [Administració i supervisió](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/)
+* [Gestió de dominis](2.-sistemes-operatius-lliures-en-xarxa/uf2-gestio-dominis/)
 
-### UF3. Compartició de recursos i seguretat
+### 3. Compartició de recursos i seguretat
 
-* [Introducció a la compartició de recursos i seguretat](uf3.-comparticio-de-recursos-i-seguretat/uf3-introduccio/)
-* [Compartir recursos en xarxa i seguretat en sistemes de propietat](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/)
-  * [Compartir arxius i carpetes en Windows](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-arxius-windows.md)
-  * [Compartir impressores en Windows](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/uf3-compartir-impressores-windows.md)
-* [Compartir recursos en xarxa i seguretat en sistemes de lliures](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/)
-  * [Compartir arxius i carpetes amb NFS](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/uf3-compartir-arxius-linux-nfs.md)
-  * [Compartir impressores amb CUPS](uf3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/uf3-compartir-impressores-cups.md)
-* [Qüestionari](uf3.-comparticio-de-recursos-i-seguretat/uf3-questionari.md)
+* [Introducció a la compartició de recursos i seguretat](3.-comparticio-de-recursos-i-seguretat/uf3-introduccio/)
+* [Compartir recursos en xarxa i seguretat en sistemes de propietat](3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-windows/)
+* [Compartir recursos en xarxa i seguretat en sistemes de lliures](3.-comparticio-de-recursos-i-seguretat/uf3-compartir-recursos-linux/)
 
-### UF4. Integració de sistemes operatius
+### 4. Integració de sistemes operatius
 
-* [Introducció](uf4.-integracio-de-sistemes-operatius/uf4-introduccio.md)
-* [Compartir recursos en escenaris heterogenis](uf4.-integracio-de-sistemes-operatius/compartir/)
-  * [Accedir a recursos compartits en Windows des de Linux](uf4.-integracio-de-sistemes-operatius/compartir/uf4-compartir-de-windows-a-linux.md)
-  * [Compartir arxius i carpetes amb SAMBA](uf4.-integracio-de-sistemes-operatius/compartir/uf3-compartir-arxius-samba.md)
-* [Gestió de dominis en escenaris heterogenis](uf4.-integracio-de-sistemes-operatius/gestio-dominis/)
-  * [Samba 4 com a controlador de domini \(DC\)](uf4.-integracio-de-sistemes-operatius/gestio-dominis/controlador-domini-samba.md)
-  * [Administrar el directori actiu de Samba 4](uf4.-integracio-de-sistemes-operatius/gestio-dominis/administrar-sambaad.md)
-  * [Perfils mòbils en un domini Samba AD](uf4.-integracio-de-sistemes-operatius/gestio-dominis/perfils-mobils-sambaad.md)
-  * [Zentyal com a controlador de domini](uf4.-integracio-de-sistemes-operatius/gestio-dominis/zentyal.md)
-* [Qüestionari](uf4.-integracio-de-sistemes-operatius/uf4-questionari.md)
+* [Introducció](4.-integracio-de-sistemes-operatius/uf4-introduccio.md)
+* [Compartir recursos en escenaris heterogenis](4.-integracio-de-sistemes-operatius/compartir/)
+* [Gestió de dominis en escenaris heterogenis](4.-integracio-de-sistemes-operatius/gestio-dominis/)
 
+## Llicència d'ús
+
+Aquest llibre digital s’ha desenvolupat a partir del projecte inicial de Sergi Coll. Aquest espai pertany a Luis De Diego, que n’ha continuat el desenvolupament mitjançant noves actualitzacions i ampliacions de contingut. Per a la seva elaboració i actualització s’han utilitzat diverses fonts, les quals estan degudament referenciades als diferents capítols.
+
+Va ser elaborat per ajudar l'alumant de SMX en el seu aprenentatge, per tant, no té cap interés comercial. La seva llicència és pública, però es demana que es faci un ús no-comercial i s'indiqui la referència d'ús sempre que s'utilitzin parts o la seva totalitat.&#x20;
+
+Així doncs, està sota llicència [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) **CC BY-NC-SA 4.0**
+
+<figure><img src=".gitbook/assets/image (47).png" alt="" width="90"><figcaption></figcaption></figure>
