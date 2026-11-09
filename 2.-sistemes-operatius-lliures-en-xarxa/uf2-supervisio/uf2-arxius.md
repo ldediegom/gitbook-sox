@@ -14,15 +14,7 @@ mkdir [opcions] ruta_al_directori
 
 #### Exemples d'ús de `mkdir`
 
-| Opcions                  | Exemple                         | Descripció                                                     |
-| ------------------------ | ------------------------------- | -------------------------------------------------------------- |
-| Sense opcions            | `mkdir directori1`              | Crea el directori `directori1` al directori actual.            |
-| Sense opcions            | `mkdir directori1/sotsdir1`     | Crea `sotsdir1` dins `directori1` (si ja existeix).            |
-| Sense opcions            | `mkdir dir1 dir2 dir3`          | Crea diversos directoris alhora.                               |
-| `-p`, `--parents`        | `mkdir -p /dir1/dir11/dir111`   | Crea tota la ruta de directoris si no existeix.                |
-| `-m mode`, `--mode=mode` | `mkdir -m 755 /dirA`            | Crea el directori amb els permisos especificats.               |
-| Comodins                 | `mkdir direct{A..E}`            | Crea `directA`, `directB`, `directC`, `directD` i `directE`.   |
-| Comodins                 | `mkdir -p sa{a,c,g}/sax{1..50}` | Crea `saa`, `sac` i `sag`, amb subdirectoris `sax1` a `sax50`. |
+<table><thead><tr><th>Opcions</th><th>Exemple</th><th>Descripció</th></tr></thead><tbody><tr><td></td><td><code>mkdir directori1</code></td><td>Crea el directori <code>directori1</code> al directori actual.</td></tr><tr><td></td><td><code>mkdir directori1/sotsdir1</code></td><td>Crea <code>sotsdir1</code> dins <code>directori1</code> (si ja existeix).</td></tr><tr><td></td><td><code>mkdir dir1 dir2 dir3</code></td><td>Crea diversos directoris alhora.</td></tr><tr><td><code>-p</code>, <code>--parents</code></td><td><code>mkdir -p /dir1/dir11/dir111</code></td><td>Crea tota la ruta de directoris si no existeix.</td></tr><tr><td><code>-m mode</code>, <code>--mode=mode</code></td><td><code>mkdir -m 755 /dirA</code></td><td>Crea el directori amb els permisos especificats.</td></tr><tr><td rowspan="2"><em>(ús de comodins)</em></td><td><code>mkdir direct{A..E}</code></td><td>Crea <code>directA</code>, <code>directB</code>, <code>directC</code>, <code>directD</code> i <code>directE</code>.</td></tr><tr><td><code>mkdir -p sa{a,c,g}/sax{1..50}</code></td><td>Crea <code>saa</code>, <code>sac</code> i <code>sag</code>, amb subdirectoris <code>sax1</code> a <code>sax50</code>.</td></tr></tbody></table>
 
 > **Important:** Si algun dels directoris de la ruta no existeix i no utilitzes `-p`, la comanda retornarà un error.
 
@@ -38,15 +30,7 @@ touch [opcions] ruta_al_fitxer
 
 **Exemples d'ús**
 
-| Opcions             | Exemple                     | Descripció                                 |
-| ------------------- | --------------------------- | ------------------------------------------ |
-| Sense opcions       | `touch fitxer1`             | Crea el fitxer `fitxer1`.                  |
-| Sense opcions       | `touch directori1/fitxer11` | Crea el fitxer dins del directori indicat. |
-| Sense opcions       | `touch fitxerA fitxerB`     | Crea diversos fitxers simultàniament.      |
-| `-c`, `--no-create` | `touch -c fitxerV`          | No crea el fitxer si no existeix.          |
-| Comodins            | `touch fitx{A..D}`          | Crea els fitxers `fitxA` a `fitxD`.        |
-| Comodins            | `touch {a,d,l2}post`        | Crea `apost`, `dpost` i `l2post`.          |
-| Comodins            | `touch fitx{A..E}`          | Crea els fitxers `fitxA` a `fitxE`.        |
+<table><thead><tr><th>Opcions</th><th>Exemple</th><th>Descripció</th></tr></thead><tbody><tr><td></td><td><code>touch fitxer1</code></td><td>Crea el fitxer <code>fitxer1</code>.</td></tr><tr><td></td><td><code>touch directori1/fitxer11</code></td><td>Crea el fitxer dins del directori indicat.</td></tr><tr><td></td><td><code>touch fitxerA fitxerB</code></td><td>Crea diversos fitxers simultàniament.</td></tr><tr><td><code>-c</code>, <code>--no-create</code></td><td><code>touch -c fitxerV</code></td><td>No crea el fitxer si no existeix.</td></tr><tr><td rowspan="3"><em>(ús de comodins)</em></td><td><code>touch fitx{A..D}</code></td><td>Crea els fitxers <code>fitxA</code> a <code>fitxD</code>.</td></tr><tr><td><code>touch {a,d,l2}post</code></td><td>Crea <code>apost</code>, <code>dpost</code> i <code>l2post</code>.</td></tr><tr><td><code>touch fitx{A..E}</code></td><td>Crea els fitxers <code>fitxA</code> a <code>fitxE</code>.</td></tr></tbody></table>
 
 #### Altres formes de crear fitxers
 
@@ -77,12 +61,12 @@ rmdir [opcions] ruta_al_directori
 
 **Exemples d'ús**
 
-| Opcions       | Exemple                  | Descripció                                                     |
-| ------------- | ------------------------ | -------------------------------------------------------------- |
-| Sense opcions | `rmdir directori1`       | Elimina un directori buit.                                     |
-| Sense opcions | `rmdir dir1 dir2`        | Elimina diversos directoris buits.                             |
-| Sense opcions | `rmdir *`                | Elimina tots els directoris buits del directori actual.        |
-| `-p`          | `rmdir -p dir1/sotsdir1` | Elimina el directori indicat i els seus pares si queden buits. |
+| Opcions | Exemple                  | Descripció                                                     |
+| ------- | ------------------------ | -------------------------------------------------------------- |
+|         | `rmdir directori1`       | Elimina un directori buit.                                     |
+|         | `rmdir dir1 dir2`        | Elimina diversos directoris buits.                             |
+|         | `rmdir *`                | Elimina tots els directoris buits del directori actual.        |
+| `-p`    | `rmdir -p dir1/sotsdir1` | Elimina el directori indicat i els seus pares si queden buits. |
 
 > **Important:** `rmdir` només elimina directoris buits.
 
@@ -98,8 +82,8 @@ rm [opcions] ruta_al_fitxer
 
 | Opcions                   | Exemple                 | Descripció                                   |
 | ------------------------- | ----------------------- | -------------------------------------------- |
-| Sense opcions             | `rm fitxer1`            | Elimina un fitxer.                           |
-| Sense opcions             | `rm fitxerA fitxerB`    | Elimina diversos fitxers.                    |
+|                           | `rm fitxer1`            | Elimina un fitxer.                           |
+|                           | `rm fitxerA fitxerB`    | Elimina diversos fitxers.                    |
 | `-f`, `--force`           | `rm -f fitxerA fitxerB` | Força l'eliminació sense confirmació.        |
 | `-i`                      | `rm -i *`               | Demana confirmació abans d'eliminar.         |
 | `-r`, `-R`, `--recursive` | `rm -r directori1`      | Elimina un directori i tot el seu contingut. |
@@ -119,11 +103,11 @@ cp [opcions] origen desti
 
 **Exemples d'ús**
 
-| Opcions       | Exemple                              | Descripció                                 |
-| ------------- | ------------------------------------ | ------------------------------------------ |
-| Sense opcions | `cp fitxer1 ../`                     | Copia el fitxer al directori superior.     |
-| `-r`, `-R`    | `cp -r directori1 carpeta_de_desti/` | Copia un directori i tot el seu contingut. |
-| `-i`          | `cp -i text1.txt carpeta_de_desti/`  | Demana confirmació abans de sobreescriure. |
+| Opcions    | Exemple                              | Descripció                                 |
+| ---------- | ------------------------------------ | ------------------------------------------ |
+|            | `cp fitxer1 ../`                     | Copia el fitxer al directori superior.     |
+| `-r`, `-R` | `cp -r directori1 carpeta_de_desti/` | Copia un directori i tot el seu contingut. |
+| `-i`       | `cp -i text1.txt carpeta_de_desti/`  | Demana confirmació abans de sobreescriure. |
 
 **Altres exemples**
 
@@ -153,11 +137,11 @@ mv [opcions] origen desti
 
 **Exemples d'ús**
 
-| Opcions       | Exemple                                           | Descripció                                 |
-| ------------- | ------------------------------------------------- | ------------------------------------------ |
-| Sense opcions | `mv fitxer1 ../`                                  | Mou el fitxer al directori superior.       |
-| `-f`          | `mv -f directori1 /home/usuari/carpeta_de_desti/` | Sobreescriu sense demanar confirmació.     |
-| `-i`          | `mv -i text1.txt /home/usuari/carpeta_de_desti/`  | Demana confirmació abans de sobreescriure. |
+| Opcions | Exemple                                           | Descripció                                 |
+| ------- | ------------------------------------------------- | ------------------------------------------ |
+|         | `mv fitxer1 ../`                                  | Mou el fitxer al directori superior.       |
+| `-f`    | `mv -f directori1 /home/usuari/carpeta_de_desti/` | Sobreescriu sense demanar confirmació.     |
+| `-i`    | `mv -i text1.txt /home/usuari/carpeta_de_desti/`  | Demana confirmació abans de sobreescriure. |
 
 **Altres exemples**
 
