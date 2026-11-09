@@ -30,9 +30,9 @@ Els permisos bàsics de GNU/Linux són:
 | `w`    | Write (escriptura) |
 | `x`    | Execute (execució) |
 
-Aquests permisos tenen un comportament diferent segons si s'apliquen a fitxers o directoris. 【1-e08699】
+Aquests permisos tenen un comportament diferent segons si s'apliquen a fitxers o directoris.&#x20;
 
-#### Permisos sobre fitxers
+### Permisos sobre fitxers
 
 | Permís | Descripció                                            |
 | ------ | ----------------------------------------------------- |
@@ -40,7 +40,7 @@ Aquests permisos tenen un comportament diferent segons si s'apliquen a fitxers o
 | `w`    | Permet escriure o modificar el contingut del fitxer.  |
 | `x`    | Permet executar el fitxer si és un programa o script. |
 
-#### Permisos sobre directoris
+### Permisos sobre directoris
 
 | Permís | Descripció                                                      |
 | ------ | --------------------------------------------------------------- |
@@ -50,9 +50,9 @@ Aquests permisos tenen un comportament diferent segons si s'apliquen a fitxers o
 
 ***
 
-### 2. Estructura dels permisos
+## Estructura dels permisos
 
-#### 2.1 Model UGO
+### Model UGO
 
 Els permisos es divideixen en tres grups principals:
 
@@ -68,7 +68,7 @@ Cada grup pot tenir permisos independents de:
 * Escriptura (`w`)
 * Execució (`x`)
 
-#### Representació de permisos
+### Representació de permisos
 
 Per exemple:
 
@@ -113,9 +113,9 @@ Interpretació:
 
 ***
 
-### 3. Modificació de permisos amb chmod
+## Modificació de permisos amb chmod
 
-#### 3.1 Canvi de permisos
+### Canvi de permisos
 
 Només poden modificar permisos:
 
@@ -134,9 +134,7 @@ Hi ha dues formes d'utilitzar-la:
 1. Representació simbòlica
 2. Representació numèrica
 
-***
-
-### 3.2 chmod amb representació simbòlica
+### `chmod` amb representació simbòlica
 
 #### Sintaxi
 
@@ -169,8 +167,6 @@ chmod {a,u,g,o}{+,-,=} {r,w,x} objecte
 | `w`    | Escriptura |
 | `x`    | Execució   |
 
-***
-
 #### Exemples amb representació simbòlica
 
 | Comanda              | Descripció                                            |
@@ -183,7 +179,7 @@ chmod {a,u,g,o}{+,-,=} {r,w,x} objecte
 
 ***
 
-### 3.3 chmod amb representació numèrica
+### `chmod` amb representació numèrica
 
 #### Sintaxi
 
@@ -239,7 +235,7 @@ On:
 
 ***
 
-### 4. Modificació de propietaris i grups
+## Modificació de propietaris i grups
 
 #### Comandes utilitzades
 
@@ -256,7 +252,7 @@ Només poden executar aquestes modificacions:
 
 ***
 
-### 4.1 Comanda chown
+### Comanda `chown`
 
 #### Sintaxi
 
@@ -294,7 +290,7 @@ Canvia el propietari del directori i de tot el seu contingut.
 
 ***
 
-### 4.2 Comanda chgrp
+### Comanda `chgrp`
 
 #### Sintaxi
 
@@ -316,9 +312,7 @@ chgrp -R grup1 *
 
 Canvia el grup de tots els fitxers i directoris del directori actual.
 
-***
-
-### Resum de comandes
+## Resum de comandes
 
 | Comanda                     | Funció                        |
 | --------------------------- | ----------------------------- |
@@ -330,3 +324,4 @@ Canvia el grup de tots els fitxers i directoris del directori actual.
 | `chgrp grup fitxer`         | Canviar grup                  |
 | `chown -R usuari directori` | Canvi recursiu de propietari  |
 | `chgrp -R grup directori`   | Canvi recursiu de grup        |
+
