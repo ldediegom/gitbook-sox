@@ -14,7 +14,9 @@ En els sistemes multiusuari és molt important definir què pot fer cada usuari 
 
 ### Access Control List (ACL)
 
-Una **ACL** (_Access Control List_ o _Llista de Control d'Accés_) permet especificar quins usuaris o grups poden accedir a un determinat recurs del sistema. 【1-e08699】
+Una **ACL** (_Access Control List_ o _Llista de Control d'Accés_) permet especificar quins usuaris o grups poden accedir a un determinat recurs del sistema. Ho permet fer de manera més precissa que amb el model tradicional.
+
+Pots veure'n més d'aquest model al punt [Control d'accés avançat amb ACL](gestio-de-permisos-de-fitxers-i-directoris.md#control-dacces-avancat-amb-acl).
 
 ## Permisos a GNU/Linux
 
@@ -43,8 +45,6 @@ Aquests permisos tenen un comportament diferent segons si s'apliquen a fitxers o
 | `r`    | Permet llistar els fitxers i directoris que conté el directori. |
 | `w`    | Permet crear, eliminar i reanomenar fitxers i directoris.       |
 | `x`    | Permet accedir al directori i entrar-hi amb `cd`.               |
-
-***
 
 ## Estructura dels permisos
 
@@ -106,8 +106,6 @@ Interpretació:
 | `68524`            | Mida en bytes       |
 | `2011-12-19 07:18` | Data de modificació |
 | `/usr/bin/top`     | Nom del fitxer      |
-
-***
 
 ## Modificació de permisos amb chmod
 
@@ -173,8 +171,6 @@ chmod {a,u,g,o}{+,-,=} {r,w,x} objecte
 | `chmod o-r fitxer`   | Elimina el permís de lectura dels altres usuaris.     |
 | `chmod go= fitxer`   | Elimina tots els permisos del grup i dels altres.     |
 
-***
-
 ### `chmod` amb representació numèrica
 
 #### Sintaxi
@@ -215,8 +211,6 @@ On:
 | 1     | --x      |
 | 0     | ---      |
 
-***
-
 #### Exemples amb representació numèrica
 
 | Comanda               | Resultat                                |
@@ -228,8 +222,6 @@ On:
 | `chmod 777 fitxer`    | Tothom té accés total.                  |
 
 > ⚠️ Evita utilitzar `777` tret que sigui estrictament necessari per motius de seguretat.
-
-***
 
 ## Modificació de propietaris i grups
 
@@ -245,8 +237,6 @@ Només poden executar aquestes modificacions:
 * `root`
 * propietari
 * usuaris amb `sudo`
-
-***
 
 ### Comanda `chown`
 
@@ -283,8 +273,6 @@ chown -R laura directori1
 ```
 
 Canvia el propietari del directori i de tot el seu contingut.
-
-***
 
 ### Comanda `chgrp`
 
