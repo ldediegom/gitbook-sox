@@ -198,7 +198,7 @@ En l'_**Administrador del servidor \[Server Manager]**_, dins de l'apartat _**Se
 
 Per comprovar el funcionament de la compartició d'arxius i carpetes - inclús d'improssores i escàners -, podem fer servir aplicacions gràfiques i també comandes. Veiem alguns exemples:
 
-#### Comandes CMD&#x20;
+#### Comandes CMD
 
 Executant la a comanda `net share` permet veure les unitats que tenim compartides en l’equip actual.
 
@@ -206,7 +206,7 @@ Executant la a comanda `net share` permet veure les unitats que tenim compartide
 
 Alguns exemples d'ús son:
 
-* Llistar comparticions locals - comprovar si la carpeta està compartida:&#x20;
+* Llistar comparticions locals - comprovar si la carpeta està compartida:
 
 ```
 net share
@@ -242,19 +242,19 @@ dir \\IPDelPC\NomRecursCompartit
 icacls \\NomDelPC\NomRecursCompartit
 ```
 
-#### Powershell - cmdlet&#x20;
+#### Powershell - cmdlet
 
 Com no pot ser d'una altra manera, també podem fer servir Powershell. Aquestes comandes ens proporcionen més informació, però alguns cops de manera més complexa que amb el clàssic CMD.
 
 Alguns exemples d'ús son:
 
-* Llistar comparticions locals - comprovar un recurs compartit:&#x20;
+* Llistar comparticions locals - comprovar un recurs compartit:
 
 ```
 Get-SmbShareAccess
 ```
 
-* Comparticions locals - comprovar un recurs compartit:&#x20;
+* Comparticions locals - comprovar un recurs compartit:
 
 ```
 Get-SmbShareAccess -Name "NomRecursCompartit"
@@ -361,7 +361,7 @@ Per activar l´ús compartit d'arxius i impressores cal el següent:
 
 Quan s'activa l’opció _**Ús compartit d’arxius i impressores**_, els usuaris de la xarxa podran tenir accés als arxius i impressores compartits en aquest equip.
 
-![](../../.gitbook/assets/win-activar-us-compartit.PNG)
+![](../../.gitbook/assets/win-activar-us-compartit.png)
 
 ### S'han canviat els permisos del fitxer o carpeta compartida, però l'usuari continua amb el mateixos permisos al accedir des del client
 
@@ -377,20 +377,20 @@ _**Solució 2 (massa radical)**_**:** Reiniciar el sistema operatiu, tornar a ob
 
 _**Solució 3**_**:** Esborrar les credencials de usuari-contrasenya de la connexió feta al servidor.
 
-1. Amb les tecles _Windows + R_ obrir la finestra de dialeg per executar: _`rundll32.exe keymgr.dll, KRShowKeyMgr`_   \
+1. Amb les tecles _Windows + R_ obrir la finestra de dialeg per executar: _`rundll32.exe keymgr.dll, KRShowKeyMgr`_\
    \
-   <img src="../../.gitbook/assets/image (20).png" alt="" data-size="original"> <br>
-2. Buscar la lP del l'ordinador on hi ha el recurs compartit i eliminar-la del llistat. \
+   <img src="../../.gitbook/assets/image (20).png" alt="" data-size="original"><br>
+2. Buscar la lP del l'ordinador on hi ha el recurs compartit i eliminar-la del llistat.\
    \
-   &#x20;<img src="../../.gitbook/assets/image (21).png" alt="" data-size="original">&#x20;
+   <img src="../../.gitbook/assets/image (21).png" alt="" data-size="original">
 
 _**Solució 4**_**:** Esborrar les credencials usuari-contrasenya de l'accés al recurs compartit amb _net use._
 
 1. Obrim un _cmd_\
-   &#x20;<img src="../../.gitbook/assets/image (22).png" alt="" data-size="original"> <br>
-2.  Mirem les connexions guardades i localitzem la que volem eliminar:&#x20;
+   <img src="../../.gitbook/assets/image (22).png" alt="" data-size="original"><br>
+2.  Mirem les connexions guardades i localitzem la que volem eliminar:
 
-    `net use` <br>
+    `net use`<br>
 3. Tenim dues opcions:
 
 *   _Opció 1: Eliminar la credencials de la connexió al recurs compartit._\
@@ -401,4 +401,3 @@ _**Solució 4**_**:** Esborrar les credencials usuari-contrasenya de l'accés al
 *   _Opció 2: Eliminar totes les credencials de totes les connexions._
 
     _`net use * /d`_
-

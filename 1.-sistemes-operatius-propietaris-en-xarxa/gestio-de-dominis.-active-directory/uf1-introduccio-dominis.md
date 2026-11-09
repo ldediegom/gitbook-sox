@@ -4,8 +4,8 @@ L’agrupació d'equips informàtics en xarxes té com a objectiu l'intercanvi d
 
 Es pot gestionar de dues formes:
 
-* **Grups de treball (Workgroup)**&#x20;
-* **Dominis**&#x20;
+* **Grups de treball (Workgroup)**
+* **Dominis**
 
 ## Grups de treball
 
@@ -41,7 +41,7 @@ La resta d’equips de la xarxa actuen com a **clients** d’aquest servei de di
 
 Un **controlador de domini** és una part essencial dels sistemes operatius de Microsoft.
 
-* S’encarrega fonamentalment d’emmagatzemar les parelles usuari-contrasenya dels comptes d’usuari que tenen accés al domini de xarxa.&#x20;
+* S’encarrega fonamentalment d’emmagatzemar les parelles usuari-contrasenya dels comptes d’usuari que tenen accés al domini de xarxa.
 * Aquest controlador centralitza la funció d’autenticar l’accés al domini.
 
 ## Directori Actiu \[_Active Directory (AD)_]
@@ -64,7 +64,7 @@ El **AD** és l'eina que permet organitzar, controlar i administrar de forma cen
 
 Quan instal·lem el **Directori Actiu \[**_**Active Directory**_**]** convertim aquest equip **controladors de domini**.
 
-![](../../.gitbook/assets/ActiveDirectory.png)
+![](../../.gitbook/assets/activedirectory.png)
 
 ## Noms de domini
 
@@ -96,11 +96,11 @@ L’estructura del servei de directori està constituïda per diferents elements
 
 La següent imatge representa un arbre que conté un domini principal (sapa.cat) i subdominis (www.sapa.cat, ftp.sapa.cat).
 
-![](../../.gitbook/assets/ArbreDomini.svg)
+![](../../.gitbook/assets/arbredomini.svg)
 
 * **Bosc (**_**Forest**_**)**: Si el conjunt de dominis no comparteixen un nom d’arrel comú, s’anomena bosc. Per tant, un bosc és un conjunt d’arbres de domini.
 
-![](../../.gitbook/assets/BoscDomini.svg)
+![](../../.gitbook/assets/boscdomini.svg)
 
 ## Objectes d'Active Directory
 
@@ -112,47 +112,47 @@ Aquest objectes a part d'unes característiques predefinides pel protocol LDAP, 
 
 Els diversos tipus d'objectes que podem utilitzar al crear la nostra estructura a LDAP i Active Directory són:
 
-* **Domini (dc):** L’objecte arrel del domini.&#x20;
-* **Unitat Organitzativa (ou):** contenidor jeràrquic d’objectes.&#x20;
-* **Usuari (u, cn,...):** Representa un usuari de la xarxa i funciona com un magatzem d'informació de&#x20;
-* identificació i autenticació&#x20;
-* **Equip:** Representa un equip de la xarxa i proporciona el compte de màquina necessària perquè el sistema entreu en el domini .&#x20;
-* **Contacte:** usuari extern al domini&#x20;
-* **Grup (cn):** poden contenir objectes de diferents unitats organitzatives i dominis&#x20;
-* **Carpeta compartida:** Proporciona accés de xarxa en AD a una carpeta compartida en un sistema Windows.&#x20;
-* **Impressora compartida:** Proporciona accés de xarxa en AD a una impressora compartida en un sistema Windows.&#x20;
-* **Contenidor:** una OU al que no se l’hi pot aplicar directives. &#x20;
+* **Domini (dc):** L’objecte arrel del domini.
+* **Unitat Organitzativa (ou):** contenidor jeràrquic d’objectes.
+* **Usuari (u, cn,...):** Representa un usuari de la xarxa i funciona com un magatzem d'informació de
+* identificació i autenticació
+* **Equip:** Representa un equip de la xarxa i proporciona el compte de màquina necessària perquè el sistema entreu en el domini .
+* **Contacte:** usuari extern al domini
+* **Grup (cn):** poden contenir objectes de diferents unitats organitzatives i dominis
+* **Carpeta compartida:** Proporciona accés de xarxa en AD a una carpeta compartida en un sistema Windows.
+* **Impressora compartida:** Proporciona accés de xarxa en AD a una impressora compartida en un sistema Windows.
+* **Contenidor:** una OU al que no se l’hi pot aplicar directives.
 
 ## **Entrades**
 
 Tot objecte ha de poder ser referenciat dins l'estructura d'un domini, arbre o bosc de manera inequívoca. Per poder-ho fer, els tipus d'objectes s'identifiquen amb una etiqueta clau com són _**ou**_ per les unitats organitzatives, _**dc**_ pel nom del domini, o _**cn**_ pels usuaris.
 
-Com passa amb els fitxers i directoris en un sistema operatiu, es poden indicar el lloc on es guarden a través indicant la serva ruta relativa (relativa al lloc on ens trobem - _directori1/fitxer.txt_) o bé indicant la seva ruta absoluta (tenint en compte l'arrel del disc _c:/directori0/directori1/fitxer.txt_). A LDAP tenim el **RDN** (o referència relativa) i el **DN** (Nom Distingit).&#x20;
+Com passa amb els fitxers i directoris en un sistema operatiu, es poden indicar el lloc on es guarden a través indicant la serva ruta relativa (relativa al lloc on ens trobem - _directori1/fitxer.txt_) o bé indicant la seva ruta absoluta (tenint en compte l'arrel del disc _c:/directori0/directori1/fitxer.txt_). A LDAP tenim el **RDN** (o referència relativa) i el **DN** (Nom Distingit).
 
-#### Què és un RDN? &#x20;
+#### Què és un RDN?
 
-Noms de Referència Relativa. És la part del nom d’un objecte. És el fragment de DN anterior al primer OU. Distingeix l’objecte dins de l’OU pare. &#x20;
+Noms de Referència Relativa. És la part del nom d’un objecte. És el fragment de DN anterior al primer OU. Distingeix l’objecte dins de l’OU pare.
 
-_**CN=Ned Stark**,OU=People,DC=gamesofthrones,DC=north._&#x20;
+_**CN=Ned Stark**,OU=People,DC=gamesofthrones,DC=north._
 
-#### Què és un DN? &#x20;
+#### Què és un DN?
 
-És nom simbòlic que identifica l’objecte de manera inequívoca dins del domini, utilitzat la ruta completa de l’arbre.&#x20;
+És nom simbòlic que identifica l’objecte de manera inequívoca dins del domini, utilitzat la ruta completa de l’arbre.
 
-_**CN=Ned Stark,OU=People,DC=gamesofthrones,DC=north**_&#x20;
+_**CN=Ned Stark,OU=People,DC=gamesofthrones,DC=north**_
 
-#### En què es diferencien?&#x20;
+#### En què es diferencien?
 
-* GUID i DN distingeixen inequívocament un objecte dins del domini. El primer, però, és inalterable tot fent canvis de localització dins de l’arbre.&#x20;
-* RDN distingeix l’objecte només dins del contenidor OU pare.&#x20;
+* GUID i DN distingeixen inequívocament un objecte dins del domini. El primer, però, és inalterable tot fent canvis de localització dins de l’arbre.
+* RDN distingeix l’objecte només dins del contenidor OU pare.
 
 #### Exemple
 
-![](../../.gitbook/assets/dn_AD.png)
+![](../../.gitbook/assets/dn_ad.png)
 
 * **Base →** “dc=Empresa,dc=com”
 * **DN d'un dels clients →** "cn=Aina Mas,ou=Clients,dc=Empresa,dc=com”
-* **RDN de la persona dins la OU=Clients→** "cn=Aina Mas"&#x20;
+* **RDN de la persona dins la OU=Clients→** "cn=Aina Mas"
 
 ## Documentació i recursos
 

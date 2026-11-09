@@ -2,7 +2,7 @@
 
 ## phpLDAPadmin
 
-![](../../.gitbook/assets/phpLDAPadmin.jpg)
+![](../../.gitbook/assets/phpldapadmin.jpg)
 
 ### Instal·lació phpLDAPAdmin
 
@@ -100,12 +100,12 @@ Per crear usuaris, grups i unitats organitzatives heu d'escollir una d'aquestes 
 * **Grups**: _Generico: Grupo Posix_
 * **Usuaris**: _Generico: Cuenta usuario_
 
-![](../../.gitbook/assets/uf2-CrearObjectesLDAP.png)
+![](../../.gitbook/assets/uf2-crearobjectesldap.png)
 
 {% hint style="warning" %}
 **Abans de crear un usuari** s'ha d'haver creat el grup al qual s'afegirà com a principal.
 
-A **Active Directory**, tots els usuaris s'afegeixen per defecte al grup "Domain Users". OpenLDAP, igual que a GNU/Linux, necessita tenir un grup per l'usuari abans de crear-lo. En el cas de **LDAP**, i **OpenLDAP**, el grup principal de l'usuari ha d'existir abans de crear l'usuari.&#x20;
+A **Active Directory**, tots els usuaris s'afegeixen per defecte al grup "Domain Users". OpenLDAP, igual que a GNU/Linux, necessita tenir un grup per l'usuari abans de crear-lo. En el cas de **LDAP**, i **OpenLDAP**, el grup principal de l'usuari ha d'existir abans de crear l'usuari.
 {% endhint %}
 
 **Dades de l'usuari**:
@@ -173,10 +173,9 @@ Per posar-lo en marxa és preferible fer-ho des de la consola:
 
 Al posar-lo en marxa demanarà amb quin servidor LDAP es vol connectar:
 
-![](../../.gitbook/assets/LAT.png)
+![](../../.gitbook/assets/lat.png)
 
 ## Documentació i recursos
 
 * **Somebooks:** [11.8. Usar una interfaz web para gestionar usuarios y grupos en el servidor OpenLDAP](https://somebooks.es/12-8-usar-una-interfaz-web-para-gestionar-usuarios-y-grupos-en-el-servidor-openldap/)
 * **phpLDAPadmin**: [https://phpldapadmin.org/](https://phpldapadmin.org/)
-

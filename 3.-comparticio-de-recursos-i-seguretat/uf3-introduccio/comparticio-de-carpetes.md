@@ -9,12 +9,12 @@ Qualsevol ordinador pot actuar com a **servidor** i com a **client**.
 
 Només cal que tingui instal·lats els **programes** adequats:
 
-* Un programa per **gestionar el servei** (en aquest cas, compartir un recurs)&#x20;
+* Un programa per **gestionar el servei** (en aquest cas, compartir un recurs)
 * Un programa per poder **accedir al servei** (accedir al recurs compartit).
 
 **Exemple:**
 
-![](../../.gitbook/assets/uf3-ServidorClient.svg)
+![](../../.gitbook/assets/uf3-servidorclient.svg)
 
 **PC1** comparteix la carpeta C1 i per tant actua com a servidor, però a la vegada accedeix a la carpeta C2 compartida en PC2, per tant també actua com a client. En canvi, el **Windows Server** només actua com a client, i el **PC2** només actua com a servidor.
 
@@ -26,12 +26,12 @@ Quan es comparteixen carpetes, cal distingir entre **permisos locals** i **permi
   * En Windows: `C:\Usuari\Documents`
   * En Linux: `/home/usuari`
 * **Permisos de compartició**: s'apliquen quan l'usuari accedeix a l'arxiu o carpeta utilitzant una ruta remota:
-  * En Windows:&#x20;
-    * `\\Server\Compartida`&#x20;
+  * En Windows:
+    * `\\Server\Compartida`
     * `X:` (suposant que `X:` és una unitat de xarxa connectada amb una carpeta remota)
-  * En Linux:&#x20;
-    * `smb://server/compartida`&#x20;
-    * `/mnt/compartida` (suposant que  `/mnt/compartida` és una carpeta remota muntada per exemple amb NFS).
+  * En Linux:
+    * `smb://server/compartida`
+    * `/mnt/compartida` (suposant que `/mnt/compartida` és una carpeta remota muntada per exemple amb NFS).
 
 Quan es comparteix una carpeta, s'han de configurar els **permisos de compartició**.
 
@@ -41,7 +41,7 @@ Es poden assignar diferents **permisos de compartició** per usuaris i grups. Aq
 
 ### Taula de permisos efectius quan s'accedeix a un arxiu o carpeta de forma remota
 
-![](../../.gitbook/assets/uf3-taula-permisos-remots.PNG)
+![](../../.gitbook/assets/uf3-taula-permisos-remots.png)
 
 ## Documentació i recursos
 

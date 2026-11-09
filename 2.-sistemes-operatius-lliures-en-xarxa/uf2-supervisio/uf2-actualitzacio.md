@@ -12,10 +12,10 @@ Hi ha diversos tipus de paquets:
 
 * Els **paquets binaris** són paquets construïts (o compilats) específicament per a una distribució. Els més comuns són:
   * Els **.rpm**, que els utilitzen _**Red Hat**_, _**Suse**_ i derivats
-  * Els **.deb**, que els utilitzen _**Debian**_, _**Ubuntu**_ i derivats.&#x20;
+  * Els **.deb**, que els utilitzen _**Debian**_, _**Ubuntu**_ i derivats.
 * Els **paquets font** són senzillament paquets que inclouen codi font.
-  * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament.&#x20;
-  * Els trobem empaquetats i comprimits amb formats com .tar.gz o tar.bz2.&#x20;
+  * Es poden utilitzar qualsevol tipus de màquina si el codi es compilen correctament.
+  * Els trobem empaquetats i comprimits amb formats com .tar.gz o tar.bz2.
 
 #### Gestors de paquets
 
@@ -113,19 +113,19 @@ Abans d'actualitzar el sistema o instal·lar paquets és recomanable **actualitz
 
 Serveix per **instal·lar i desinstal·lar programes** i paquets que hi ha en els repositoris d'Ubuntu.
 
-![](../../.gitbook/assets/uf2-SoftwareUbuntu.png)
+![](../../.gitbook/assets/uf2-softwareubuntu.png)
 
 ### Software i actualitzacions
 
 Serveix per **configurar les actualitzacions del sistema i del programari** (triar els repositoris, la periodicitat...). També mostra i permet seleccionar possibles controladors de hardware, tant lliures com privatius (per exemple, els de la targeta gràfica).
 
-![](../../.gitbook/assets/uf2-SoftwareActualitzacions.png)
+![](../../.gitbook/assets/uf2-softwareactualitzacions.png)
 
 ### Actualització de software
 
 Permet **comprovar manualment si hi ha actualitzacions** i triar quins paquets es volen actualitzar.
 
-![](../../.gitbook/assets/uf2-Actualitzacions.png)
+![](../../.gitbook/assets/uf2-actualitzacions.png)
 
 ## Documentació i altres recursos
 

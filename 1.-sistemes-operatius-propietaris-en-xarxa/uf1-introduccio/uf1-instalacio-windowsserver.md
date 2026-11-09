@@ -12,7 +12,7 @@ Cal assegurar-nos que el nostre maquinari compleix els requisits mínims tant de
 
 Cal tenir preparat tot el programari i les dades necessàries: Sistema Operatiu, controladors, claus d'activació, etc.
 
-> **Nota:** Si no disposes d'una **llicència** de Windows Server, pots obtenir, de forma gratuita, un versió d'evaluació durant un període de 180 dies a la següent direcció: [https://www.microsoft.com/en-us/evalcenter/download-windows-server-2025?msockid=1fbbaf4f9f6a68601767bba39eb7690c](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2025?msockid=1fbbaf4f9f6a68601767bba39eb7690c)  o l'alternativa [https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2025](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2025)
+> **Nota:** Si no disposes d'una **llicència** de Windows Server, pots obtenir, de forma gratuita, un versió d'evaluació durant un període de 180 dies a la següent direcció: [https://www.microsoft.com/en-us/evalcenter/download-windows-server-2025?msockid=1fbbaf4f9f6a68601767bba39eb7690c](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2025?msockid=1fbbaf4f9f6a68601767bba39eb7690c) o l'alternativa [https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2025](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-server-2025)
 
 #### Crear la màquina virtual
 
@@ -46,7 +46,7 @@ Windows Server permet instal·lar-se en dues versions diferents:
   * S’instal·la la interfície gràfica d'usuari amb totes les eines d'administració del servidor.
 * **Opció** _**Windows Server 2025 Standard (Core).**_ _\*\*_
   * No s’instal·la la interfície gràfica d’usuari estàndard i el servidor s’administra amb el terminal de comandes (Windows PowerShell) o bé remotament.
-  * És l’opció predeterminada i recomanada per Microsoft.&#x20;
+  * És l’opció predeterminada i recomanada per Microsoft.
   * **Avantatges**: requereix menys espai de disc (uns 4 GB menys), és més eficient i augmenta la seguretat.
 
 #### Triar el tipus d’instal·lació
@@ -64,11 +64,11 @@ Una vegada escollit l’opció d’instal·lació, cal que decidiu si fareu una 
 
 D'aquesta forma els possibles errors del sistema operatiu no afectaran tant directament les dades de l'empresa.
 
-* Amb el botó _**Nuevo**_,  crear una partició d'uns 20 GB.
+* Amb el botó _**Nuevo**_, crear una partició d'uns 20 GB.
 * Utilitzar l'espai restant per crear una altra partició.
 * Seleccionar la partició de 20 GB per instal·lar el sistema i continuar endavant.
 
-![](../../.gitbook/assets/WSInst07-Particionat.png)
+![](../../.gitbook/assets/wsinst07-particionat.png)
 
 #### Assignar contrasenya de l'usuari Administrador
 
@@ -96,7 +96,7 @@ Un servidor ha de tenir una **adreça estàtica**, ja que els clients l'han de c
 
 L'adreça ha de pertànyer a la xarxa on està connectada la màquina. Per exemple:
 
-* **Adreça IP**: `172.30.0.10`&#x20;
+* **Adreça IP**: `172.30.0.10`
 * **Màscara**: `255.255.0.0` (de 16 bits, com la de la xarxa)
 * **Porta d'enllaç (GW)**: `172.30.0.1` (l'adreça del router virtual de la xarxa NAT)
 * **Servidors DNS**: `172.30.0.1` i `8.8.8.8` (la mateixa porta d'enllaç de VirtualBox pot fer de servidor DNS).
@@ -107,8 +107,8 @@ En el cas de **màquines virtuals**, pot ser molt útil instal·lar les eines ad
 
 Aquestes eines permeten disposar de més opcions per:
 
-* Configurar la resolució de pantalla per tal que s'adapti a la mida de la finestra. &#x20;
-* Realitzar accions de _**copiar i enganxar**_  text, gràfics i arxius entre la màquina real i la virtual.&#x20;
+* Configurar la resolució de pantalla per tal que s'adapti a la mida de la finestra.
+* Realitzar accions de _**copiar i enganxar**_ text, gràfics i arxius entre la màquina real i la virtual.
 * Accedir des de la màquina virtual (guest) a una carpeta de la màquina real (host) per poder passar arxius fàcilment.
 
 **Instal·lació en Virtual Box**
@@ -138,18 +138,18 @@ Els _snapshots_ es fan i es poden recuperar més ràpidament, però poden fer qu
 Instal·lar noves funcionalitats o noves característiques:
 
 * **Funcions de servidor (rols):** Conjunt de programes que fan una funció específica per diferents usuaris o altres equips d'una xarxa. Un servidor pot realitzar més d'una funció o rol.
-  * Servidor de fitxers.&#x20;
-  * Servidor d'aplicacions.&#x20;
-  * Servidor de correu.&#x20;
-  * Terminal server: permet l’administració remota del servidor des d’un altre equip de la xarxa.&#x20;
-  * Control de domini.&#x20;
-  * Servidor DNS: realitza la resolució de noms del domini.&#x20;
+  * Servidor de fitxers.
+  * Servidor d'aplicacions.
+  * Servidor de correu.
+  * Terminal server: permet l’administració remota del servidor des d’un altre equip de la xarxa.
+  * Control de domini.
+  * Servidor DNS: realitza la resolució de noms del domini.
   * Servidor DHCP: realitza l’assignació d'adreces IP automàtiques.
   * etc.
-* **Serveis de funcions (serveis de rol)**: afegeixen més funcionalitat a un servidor.&#x20;
-  * Alguns rols, com per exemple el de servidor de DNS, només tenen una funcionalitat, i per tant no tenen serveis de rol disponibles.&#x20;
+* **Serveis de funcions (serveis de rol)**: afegeixen més funcionalitat a un servidor.
+  * Alguns rols, com per exemple el de servidor de DNS, només tenen una funcionalitat, i per tant no tenen serveis de rol disponibles.
   * Altres, com per exemple el de servidor d'escriptori remot, tenen diferents serveis de rol que es poden afegir en funció de les necessitats de l'empresa.
-* **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor, però no tenen cap relació amb els rols que desenvolupa.&#x20;
+* **Característiques:** són programes per complementar o augmentar la funcionalitat del servidor, però no tenen cap relació amb els rols que desenvolupa.
   * Client TFTP
   * Client Telnet
 

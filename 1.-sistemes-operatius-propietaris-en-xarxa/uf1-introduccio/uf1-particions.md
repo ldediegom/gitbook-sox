@@ -6,7 +6,7 @@ Actualment, els discos tenen molta capacitat d'emmagatzematge. Això permet que 
 
 **Perquè crear particions?**
 
-* Per poder instal·lar més d'un sistema operatiu (_Dual boot systems_).&#x20;
+* Per poder instal·lar més d'un sistema operatiu (_Dual boot systems_).
 * Per separar les dades del sistema de les dades dels usuaris. Els sistemes operatius inclouen **programes per gestionar les particions** amb les opcions més importants:
 * Crear el sistema de particionat.
 * Crear i esborrar particions.
@@ -28,13 +28,13 @@ Però també es poden trobar altres programes, fins i tot gratuïts, amb altres 
 
     Una de les particions primàries es pot marcar com a **partició activa**. Si hi ha diversos sistemes operatius, arrencarà el que es trobi en aquesta partició.
 
-![](../../.gitbook/assets/uf1-MBR.png)
+![](../../.gitbook/assets/uf1-mbr.png)
 
 Per superar la **limitació de 4 particions** és possible fer que una d'aquestes 4 sigui una partició estesa.
 
 La **partició estesa (**_**extended partition**_**)** serveix per contenir **particions lògiques**, tantes com es vulgui.
 
-![](../../.gitbook/assets/uf1-MBR2.png)
+![](../../.gitbook/assets/uf1-mbr2.png)
 
 ### Particionat GPT
 
@@ -45,10 +45,10 @@ La **partició estesa (**_**extended partition**_**)** serveix per contenir **pa
   * En els altres 32 sectors hi ha la informació de les 128 particions.
 * Totes les particions són primàries (**no hi ha particions esteses ni lògiques**).
 
-![](../../.gitbook/assets/uf1-GPT.svg)
+![](../../.gitbook/assets/uf1-gpt.svg)
 
 En l'espai lliure encara es poden crear moltes particions més.
 
 ## Documentació i recursos
 
-* **Font d'informació:**  Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7\&ref=1012](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7\&ref=1012))
+* **Font d'informació:** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7\&ref=1012](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?cap=7\&ref=1012))

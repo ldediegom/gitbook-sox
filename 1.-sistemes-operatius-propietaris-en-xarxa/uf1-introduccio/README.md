@@ -28,9 +28,7 @@ Els altres equips de la xarxa, actuen com a **clients** sol·licitant recursos a
 
 Aquest model de treball es coneix com a **arquitectura client/servidor**.
 
-![Il·lustració Client-Servidor](../../.gitbook/assets/clientServidor.png)
-
-
+![Il·lustració Client-Servidor](../../.gitbook/assets/clientservidor.png)
 
 ## Funcions dels Sistemes Operatius en Xarxa
 

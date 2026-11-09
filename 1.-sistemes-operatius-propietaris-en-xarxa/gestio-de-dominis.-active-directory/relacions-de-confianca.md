@@ -21,7 +21,7 @@ Les relacions de **confiança entre dominis** permeten:
 
 **Exemple de relació unidireccional:** Unidireccional de sortida en el domini A i d'entrada en el domini B:
 
-![](../../.gitbook/assets/Relacions_Unidireccional.svg)
+![](../../.gitbook/assets/relacions_unidireccional.svg)
 
 Vol dir que el domini A confia en el domini B, però B no confia en A. Els usuaris del domini B es poden validar en màquines unides al domini A, però els usuaris del domini A no es poden validar en màquines unides al domini B.
 
@@ -31,11 +31,11 @@ Vol dir que el domini A confia en el domini B, però B no confia en A. Els usuar
 
 En Windows, les relacions transitives també es diuen relacions de bosc, perquè quan s'afegeix un subdomini o un arbre a un bosc existent, es crea automàticament una relació transitiva.
 
-![](../../.gitbook/assets/Relacions_Transitiva.svg)
+![](../../.gitbook/assets/relacions_transitiva.svg)
 
 * **No transitives:** si hi ha una relació no transitiva entre els dominis A i B, i una altra entre els dominis B i C, si es vol que hi hagi una relació entre els dominis A i C caldrà crear una relació explícita entre ells.
 
-![](../../.gitbook/assets/Relacions_NoTransitiva.svg)
+![](../../.gitbook/assets/relacions_notransitiva.svg)
 
 ## Documentació i recursos
 

@@ -1,6 +1,6 @@
 # Instal·lació d'un controlador de domini en Active Directory
 
-![](../../.gitbook/assets/ActiveDirectory.png)
+![](../../.gitbook/assets/activedirectory.png)
 
 ## Configuració prèvia
 
@@ -12,23 +12,23 @@ El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom i cognoms).
 
 ## Instal·lació del Directori Actiu
 
-1.  La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des de l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.  &#x20;
+1.  La instal·lació del **Directori Actiu** és la implementació d'una funció bàsica o rol del nostre Windows Server. Com qualsevol altre rol de servidor el podem instal·lar des de l’_**Administrador del servidor**_ i seleccionar l'opció _**Agregar roles y características**_ que obrirà l'assistent per afegir funcions.
 
-    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png)<img src="../../.gitbook/assets/AD_afegir.png" alt="" data-size="original">
-2.  Triem l'opció _**Instalación basada en características o en roles**_.&#x20;
+    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_afegir.png) ![](../../.gitbook/assets/ad_afegir.png)
+2.  Triem l'opció _**Instalación basada en características o en roles**_.
 
-    <figure><img src="../../.gitbook/assets/role-based (1).png" alt=""><figcaption></figcaption></figure>
-3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_ fins a la llista de possibles funcions per instal·lar en el sistema. &#x20;
-4.  Marcar l'opció _**Serveis de Domini d'Active Directory (AD DS)**_ i _**DNS Server**_ i prémer el botó de _**Següent**_.&#x20;
+    <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+3. Després d’algunes pantalles d'informació on cal escollir a quin servidor el volem instal·lar, anirem amb el botó de _**Següent**_ fins a la llista de possibles funcions per instal·lar en el sistema.
+4.  Marcar l'opció _**Serveis de Domini d'Active Directory (AD DS)**_ i _**DNS Server**_ i prémer el botó de _**Següent**_.
 
     Donat que es fan servir noms de domini caldrà instal·lar i configurar al servidor el servei de DNS per tal que resolgui els noms de domini que es fan servir. Aquest servei s'instal·la per defecte si no el detecta.
 
     <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
-5.  Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_. &#x20;
+5.  Un cop finalitzada la instal·lació ens apareix una pantalla informativa on ens adverteix que per convertir el servidor en un controlador de domini funcional cal obrir l'assistent per crear un nou domini seleccionant _**Promover este servidor a controlador de dominio**_.
 
     ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/ad_ins4.png)
 
-    <figure><img src="../../.gitbook/assets/AD_ins4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/ad_ins4.png" alt=""><figcaption></figcaption></figure>
 
 ## Promocionar el servidor a controlador de domini i creació del domini
 
@@ -36,12 +36,12 @@ Un cop instal·lats els serveis bàsics de **Directori Actiu** és necessari com
 
 En l’_**Administrador del servidor**_ ens apareix una notificació indicant que es requereix una configuració de l'AD i mostra l’opció de _**Promover este servidor a controlador de dominio**_.
 
-![](../../.gitbook/assets/AD_ins5.png)
+![](../../.gitbook/assets/ad_ins5.png)
 
 Després de la pantalla d'inici de l’assistent hi ha tres opcions:
 
 * _**Afegir l'equip com a controlador de domini a un domini ja existent**_: serveix per afegir un controlador secundari o de «backup» a un domini ja creat. Això permetrà repartir la càrrega entre els dos servidors i, en cas què el controlador principal caigui, el sistema podrà continuar proporcionant el servei amb el controlador secundari.
-* _**Afegir un nou domini en un bosc existent**_:&#x20;
+* _**Afegir un nou domini en un bosc existent**_:
 * _**Afegir un nou bosc**_.
 
 Com es tracta de crear un domini aïllat (sense relació amb altres dominis, ni serà un subdomini, ni tampoc un controlador secundari dins del mateix domini...) escollim la tercera opció _**Afegir un nou bosc**_.
@@ -84,9 +84,9 @@ Els passos de configuració addicional del servei DNS son:
 
 1. Accedir al gestor de DNS: _**Server Manager > Tools > DNS**_
 2. Amb _botó dret_ sobre el servidor, accedir a les _**Propiedades**_ (_**Properties**_)
-3. A la pestanya _**Avanzado**_ (_**Advanced**_), activem _**Habilitar limpieza automática de registros obsoletos**_ (_**Enable automatic scavenging of stale records**_). Aquesta opció eliminarà els registres antics de la zona DNS amb la periodicitat que indiquem.&#x20;
+3. A la pestanya _**Avanzado**_ (_**Advanced**_), activem _**Habilitar limpieza automática de registros obsoletos**_ (_**Enable automatic scavenging of stale records**_). Aquesta opció eliminarà els registres antics de la zona DNS amb la periodicitat que indiquem.
 4. S'apliquen els canvis i es tanca la finestra emergent.
-5. Desplegar el _**Forward Lookup Zones**_**&#x20;(Zona de Busqueda Directa)**_._&#x20;
+5. Desplegar el _**Forward Lookup Zones**_**&#x20;(Zona de Busqueda Directa)**_._
 6. Entra/selecciona el domini per a desplegar els registres a la part dreta de la finestra.
 7. A l'arbre de l'estructura DNS (part esquerra), amb _botó dret_ sobre la zona de domini (_xxx.local_), accedir a les _**Propiedades**_ (_**Properties**_)
 8. A la pestanya _**General,**_ accedir a _**Caducidad**_ (_**Aging**_) per poder configurar la caducitat/neteja.
@@ -95,7 +95,7 @@ Els passos de configuració addicional del servei DNS son:
 
 Per comprovar que el servidor DNS resolt correctament els noms de domini, es pot fer un _**ping**_ des de la terminal. Per exemple:
 
-<p align="center"> <code>ping xxx.local</code></p>
+<p align="center"><code>ping xxx.local</code></p>
 
 {% hint style="warning" %}
 Recorda que a la configuració de la xarxa, s'ha de revisar que tinguem correctament una IP estàtica i com a DNS la mateixa IP principal del servidor.
@@ -123,23 +123,23 @@ A continuació, assigna IP Estàtica al client. El controlador de domini també 
 
 Finalment, fes pings per a verificar que el client pot comunicar-se amb el servidor.
 
-* ping a la ip del servidor&#x20;
+* ping a la ip del servidor
 * ping a google.com
 * ping al servidor del domini (`wsxxx.adxxx.local`)
 
 ### Unir el client al domini
 
-1. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. Una forma d'arribar a la configuració és fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar _**Sistema > Información > Configuración avanzada**_ (_o també, **Dominio o grupo de trabajo**_) **> (secció&#x20;**_**Nombre del equipo**_**) Cambiar**_._ En versions anteriors la ruta pot ser la següent: _**Sistema > Cambiar configuración > Cambiar...**_&#x20;
+1. Entreu a la màquina client i **afegiu-la al domini**, canviant el mode de grup de treball al mode de domini. Una forma d'arribar a la configuració és fer clic amb el botó secundari del ratolí sobre la icona d'inici de Windows i seleccionar _**Sistema > Información > Configuración avanzada**_ (_o també, **Dominio o grupo de trabajo**_) **> (secció&#x20;**_**Nombre del equipo**_**) Cambiar**_._ En versions anteriors la ruta pot ser la següent: _**Sistema > Cambiar configuración > Cambiar...**_
 2. Cal seleccionar l'opció _**Dominio**_ i posar el nom del domini al qual voleu connectar-la (`adxxx.local`). El nom del domini també es pot posar en el format NetBIOS (`ADXXX`).
 3. Si pot connectar amb el servidor, demanarà les credencials de l'administrador del domini.
 4. Si tot ha anat bé, ens indicarà que l'equip s'ha unit al domini, però que **cal reiniciar**.
 5. Ara entreu a la màquina client i veureu que podeu entrar al domini mitjançant les credencials de l'administrador o d'un usuari estàndard. L'inici de sessió amb l'usuari de domini es pot fer, tal com s'indica a la [teoria](usuaris-grups-i-unitats-organitzatives.md#usuaris-globals), posant:
-   * Format DNS: `nomusuari@adxxx.local`&#x20;
+   * Format DNS: `nomusuari@adxxx.local`
    * Format NetBIOS: `ADXXX\nomusuri`
 
-Si tot s'ha fet correctament, en accedir al client:&#x20;
+Si tot s'ha fet correctament, en accedir al client:
 
-* A la pantalla d'inici de sessió del client, hauria d'apareixer l'opció per defecte de posar un usuari de domini.&#x20;
+* A la pantalla d'inici de sessió del client, hauria d'apareixer l'opció per defecte de posar un usuari de domini.
 * Al servidor, al programa _**Usuarios y equipos de Active Directory**_ ( _**Active Directory Users and Computers**_) o al _**Centro de administració de Active Directory**_ (_**Active Directory Administrative Center**_), a la UO anomenada _**Equipos**_ (_**Computers**_) hauria d'aparèixer el nou client.
 
 ### Desconnectar un client del domini
@@ -158,7 +158,7 @@ Després repetirem els passos per unir el client a un domini posant el nom del n
 
 ### Connectar un domini a un bosc diferent
 
-En algunes ocasions pot ser necessari unir un domini, un arbre o un bosc sencer a un altre bosc existent.   Aquests casos es presenten quan s'uneixen dues empreses o s'havia fet configuracions totalment independents en el seu inici.
+En algunes ocasions pot ser necessari unir un domini, un arbre o un bosc sencer a un altre bosc existent. Aquests casos es presenten quan s'uneixen dues empreses o s'havia fet configuracions totalment independents en el seu inici.
 
 És imprescindible que els dos servidors tinguin connexió entre ells. De manera directa o indirecta han de poder veure's entre els seus serveis DNS. Això es configura:
 
@@ -166,8 +166,6 @@ En algunes ocasions pot ser necessari unir un domini, un arbre o un bosc sencer 
 * Opció 2: afegint una regla al servei de DNS. _Tens un manual_ [_aquí_](https://somebooks.es/relaciones-de-confianza-con-dominios-de-otros-bosques-en-windows-server-2022-parte-2/).
 
 Pots seguir els següents passos per unir un domini d'un bosc a un altre bosc: [https://somebooks.es/relaciones-de-confianza-con-dominios-de-otros-bosques-en-windows-server-2022-parte-3/](https://somebooks.es/relaciones-de-confianza-con-dominios-de-otros-bosques-en-windows-server-2022-parte-3/)
-
-
 
 ## Documentació i recursos
 

@@ -67,24 +67,24 @@ Els camps que s'han de posar a cada línia són els següents:
 
 **Exemples:**
 
-| Símbol        | Significat                                                              |      Exemple      | Resultat                             |
-| ------------- | ----------------------------------------------------------------------- | :---------------: | ------------------------------------ |
-| \*            | Tot el rang. Cada unitat de temps                                       |     diaMes  \*    | Cada dia                             |
-| num           | Per indicar el moment concret                                           |      Hora  15     | A les 15:00h                         |
-| num-num       | Rang de valors consecutius **No posar espais**                          |      Mes  1-6     | Del Gener al Juny                    |
-| num, num, num | Per indicar valors concrets de hores, dies o mesos. **No posar espais** | diaSetmana  1,3,5 | Cada dilluns, dimecres i divendres   |
-| \*/num        | Cada determinat temps                                                   |    Hores  \*/2    | Cada 2 hores                         |
-| num-num/num   | Determinar un interval dins un determinat rang                          |    Hora  8-20/5   | Entre les 8h i les 20h, cada 5 hores |
+| Símbol        | Significat                                                              |      Exemple     | Resultat                             |
+| ------------- | ----------------------------------------------------------------------- | :--------------: | ------------------------------------ |
+| \*            | Tot el rang. Cada unitat de temps                                       |     diaMes \*    | Cada dia                             |
+| num           | Per indicar el moment concret                                           |      Hora 15     | A les 15:00h                         |
+| num-num       | Rang de valors consecutius **No posar espais**                          |      Mes 1-6     | Del Gener al Juny                    |
+| num, num, num | Per indicar valors concrets de hores, dies o mesos. **No posar espais** | diaSetmana 1,3,5 | Cada dilluns, dimecres i divendres   |
+| \*/num        | Cada determinat temps                                                   |    Hores \*/2    | Cada 2 hores                         |
+| num-num/num   | Determinar un interval dins un determinat rang                          |    Hora 8-20/5   | Entre les 8h i les 20h, cada 5 hores |
 
 **Exercici**
 
-![](../../.gitbook/assets/US-automatitzacio1.PNG)
+![](../../.gitbook/assets/us-automatitzacio1.png)
 
 **Solució**
 
-![](../../.gitbook/assets/US-automatitzacio2.PNG)
+![](../../.gitbook/assets/us-automatitzacio2.png)
 
-![](../../.gitbook/assets/US-automatitzacio3.PNG)
+![](../../.gitbook/assets/us-automatitzacio3.png)
 
 ## Amb entorn gràfic
 

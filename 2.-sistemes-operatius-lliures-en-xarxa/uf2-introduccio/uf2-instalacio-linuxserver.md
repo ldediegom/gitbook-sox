@@ -28,7 +28,7 @@ Després de la instal·lació, la memòria RAM es pot reduir, tot i que dependr�
 ### Paràmetres bàsics de configuració
 
 * Triar l'idioma i altres dades regionals (país, teclat...).
-* **Nom de la  màquina**: per exemple, _**usxxx**_ (_**xxx**_ són les teves inicials en minúscules).
+* **Nom de la màquina**: per exemple, _**usxxx**_ (_**xxx**_ són les teves inicials en minúscules).
 * **Nom de l'usuari** (es pot posar nom i cognoms).
 * **Nom del compte d'usuari** (una sola paraula, lletres minúscules o números...).
 * **Contrasenya** (preferiblement que segueixi els criteris de seguretat).
@@ -42,8 +42,8 @@ Tot i que als sistemes Windows és important planificar els espais de disc, la s
 A aquesta acció se l'anomena **muntar** una partició o disc.
 
 {% hint style="info" %}
-Un **punt de muntatge** és qualsevol directori que s’utilitzi per accedir al sistema d’arxius de la partició. El que fa és afegir-lo a l'arbre de sistema d’arxius creat.\
-Creant una partició amb punt de muntatge es reserva un espai de disc per aquell directori. Aquest va associat a un sistema de fitxers (ext4, ext5, swap...) com en qualsevol partició.\
+Un **punt de muntatge** és qualsevol directori que s’utilitzi per accedir al sistema d’arxius de la partició. El que fa és afegir-lo a l'arbre de sistema d’arxius creat.\
+Creant una partició amb punt de muntatge es reserva un espai de disc per aquell directori. Aquest va associat a un sistema de fitxers (ext4, ext5, swap...) com en qualsevol partició.\
 Se solen fer per /, /boot, /home, i per l’espai d’intercanvi swap.
 {% endhint %}
 
@@ -51,7 +51,7 @@ L'arbre de directoris genèric de GNU/Linux és el que es mostra a la imatge (s'
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-En el següent enllaç hi ha una descripció més profunda de cada directori: [https://en.wikipedia.org/wiki/Filesystem\_Hierarchy\_Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)&#x20;
+En el següent enllaç hi ha una descripció més profunda de cada directori: [https://en.wikipedia.org/wiki/Filesystem\_Hierarchy\_Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
 #### _Recomanacions en la planificació de disc_
 
@@ -67,7 +67,7 @@ Aquests són alguns dels punts a tenir en compte:
 * Repetir els passos anteriors per crear una partició primària per la carpeta d'usuaris (/home). Aquest espai serà inferior al que es fa servir en un Ubuntu Desktop.
 * Finalment, crear una altra partició primària amb la resta de l'espai per a la swap (àrea d'intercanvi). Tot i que és menys important actualment perquè disposem de més RAM, es pot posar la meitat de swap que de RAM. Si en tenim molt poca (< 2GB), podem optar per posar el mateix o, fins i tot, el doble (2GB - 4GB). Si deposem de gran quantitat de RAM, la mida podria de ser inferior a 1GB.
 * Podem crear també una partició pel punt de muntatge /boot. Així si es corromp l'arrencada del sistema, es podria provar de reparar amb més facilitat.
-* Es poden crear particions segons els requisits d'ús del servidor. Per exemple:&#x20;
+* Es poden crear particions segons els requisits d'ús del servidor. Per exemple:
   * Per un servidor de propòsit general, podem crear també el /var i /tmp.
   * Per un servidor web es podrien crear també les particions /var/www, /var/log i /tmp.
   * Per un servidor de Bases de Dades, les /var/lib i /var/log.
@@ -79,13 +79,13 @@ Cada distribució té el seu programa d'instal·lació. Així que ens haurem d'a
 
 Com indicar a Ubuntu Server que és el disc d'arrencada:
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 S'hauran de crear tots els punts de muntatge, indicant el sistema de fitxers associat. Recorda que el sistema de fitxers de swap és el _swap_.
 
 Abans de confirmar, comprovar les particions creades (aquest només és un exemple):
 
-![](../../.gitbook/assets/US-Instalacio-particions.png)
+![](../../.gitbook/assets/us-instalacio-particions.png)
 
 Si ha quedat cap dubte respecte a aquesta part, pots visualitzar el [vídeo](https://drive.google.com/file/d/1Ld3dql1JlRSzpsu0m12A9G3ACHuJnFB3/view?usp=sharing) sobre gestió de particions d'una instal·lació manual d'Ubuntu Desktop.
 
@@ -152,7 +152,7 @@ network:
                 addresses: [172.16.0.11, 172.16.0.6]
 ```
 
-Podem veure que el _gateway_ es configura com una ruta per defecte. Ja que aquest serà el salt per defecte si no es coneix el següent salt.&#x20;
+Podem veure que el _gateway_ es configura com una ruta per defecte. Ja que aquest serà el salt per defecte si no es coneix el següent salt.
 
 Així doncs, el paràmetre _**router**_ ens permet configurar les rutes disponibles des del dispositiu que s'està configurant.
 
@@ -170,7 +170,7 @@ sudo netplan apply
 
 **Cas 2: Dues interfícies, una amb connexió a internet i l'altra a xarxa LAN.**
 
-Un cas clàssic en les pràctiques amb màquines virtuals és aconseguir que dues màquines, un servidor i un client, tinguin connexió entre elles i connexió a Internet. Si volem poder treballar a classe i a casa descarta l'ús de fer un _Bridge, ja que_ el servidor sempre ha de tenir a la xarxa interna una _IP estàtica_. &#x20;
+Un cas clàssic en les pràctiques amb màquines virtuals és aconseguir que dues màquines, un servidor i un client, tinguin connexió entre elles i connexió a Internet. Si volem poder treballar a classe i a casa descarta l'ús de fer un _Bridge, ja que_ el servidor sempre ha de tenir a la xarxa interna una _IP estàtica_.
 
 Aquesta és una configuració senzilla sense ús d'encaminament manual. Una interfície en NAT (ens33) i una en xarxa interna (ens38):
 
@@ -247,7 +247,7 @@ La majoria de sistemes d'instal·lació de distribucions permeten formatar els d
 Si no s'ha realitzat aquest procés durant la instal·lació o si s'afegeix un disc nou posteriorment, el muntatge es pot fer de dues maneres:
 
 * Muntatge automàtic: Es configura perquè el sistema munti la partició sol cada vegada que s'engega el servidor (mitjançant el fitxer [`/etc/fstab`](#user-content-fn-1)[^1]).
-* Muntatge manual ó temporal: Es fa a través de la línia d'ordres (amb la comanda [`mount`](#user-content-fn-2)[^2]) quan cal accedir a un disc en un moment puntual.&#x20;
+* Muntatge manual ó temporal: Es fa a través de la línia d'ordres (amb la comanda [`mount`](#user-content-fn-2)[^2]) quan cal accedir a un disc en un moment puntual.
 
 {% hint style="warning" %}
 **Requisits previs per al muntatge**
@@ -263,8 +263,6 @@ Existeixen alguns programes gràfics que ho faciliten, però en servidors habitu
 {% hint style="info" %}
 Per a més informació, revisar el tutorial: [How to mount a drive in Ubuntu/Debian](https://linuxgenie.net/mount-drive-ubuntu-linux/)
 {% endhint %}
-
-&#x20;
 
 [^1]: Més informació sobre aquest fitxer a [https://www.geeksforgeeks.org/linux-unix/understanding-etc-fstab/](https://www.geeksforgeeks.org/linux-unix/understanding-etc-fstab/)
 

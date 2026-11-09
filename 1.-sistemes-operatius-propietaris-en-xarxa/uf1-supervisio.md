@@ -4,12 +4,12 @@
 
 Algunes de **tasques d'un administrador de sistemes** d'informació:
 
-* Instal·lació, configuració i reconfiguració del Sistema Operatiu&#x20;
+* Instal·lació, configuració i reconfiguració del Sistema Operatiu
 * Instal·lació, actualització dels drivers i firmwares.
-* Instal·lació de les **actualitzacions** crítiques i/o recomanables del sistema operatiu tan directament relacionades amb el rendiment, disseny, funcionament i la seguretat.&#x20;
-  * Crítiques és important instal·lar-les, sempre que no afecti el funcionament del sistema d'informació.&#x20;
-  * Recomanables dependrà de si ens soluciona un problema o no.&#x20;
-* Gestió i comprovació de les **còpies de seguretat**.&#x20;
+* Instal·lació de les **actualitzacions** crítiques i/o recomanables del sistema operatiu tan directament relacionades amb el rendiment, disseny, funcionament i la seguretat.
+  * Crítiques és important instal·lar-les, sempre que no afecti el funcionament del sistema d'informació.
+  * Recomanables dependrà de si ens soluciona un problema o no.
+* Gestió i comprovació de les **còpies de seguretat**.
 * Planificació del manteniment del sistema.
 * **Monitoratge i vigilància:**
   * esdeveniments de seguretat, registres i alertes
@@ -44,19 +44,19 @@ Algunes d'aquestes eines i d'altres que no estàn lligades a la supervisió, es 
 
 L'**Administrador del servidor** permet veure, en una única pantalla, la informació del sistema, opcions de configuració de seguretat i els seus possibles problemes de configuració.
 
-![](../.gitbook/assets/ServerManager.png)
+![](../.gitbook/assets/servermanager.png)
 
 L'**Administrador del servidor**, amb una única eina, permet als administradors:
 
 * Veure i modificar els **rols i característiques instal·lats** al servidor.
 * Realitzar tasques d'administració com **iniciar o aturar serveis** i administrar comptes d'usuari locals.
 * Determinar l'**estat del servidor**.
-* Identificar **esdeveniments crítics**.&#x20;
+* Identificar **esdeveniments crítics**.
 * Analitzar i solucionar **problemes o errors de configuració**.
 
 ### Windows Admin Center
 
-**Windows Admin Center** fa uns anys que ha estat creat per substituir, sobretot, el _Server Manager_ i així integrar la capacitat de diverses aplicacions "clàssiques" en un&#x61;_._&#x20;
+**Windows Admin Center** fa uns anys que ha estat creat per substituir, sobretot, el _Server Manager_ i així integrar la capacitat de diverses aplicacions "clàssiques" en un&#x61;_._
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +69,7 @@ L'**Administrador del servidor**, amb una única eina, permet als administradors
 
 És un administrador pensat per la gestió d'una infraestructura local. Es poden administrar servidors, clients i clústers.
 
-En les últimes versions s'han creat  directa amb el cloud de Microsoft, **Azure**. Aquesta és una connexió natural en l'evolució de l'administració de grans infraestructures. Tot i així, no substitueix l'aplicació web d'administració d'Azure, ni és el seu principal objectiu.&#x20;
+En les últimes versions s'han creat directa amb el cloud de Microsoft, **Azure**. Aquesta és una connexió natural en l'evolució de l'administració de grans infraestructures. Tot i així, no substitueix l'aplicació web d'administració d'Azure, ni és el seu principal objectiu.
 
 Les característiques principals es podries resumir en:
 
@@ -119,12 +119,12 @@ Cada servei el podem configurar: Ens posem a sobre > boto dret ratolí > propiet
 
 > Que un servei estigui instal·lat no vol dir que s'estigui executant.
 
-![](../.gitbook/assets/SevicesStart.png)
+![](../.gitbook/assets/sevicesstart.png)
 
 Existeixen quatre **tipus d’arrencada d’un servei**:
 
 * **Automàtic:** El servei que s’iniciarà quan l’equip s’engegui.
-* **Automàtic (inici retardat):** el servei s’inicia quan l’equip està en marxa i tots els serveis automàtics (marcats amb l’opció anterior) estan funcionant.&#x20;
+* **Automàtic (inici retardat):** el servei s’inicia quan l’equip està en marxa i tots els serveis automàtics (marcats amb l’opció anterior) estan funcionant.
 * **Manual:** el servei s’haurà d’iniciar manualment.
 * **Deshabilitat:** el servei estarà desactivat i no es pot engegar.
 
@@ -134,7 +134,7 @@ Existeixen quatre **tipus d’arrencada d’un servei**:
 
 El sistema Microsoft Windows Server permet fer accions si detecta que un servei específic falla.
 
-![](../.gitbook/assets/ServeisRecuperacio.png)
+![](../.gitbook/assets/serveisrecuperacio.png)
 
 Existeixen tres opcions de **recuperació d’un servei**:
 
@@ -146,7 +146,7 @@ Existeixen tres opcions de **recuperació d’un servei**:
 
 L'**administrador de discs** permet administrar els discs, particions i volums.
 
-![](../.gitbook/assets/WSDiskManagement.png)
+![](../.gitbook/assets/wsdiskmanagement.png)
 
 ### Registre d’esdeveniments _\[Event Viewer]_
 
@@ -162,7 +162,7 @@ Els principals són:
 * Registres d'aplicacions i serveis
   * Esdeveniments de hardware
 
-![](../.gitbook/assets/EventViewer.png)
+![](../.gitbook/assets/eventviewer.png)
 
 Aquesta eina proporciona moltíssima informació. Per trobar de forma ràpida la que es necessita, es poden crear vistes personalitzades o filtrar els que compleixin uns determinats criteris.
 
@@ -170,13 +170,13 @@ També ofereix la possibilitat de guardar determinats esdeveniments i esborrar-l
 
 ### Monitor de recursos \[_Resource Monitor_]
 
-El Monitor de recursos (Resource Monitor) és una eina disponibles als servidors i edicions professionals de Windows que permet observar en temps real com el sistema operatiu i les aplicacions utilitzen els recursos principals de l’ordinador o servidor.&#x20;
+El Monitor de recursos (Resource Monitor) és una eina disponibles als servidors i edicions professionals de Windows que permet observar en temps real com el sistema operatiu i les aplicacions utilitzen els recursos principals de l’ordinador o servidor.
 
 És un complement de l'_**Administrador de tasques**_ i del _**Monitor de rendiment**_, que ofereix una visió molt més detallada.
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-Podem accedir a la informació detallada d'ús de CPU, Memòria principal (RAM), Discs i Xarxa.  É suna versió més detallada, però amb un disseny menys actualitzat que l'_**Administrador de tasques**_.&#x20;
+Podem accedir a la informació detallada d'ús de CPU, Memòria principal (RAM), Discs i Xarxa. É suna versió més detallada, però amb un disseny menys actualitzat que l'_**Administrador de tasques**_.
 
 Podem accedir a aquesta aplicació amb la comanda: _resmon.exe_
 
@@ -207,7 +207,7 @@ Les eines o característiques principals què inclou el Monitor de rendiment só
    * _**Comptadors de rendiment (Performance Counters)**_**:** permeten mesurar l'estat o l'activitat del sistema. Es poden afegir de múltiples fonts: sistema operatiu, serveis, aplicacions i rols de Windows. Aquest comptadors es poden establir tenint en compte diferents mètriques (p. ex. % d’ús de CPU, bytes llegits del disc/segon, memòria disponible). Aquest compadors es poden associar a alertes i accions a realitzar.
    * _**Gràfics en temps real**_: proporciona una visió gràfica de l'evolució de diferents comptadors, què permeten comparar recursos i detectar anomàlies.
 2. Data Collector Sets (Conjunts de recopiladors de dades): és un conjunt personalitzat de comptadors de rendiment, seguiments d' esdeveniments i dades de configuració del sistema què fa un registre de dades durant un període determinat. És una eina idea per fer auditories de rendiment o analitzar incidències.
-3. Informes: Són la representació estructurada de les dades recopilades pels comptadors de rendiment, conjunts de recopilació de dades (Data Collector Sets) o altres eines de monitoratge.&#x20;
+3. Informes: Són la representació estructurada de les dades recopilades pels comptadors de rendiment, conjunts de recopilació de dades (Data Collector Sets) o altres eines de monitoratge.
 
 La comanda per poder accedir és _perfmon.exe_
 
@@ -234,14 +234,14 @@ Les **tasques** tenen tres parts principals:
 2. **Acció (action):** què ha de fer (executar un programa, enviar un missatge, etc.).
 3. **Condicions (conditions):** en quines circumstàncies es pot executar.
 
-**Per exemple...**&#x20;
+**Per exemple...**
 
 Es pot apagar o reiniciar el sistema de forma periòdica (per exemple, els diumenges a les 3h de la matinada) o només un cop (el dia 31 de desembre). Això es pot fer introduint directament la comanda o fent que s'executi un script amb aquesta comanda i moltes altres.
 
 1. Directament amb Powershell seria: `schtasks /create /sc daily /tn "AturarSistema" /tr "shutdown /s /f /t 0" /st 03:00`
 2. Fent servir el programador de tasques, es podria:
    1. Indicar l'hora d'execució i la comanda a executar: `shutdown /s /f /t 0`
-   2. Indicar l'hora d'execució i el fitxer .bat o ps que es vol executar. En aquest exemple, una aturada (shutdown /s) forçada (/f) amb un temps d'espera de 0 segons (/t 0):&#x20;
+   2. Indicar l'hora d'execució i el fitxer .bat o ps que es vol executar. En aquest exemple, una aturada (shutdown /s) forçada (/f) amb un temps d'espera de 0 segons (/t 0):
 
 {% code title="apagada_programada.bat" %}
 ```batch
@@ -283,7 +283,7 @@ Es pot accedir a aquesta eina cercant-la, accedint directament a través del dis
 
 **Emmagatzematge** cada vegada proporciona més informació i eines, algunes noves, d'altres que substitueixen a les "clàssiques" i també accessos directes a les que encara sobrevien i son difícils de subsitituir (encara).
 
-Aquesta eina dins de la _Configuració_ de Windows, proporciona una vista visual de la distribució de l'emmagatzemantge del disc principal.  Un aspecte molt semblant al que podem trobar a sistemes operatius mòbils.
+Aquesta eina dins de la _Configuració_ de Windows, proporciona una vista visual de la distribució de l'emmagatzemantge del disc principal. Un aspecte molt semblant al que podem trobar a sistemes operatius mòbils.
 
 Podem accedir seguint els següents passos: _Configuració_ > _Sistema > Emmagatzematge._
 
@@ -300,7 +300,7 @@ Entre d'altres, ens proporciona la següent informació i eines:
   * Gestió d’espais d’emmagatzematge (Storage Spaces)
   * Accés a informació avançada dels discos i volums
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -323,7 +323,7 @@ En el **Windows Update** podem configurar:
 ![](<../.gitbook/assets/Winodws Update 2025.png>)
 
 * **Canviar hores actives:** Un cop instal·lades actualitzacions, si és necessari reiniciar, tenim dues opcions:
-  * reiniciar el servidor manualment&#x20;
+  * reiniciar el servidor manualment
   *   esperar un reinici automàtic fora de les hores de major activitat del sistema.
 
       De forma predeterminada, les hores de major activitat estan definides entre les 8:00 i las 17:00. Si aquests valors no s'adapten a l'horari de la teva empresa els podem modificar amb l'opció _**Cambiar horas activas**_.
@@ -340,7 +340,7 @@ Per això, quan un pedaç de seguretat crític és emès pels servidors d'actual
 
 Tot això ho farà sense demanar consentiment a l'usuari i, si ens descuidem, ens reiniciarà el sistema sense tenir en compte el que estiguem fent en aquell moment.
 
-![](../.gitbook/assets/new-upgrade-UI.png)
+![](../.gitbook/assets/new-upgrade-ui.png)
 
 En el nostre cas una actualització forçada ens podria destorbar durant la realització d'alguna pràctica o control. Per això, farem servir algunes eines administratives per impedir-ho.
 
@@ -350,7 +350,7 @@ El servei responsable de les actualitzacions de Windows s'anomena _**wuausrv**_ 
 
 _**Administrador de serveis > "Windows Update" > Propietats > Tipus d'inici > Escollir Deshabilitat**_ _**Administrador de serveis > "Windows Update" > Propietats > Estat del servei > Detenir**_
 
-![](../.gitbook/assets/UF1_wuauserv.PNG)
+![](../.gitbook/assets/uf1_wuauserv.png)
 
 #### B) Deshabilitar la directiva de grup (GPO) responsable de les actualitzacions
 
@@ -368,16 +368,16 @@ _**Configuració de l'equip > Plantilles administratives > Components de Windows
 
 A la dreta, trobarem un llarg llistat de regles. Entre elles, **deshabilitarem** almenys una de les següents regles:
 
-* _Configurar Actualitzacions automàtiques_&#x20;
+* _Configurar Actualitzacions automàtiques_
 * _No reiniciar automàticament amb usuaris que hagin iniciat sessions en instal·lacions d'actualitzacions automàtiques_
 
-![](../.gitbook/assets/UF1_gpo_editor.PNG)
+![](../.gitbook/assets/uf1_gpo_editor.png)
 
 Per forçar l'aplicació de directives editades haurem d'executar \[Win + R]: `gpupdate /force /boot /logoff`
 
 ## Documentació i recursos
 
-SomeBooks.es: [Configurar las actualizaciones en Windows Server 2022 con GUI ](https://somebooks.es/configurar-las-actualizaciones-en-windows-server-2022-con-gui/)
+SomeBooks.es: [Configurar las actualizaciones en Windows Server 2022 con GUI](https://somebooks.es/configurar-las-actualizaciones-en-windows-server-2022-con-gui/)
 
 SomeBooks.es: [Instalar actualizaciones en Windows Server 2022 con GUI](https://somebooks.es/instalar-actualizaciones-en-windows-server-2022-con-gui/)
 

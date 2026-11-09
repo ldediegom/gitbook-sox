@@ -26,7 +26,7 @@ La gran majoria de distribucions GNU/Linux utilitzen el CUPS com a sistema d’i
 
 Quan el **CUPS** es fa servir amb el **Samba**, les impressores també es poden utilitzar en ordinadors **Windows** remots per imprimir per mitjà de la xarxa.
 
-![](../../.gitbook/assets/CUPSlogo.png)
+![](../../.gitbook/assets/cupslogo.png)
 
 CUPS també permet configurar i administrar les impressores mitjançant una **interfície web**, accessible habitualment des del navegador a l’adreça:
 
@@ -96,7 +96,7 @@ Com tots els serveis, CUPS es desgrana en diversos fitxers. Els més importants 
 
 * **/etc/cups/cupsd.conf**: És el fitxer principal. Defineix com es comporta el servei (el dimoni cupsd): qui té permís per imprimir, si s'accepten connexions remotes, les directives (permisos específics, el nivell de registre d'errors (logs) i els mètodes d'autenticació.
 * **/etc/cups/cups-files.conf**: Defineix carpetes de CUPS, propietaris i permisos d’accés: on es guarden les cues d’impressió, fitxers temporals i PDFs.
-* **/etc/cups/printers.conf**: Aquí es llisten totes les impressores instal·lades. Guarda informació sobre l'estat de la impressora, el nom del dispositiu, la URL de connexió (URI) i si està compartida o no. <mark style="color:$danger;">**Compte!**</mark> <mark style="color:$danger;"></mark><mark style="color:$danger;">No editar a mà aquest fitxer.</mark>
+* **/etc/cups/printers.conf**: Aquí es llisten totes les impressores instal·lades. Guarda informació sobre l'estat de la impressora, el nom del dispositiu, la URL de connexió (URI) i si està compartida o no. <mark style="color:$danger;">**Compte!**</mark> <mark style="color:$danger;">No editar a mà aquest fitxer.</mark>
 
 A més, amb les impressores intal·lades es crea un fitxer amb l'accés a la configuració del **driver**. En el cas de la impressora **cups-pdf** és _`/etc/cups/cups-pdf.conf`_
 
@@ -160,8 +160,8 @@ sudo systemctl restart cups
 
 #### Permisos d'accés a la interfície web
 
-Editem l'arxiu **/etc/cups/cupsd.conf** que és on tenim les directives dels permisos, cada\
-part correspon a una secció de la interfície de administració.&#x20;
+Editem l'arxiu **/etc/cups/cupsd.conf** que és on tenim les directives dels permisos, cada\
+part correspon a una secció de la interfície de administració.
 
 Les següents opcions es poden fer servir per:
 
@@ -256,13 +256,13 @@ El paquet **cups-pdf** ens instal·la una impressora virtual que permet crear fi
 
 Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció **Add printer** de la pestanya **Administration**.
 
-![](../../.gitbook/assets/CUPSAdministration.png)
+![](../../.gitbook/assets/cupsadministration.png)
 
 1. Seleccionem la impressora a instal·lar. Per exemple l’impressora local **CUPS-PDF (Virtual PDF Printer)**.
-2. Cal posar un nom a la impressora, i si es vol, una descripció i lloc on es troba la impressora.&#x20;
+2. Cal posar un nom a la impressora, i si es vol, una descripció i lloc on es troba la impressora.
    * També cal marcar l’opció de **“Share This Printer”** per compartir-la.
 3. Ens demanarà el **fabricant** de la impressora. Seleccionem la marca **Generic** (també poden ser **CUPS-PDF** o **Virtual PDF Printer**)
-4. Seguidament, ens demanarà pel **model d'impressora** per instal·lar els controladors més adequats.&#x20;
+4. Seguidament, ens demanarà pel **model d'impressora** per instal·lar els controladors més adequats.
    * També, permet especificar aquests controladors mitjançant un fitxer de text en format PPD (PostScript printer description).
    * Seleccionem el model **Generic CUPS-PDF Printer (en)** o **Generic PDF Printer**, o **Generic PostScript Printer** (dels que estiguin marcat com _recomenats_). Una altra opció moderna: **Everywhere** (que no necessiten la instal·lació de drivers específics).
 5. Si s’instal·la correctament, apareixerà una pantalla que ens permetrà configurar les **opcions generals d’impressió** de la impressora.
@@ -279,7 +279,7 @@ sudo cupsaccept PDF
 ```
 
 * `sudo lpadmin -p PDF -E -v cups-pdf:/ -m everywhere` -> Crea la impressora virtual PDF amb nom PDF. Una alternativa és optar per `-m raw`, però aquesta hauria deixarà d'estar operativa en el futur.
-* `sudo cupsenable PDF`  -> Activa la impressora
+* `sudo cupsenable PDF` -> Activa la impressora
 * `cupsaccept PDF-Test` -> Permet enviar treballs a la impressora
 
 Per comprovar si està activa:
@@ -372,7 +372,7 @@ Per revisar les impressores, l'estat de la cua i del servidor, es pot fer servir
 
 Per revisar una impressora en concret s'ha de fer servir el nom donat a la impressora i executar la següent comanda:
 
-`lpstat -l -p`` `_`NomImpressora`_
+` lpstat -l -p`` `` `_`NomImpressora`_
 
 Ha d’indicar que està **enabled** i compartida.
 
@@ -386,7 +386,7 @@ o
 
 Una altra comanda és `lpinfo` una eina de "descobriment".:
 
-`lpinfo -v`  ens permet veure quins dispositius estan disponibles, tant locals com en xarxa local.
+`lpinfo -v` ens permet veure quins dispositius estan disponibles, tant locals com en xarxa local.
 
 ### Veure els treballs d’impressió
 
@@ -405,7 +405,7 @@ Es poden fer servir dues comandes:
    * Si ens ha detectat la impressora que volem instal·lar, només caldrà que premem el botó Endavant.
    * Si no ens ha detectat la impressora, despleguem l'opció **Impresora de red** i triem **Buscar impressora de red**. En el camp **Equip** posem la IP del servidor on està compartida i cliquem **Buscar**.
 4. Ens demanarà el nom mitjançant el qual volem que es reconegui la impressora en el sistema i haurem de fer clic a **Aplica**.
-   * De manera opcional, també ens demanarà una descripció d’aquesta impressora i lloc on es troba.&#x20;
+   * De manera opcional, també ens demanarà una descripció d’aquesta impressora i lloc on es troba.
 5. Finalment, el sistema ens proposarà **imprimir una pàgina de prova** perquè puguem estar segurs que la instal·lació s’ha fet correctament.
 
 ### Afegir impressora per terminal
@@ -418,7 +418,7 @@ Primer hem de saber com es diu la impressora a la xarxa. Executa això al Client
 lpstat -e
 ```
 
-Això t'hauria de llistar les impressores disponibles. Cercar la impressora amb el nom configurat al servidor.&#x20;
+Això t'hauria de llistar les impressores disponibles. Cercar la impressora amb el nom configurat al servidor.
 
 Si no surt res, prova de buscar-la per xarxa:
 

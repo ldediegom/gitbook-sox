@@ -149,7 +149,7 @@ Per obrir la interfície gràfica cal executar la següent comanda:
 
 `sudo /opt/pbis/bin/domainjoin-gui`
 
-![](../../.gitbook/assets/PBIS-domini.png)
+![](../../.gitbook/assets/pbis-domini.png)
 
 * Nom del domini: `adxxx.local`
 * Deshabilitar l'opció _**Enable default user name prefix**_

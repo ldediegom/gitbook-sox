@@ -32,6 +32,7 @@
   * [Gestió d'arxius](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-arxius.md)
   * [Administració de discos amb LVM](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-arxius-1.md)
   * [Gestió d'usuaris i grups locals](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-usuaris-locals.md)
+  * [Gestió de permisos de fitxers i directoris](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/gestio-de-permisos-de-fitxers-i-directoris.md)
   * [Instal·lació de paquets i actualització](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-actualitzacio.md)
   * [Monitoratge](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-monitoritzacio.md)
   * [Administració web](2.-sistemes-operatius-lliures-en-xarxa/uf2-supervisio/uf2-adm-web.md)

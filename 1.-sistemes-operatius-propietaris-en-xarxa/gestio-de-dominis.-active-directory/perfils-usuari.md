@@ -8,14 +8,14 @@ Aquestes dades inclouen:
 
 * En quina **carpeta on es guarda el perfil d'usuari** on es guarda la configuració que l'usuari fa del seu entorn de treball.
   * Fons de l'escriptori, mida de les icones, la lletra del sistema, configuració del teclat i ratolí...
-  *   **Accés ràpid**: arxius que l'usuari guarda a l'escriptori, arxius descarregats d'Internet, música, fotos i vídeos. <img src="../../.gitbook/assets/ADPerfil_AccesRapid.png" alt="" data-size="original">&#x20;
+  *   **Accés ràpid**: arxius que l'usuari guarda a l'escriptori, arxius descarregats d'Internet, música, fotos i vídeos. <img src="../../.gitbook/assets/adperfil_accesrapid.png" alt="" data-size="original">
 
       ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfil_accesrapid.png)
 * En quina **carpeta privada** on es guarden els seus arxius personals. Només ell hi podrà accedir.
 * Quin **script s'executarà cada cop que l'usuari iniciï sessió**. Algunes de les coses que es poden programar son:
   * Sincronitzar la data i hora del client amb el servidor.
   * Configurar les impressores a les que pot accedir l'usuari.
-  * Connectar una unitat de xarxa a una carpeta compartida en el servidor.&#x20;
+  * Connectar una unitat de xarxa a una carpeta compartida en el servidor.
 
 Els diferents arxius que formen el perfil s'estructuren en carpetes com per exemples _**Dades de programes**_, _**Escriptori**_, _**Favorits**_, _**Els meus documents**_, _**Impressores**_, etc.
 
@@ -27,18 +27,18 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 
 **Perfil local**:
 
-* Quan s'accedeix amb un usuari local, el perfil d'usuari que s'utilitzarà és el què hi ha la mateixa màquina.&#x20;
-* Si encara no té cap perfil guardat, se li crea un per defecte.&#x20;
+* Quan s'accedeix amb un usuari local, el perfil d'usuari que s'utilitzarà és el què hi ha la mateixa màquina.
+* Si encara no té cap perfil guardat, se li crea un per defecte.
 * Quan l'usuari tanca sessió, es guarden els canvis que ha fet (el seu perfil) en la mateixa màquina.
 
 **Perfil temporal**:
 
-* Es crea un perfil temporal quan no es pot carregar el perfil.&#x20;
+* Es crea un perfil temporal quan no es pot carregar el perfil.
 * Els canvis que faci l'usuari s'esborren quan es tanca la sessió.
 
 **Perfils de xarxa**:
 
-* Quan s'accedeix amb un usuari del domini, es carrega el perfil guardat en el servidor. D'aquesta forma, l'usuari tindrà la seva configuració en qualsevol ordinador.&#x20;
+* Quan s'accedeix amb un usuari del domini, es carrega el perfil guardat en el servidor. D'aquesta forma, l'usuari tindrà la seva configuració en qualsevol ordinador.
 * Els canvis que faci (si és un perfil mòbil) també es guardaran al servidor quan tanqui la sessió.
   * **Perfil Mòbil**: l'usuari pot fer canvis en el seu perfil.
   * **Perfil Obligatori**: l'usuari pot fer canvis, però s'esborren en tancar la sessió.
@@ -46,8 +46,8 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 
 > Els **perfils mòbils** són molt útils però també tenen **inconvenients**:
 >
-> * Si l'usuari té molts arxius o arxius molt grans, l'inici i tancament de sessió es ralentitza molt.&#x20;
-> * Pot augmentar molt el tràfic de xarxa.&#x20;
+> * Si l'usuari té molts arxius o arxius molt grans, l'inici i tancament de sessió es ralentitza molt.
+> * Pot augmentar molt el tràfic de xarxa.
 > * Si falla la xarxa o el servidor, els usuaris no podran accedir als seus arxius.
 
 ## Configuració de perfil mòbil d'usuari
@@ -57,7 +57,7 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 Si es vol configurar els **perfils mòbils**, primer de tot cal crear en el **servidor** la carpeta on es guardaran les carpetes de perfil de cada usuari i posar els permisos adequats:
 
 {% hint style="danger" %}
-Compte a la **ubicació de la carpeta**! Com totes les carpetes compartides, és adequat crear-la en un espai poc propens a atacs o en tot cas, on s'eviti mals majors en cas d'atac. Ubicacions adequades serien:&#x20;
+Compte a la **ubicació de la carpeta**! Com totes les carpetes compartides, és adequat crear-la en un espai poc propens a atacs o en tot cas, on s'eviti mals majors en cas d'atac. Ubicacions adequades serien:
 
 * A una unitat o volum secundaris del sistema; per exemple: _**D:\\, E:\\,...**_
 * En cas de no disposar d'un altre lloc, a l'arrel del sistema: unitat _**C:\\**_
@@ -80,12 +80,12 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
 5. Afegir els següents usuaris i donar-los els permisos necessaris clicant el botó _**Agregar > Seleccionar una entidad de seguridad**_:
    * **Administadors (Administrators)**
      * Aplicar permisos sobre _**"Esta carpeta, subcarpetas y archivos"**_.
-     *   Marcar la casella **control total**. <img src="../../.gitbook/assets/ADPermisosAdmin.png" alt="" data-size="original">&#x20;
+     *   Marcar la casella **control total**. <img src="../../.gitbook/assets/adpermisosadmin.png" alt="" data-size="original">
 
          ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisosadmin.png)
 6. **Propietari (CREATOR OWNER)**:
    * Aplicar permisos sobre _**"Solo subcarpetas y archivos"**_ .
-   *   Marcar la casella **control total**. <img src="../../.gitbook/assets/ADPermisosCreator.png" alt="" data-size="original">&#x20;
+   *   Marcar la casella **control total**. <img src="../../.gitbook/assets/adpermisoscreator.png" alt="" data-size="original">
 
        ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisoscreator.png)
 7.  **Usuaris del domini (Domain Users)**:
@@ -96,9 +96,9 @@ Un cop creada la carpeta cal posar els **permisos** adequats:
         * Permís per _**Travessar aquest directori/executar arxius**_.
         * Permís per _**Mostrar carpeta / llegir dades**_.
         * Permís per _**Crear carpetes / adjuntar dades**_.
-        * _**Permisos de lectura**_.&#x20;
+        * _**Permisos de lectura**_.
 
-        <img src="../../.gitbook/assets/ADPermisosUsuaris.png" alt="" data-size="original">&#x20;
+        ![](../../.gitbook/assets/adpermisosusuaris.png)
 
     ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adpermisosusuaris.png)
 
@@ -119,11 +119,11 @@ Les carpetes anteriors (_**perfils**_ i _**privades**_) s'han de compartir de fo
 * Marcar la casella _**Compartir esta carpeta**_ i clicar el botó _**Permisos**_
 * Seleccionar l'usuari _**Todos (Everyone)**_ i marcar l'opció _**Control Total**_
 
-![](../../.gitbook/assets/ADPerfilsPermisosComparticio.png)
+![](../../.gitbook/assets/adperfilspermisoscomparticio.png)
 
 La ruta per accedir de forma remota a una carpeta compartida es pot veure a l'apartat _**Propiedades > Compartir > Ruta de acceso a la red**_.
 
-![](../../.gitbook/assets/ADPerfilsRutaCompartida.png)
+![](../../.gitbook/assets/adperfilsrutacompartida.png)
 
 El nom de la ruta només hauria de contenir el nom del servidor (`\\WSXXX`) i el nom de la carpeta compartida (`\Perfils`). Si surt una ruta més llarga, segurament és perquè s'ha utilitzat el botó _**Compartir...**_ en lloc de _**Uso compartido avanzado...**_.
 
@@ -143,7 +143,7 @@ Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el bo
     >
     > **MAI** s'ha de posar la ruta local (`C:\...`).
 
-    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilsperfilruta.png)<img src="../../.gitbook/assets/ADPerfilsPerfilRuta.png" alt="" data-size="original">&#x20;
+    ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilsperfilruta.png) ![](../../.gitbook/assets/adperfilsperfilruta.png)
 
     > La **carpeta de perfil mòbil** de l'usuari no es crearà fins que l'usuari es validi per primera vegada.
 *   _**Carpeta particular**_: ha de ser la carpeta que s'ha compartit per guardar les carpetes privades més l'identificador del l'usuari o `%username%`.
@@ -152,7 +152,7 @@ Per configurar el perfil mòbil d'un usuari cal seleccionar l'usuari i amb el bo
 
         També s'ha indicar la lletra de la unitat se xarxa a la què es connectarà aquesta carpeta en la màquina client.
 
-        ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilprivada.png)<img src="../../.gitbook/assets/ADPerfilPrivada.png" alt="" data-size="original">&#x20;
+        ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/adperfilprivada.png) ![](../../.gitbook/assets/adperfilprivada.png)
 
     > La **carpeta privada** de cada usuari es crearà dins de `Privades`en quant es faci clic a _**Aceptar**_.
 * _**Script de inicio de sessión**_: no s'ha de posar la ruta. Les màquines unides al domini ja saben on trobar-lo: `\\WSXXX\netlogon`.
@@ -163,7 +163,7 @@ En el **client**, iniciar sessió amb un usuari del domini a qui se li ha config
 
 Podria ser que surtís un error indicant que s'ha creat un perfil temporal.
 
-![](../../.gitbook/assets/ADPerfilTemporal.png)
+![](../../.gitbook/assets/adperfiltemporal.png)
 
 Els possibles motius són:
 
@@ -198,7 +198,7 @@ Aquesta carpeta pot tenir la extensió _**.V6**_ depenent de la versió de siste
 
 Un cop iniciada la sessió en el **client**, l'usuari ha de veure una unitat de xarxa (la que s'hagi configurat en el perfil) i ha de poder entrar, crear, esborrar i modificar arxius i carpetes.
 
-![](../../.gitbook/assets/ADCarpetaPrivada.png)
+![](../../.gitbook/assets/adcarpetaprivada.png)
 
 Alguns errors que es poden produir són:
 
@@ -209,6 +209,5 @@ Alguns errors que es poden produir són:
 
 * **Apunts d'Oriol Torres:** "How enable roaming profiles" ([https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing](https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing))
 * **Microsoft**: "Deploy Roaming User Profiles" ([https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles))
-* **Font d'informació:**  Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
+* **Font d'informació:** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
 * **Somebooks:** Crear un perfil mòbil ([http://somebooks.es/5-7-crear-un-perfil-movil/](http://somebooks.es/5-7-crear-un-perfil-movil/))
-

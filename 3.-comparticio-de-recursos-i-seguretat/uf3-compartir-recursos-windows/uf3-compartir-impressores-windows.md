@@ -73,7 +73,7 @@ Els **permisos** que es poden assignar són:
 
 * _Imprimir_
 * _Administrar aquesta impressora_
-* _Administrar documents_&#x20;
+* _Administrar documents_
 * _Permisos especials_
 
 ### Opcions avançades
@@ -81,9 +81,9 @@ Els **permisos** que es poden assignar són:
 Amb el botó _**Opciones avanzadas**_ es poden canviar algunes propietats avançades com:
 
 * Canviar el propietari.
-* Assignar _**Permisos especials**_ com:&#x20;
-  * _Permisos de lectura_&#x20;
-  * _Canviar permisos_ &#x20;
+* Assignar _**Permisos especials**_ com:
+  * _Permisos de lectura_
+  * _Canviar permisos_
   * _Prendre possessió_
 * Veure els permisos efectius.
 
@@ -113,11 +113,9 @@ Podem instal·lar una impressora de xarxa varies formes en funció de si coneixe
     A continuació ens ha de detectar la impressora compartida i la seleccionem de la llista.
 *   Opció _**Afegir impressora TCP/IP escrivint la direcció IP o nom de host**_
 
-    A continuació caldrà posar la IP o nom de la impressora &#x20;
+    A continuació caldrà posar la IP o nom de la impressora
 
-<div align="center"><img src="../../.gitbook/assets/uf3-afegir-impressora-IP.png" alt=""></div>
-
-
+<div align="center"><img src="../../.gitbook/assets/uf3-afegir-impressora-ip.png" alt=""></div>
 
 ![](https://github.com/ldediegom/gitbook-sox/tree/da301902aefdc6f0c12f6016f9e43f8cf24607bf/.gitbook/assets/uf3-afegir-impressora-ip.png)
 
