@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Gestió de permisos de fitxers i directoris
 
 ## Introducció
@@ -325,3 +321,180 @@ Canvia el grup de tots els fitxers i directoris del directori actual.
 | `chown -R usuari directori` | Canvi recursiu de propietari  |
 | `chgrp -R grup directori`   | Canvi recursiu de grup        |
 
+## Control d'accés avançat amb ACL
+
+### Què és una ACL?
+
+Els sistema tradicional d'assignació de permisos que hem vist, l'UGO (_Usuari, Grup i Altres_), en ocasions és poc adaptatiu. Permet una seria de configuracions genèriques què no deixen espai per les excepcions o configuracions més concretes per usuaris o grups. **ACL** (_**Access Control List**_**&#x20;o&#x20;**_**Llista de Control d'Accés**_) és un mecanisme que permet assignar permisos específics a usuaris o grups concrets sobre fitxers i directoris permetent la defició d' excepcions sense modificar els permisos generals del recurs.
+
+{% hint style="warning" %}
+Les ACL no eliminen ni substitueixen la configuració tradicional de permisos UGO (Usuari, Grup i Altres), sinó que l'amplien afegint permisos específics per a determinats usuaris o grups.
+{% endhint %}
+
+#### Característiques
+
+ACL ens permet:
+
+* **Permisos personalitzats:** Assignar permisos de manera més específica a usuaris o grups concrets.
+* **Major flexibilitat que el model UGO**
+* **Control d'accés a recursos més avançada:** Permeten una millor gestió a entorns amb molts usuaris i amb compartició de recursos.&#x20;
+
+### Visualitzar ACL
+
+Per consultar les ACL associades a un fitxer o directori s'utilitza la comanda:
+
+```bash
+getfacl objecte
+```
+
+**Exemple**
+
+```bash
+getfacl fitxer1
+```
+
+Possible sortida:
+
+```
+# file: fitxer1
+# owner: joan
+# group: alumnes
+user::rw-
+user:anna:r--
+group::r--
+mask::r--
+other::---
+```
+
+**Interpretació**
+
+| Entrada         | Significat                                                                                                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `user::rw-`     | Permisos del propietari: lectura i escriptura.                                                                                             |
+| `user:anna:r--` | Permisos assignats a l'usuari anna: lectura.                                                                                               |
+| `group::r--`    | Permisos del grup propietari: lectura.                                                                                                     |
+| `mask::r--`     | Límit màxim dels permisos efectius per al grup propietari i per a les entrades ACL d'usuaris i grups. En aquest cas, només permet lectura. |
+| `other::---`    | La resta d'usuaris no tenen cap permís sobre l'objecte.                                                                                    |
+
+### Assignar ACL
+
+Per afegir una ACL s'utilitza la comanda:
+
+```bash
+setfacl -m entrada objecte
+```
+
+on:
+
+* **- m:** indica que es vol fer una moficicació.
+* **entrada:** l'assignació de permisos que es vol fer.
+* **objecte:** nom del fitxer o directori.
+
+**Sintaxi per un usuari (`u`)**
+
+```bash
+setfacl -m u:usuari:permisos objecte
+```
+
+o bé per un grup (`g`)
+
+```bash
+setfacl -m g:grup:permisos objecte
+```
+
+#### **Exemples d'assignació de permisos ACL**
+
+**A) Donar permisos de lectura i escriptura a un usuari**
+
+Assignem a l'usuari (`u`) **anna** (`anna`) permisos de lectura i escriptura (`rw`) sobre l'objecte _fitxer1._
+
+```bash
+setfacl -m u:anna:rw fitxer1
+```
+
+**B) Donar permisos complets a un usuari**
+
+Assignem a l'usuari (`u`) _**anna**_ (`anna`) permisos totals (`rwx`) sobre l'objecte _fitxer1_.
+
+```bash
+setfacl -m u:anna:rwx fitxer1
+```
+
+**C) Donar permisos de lectura a un grup**
+
+Assignem al grup (`g`) **practiques** (`practiques`) permisos de lectura (`r`) sobre l'objecte _fitxer1_.
+
+```bash
+setfacl -m g:practiques:r fitxer1
+```
+
+### Eliminar ACL
+
+#### Eliminar una entrada concreta
+
+Per eliminar una entrada concreta farem servir el paràmentre `x` i indicarem l'usuari o grup al que volem eliminar de la configuració i l'objecte sobre el que ho volem fer.
+
+```bash
+setfacl -x entrada objecte
+```
+
+**Exemple**
+
+Eliminem l'entrada ACL (`-x`) assignada a l'usuari (`u`) **anna** sobre l'objecte _fitxer1_.
+
+```bash
+setfacl -x u:anna fitxer1
+```
+
+#### Eliminar totes les ACL
+
+Per eliminar totes les ACL d'un fitxer o directori farem servir el paràmetre `b` i indicarem l'objecte on volem aplicar aquesta eliminació de configuració.
+
+```bash
+setfacl -b objecte
+```
+
+**Exemple**
+
+```bash
+setfacl -b fitxer1
+```
+
+{% hint style="info" %}
+Després d'executar aquesta comanda només es conservaran els permisos tradicionals UGO.
+{% endhint %}
+
+### ACL per defecte en directoris
+
+Es poden definir permisos ACL per defecte perquè els nous fitxers i directoris heretin automàticament aquests permisos. És el que s'anomena **ACL per defecte**.
+
+**Sintaxi**
+
+```bash
+setfacl -m d:u:usuari:permisos directori
+```
+
+**Exemple**
+
+Assignem una ACL per defecte a l'usuari (`u`) **anna** (`anna`) perquè hereti permisos complets (`rwx`) sobre tots els fitxers i directoris nous que es creïn dins del **directori** (`d`) _projectes_.
+
+```bash
+setfacl -m d:u:anna:rwx projectes
+```
+
+Per tant, qualsevol fitxer creat dins del directori `projectes` heretarà aquests permisos per a l'usuari `anna`.
+
+> **Important:** Aquesta configuració no modifica els permisos dels fitxers ja existents dins del directori, sinó únicament els que es creïn a partir d'aquell moment.
+
+### Resum de comandes ACL
+
+| Comanda                             | Funció                                    |
+| ----------------------------------- | ----------------------------------------- |
+| `getfacl fitxer`                    | Mostra les ACL del fitxer.                |
+| `setfacl -m u:anna:rwx fitxer`      | Assigna permisos ACL a l'usuari anna.     |
+| `setfacl -m g:professors:r fitxer`  | Assigna permisos ACL a un grup.           |
+| `setfacl -x u:anna fitxer`          | Elimina una ACL concreta.                 |
+| `setfacl -b fitxer`                 | Elimina totes les ACL del fitxer.         |
+| `setfacl -m d:u:anna:rwx directori` | Defineix ACL per defecte en un directori. |
+
+> Les ACL són especialment útils quan un usuari necessita permisos específics sobre un fitxer o directori sense modificar els permisos del propietari, del grup o de la resta d'usuaris.
