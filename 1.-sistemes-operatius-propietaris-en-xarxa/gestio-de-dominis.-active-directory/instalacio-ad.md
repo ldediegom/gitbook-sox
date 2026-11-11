@@ -6,9 +6,72 @@
 
 **Configurar el nom del servidor**
 
-El nom ha de ser `wsxxx` (`xxx` són les inicials del vostre nom i cognoms).
+{% hint style="danger" %}
+**ATENCIÓ**: és molt important assegurar-se que el nom del servidor sigui correcte, ja que un cop configurat com a controlador de domini, el nom no s'ha de canviar
+{% endhint %}
 
-> **ATENCIÓ**: és molt important assegurar-se que el nom del servidor sigui correcte, ja que un cop configurat com a controlador de domini, el nom no s'ha de canviar
+## Rol, servei de rol i característiques
+
+Un cop instal·lat **Windows Server**, és possible ampliar-ne les funcionalitats mitjançant la incorporació de **rols**, **serveis de rol** i **característiques**. Aquests components permeten adaptar el servidor a les necessitats de l'organització, proporcionant serveis de xarxa, eines d'administració i funcionalitats addicionals.
+
+En aquest punt veurem en què es diferencien.
+
+### Rol (Funció)
+
+Un **rol** és un conjunt de programes que permeten a un servidor realitzar una funció específica per a usuaris o altres equips dins d'una xarxa.
+
+Alguns exemples de rols són:
+
+* Active Directory Domain Services (AD DS)
+* DHCP Server
+* DNS Server
+* Hyper-V
+* Remote Access
+* File and Storage Services
+
+### Serveis de Rol
+
+Els **serveis de rol** són components que proporcionen la funcionalitat específica d'un rol. Segons la seva configuració, ofereixen determinats serveis als usuaris i ordinadors de la xarxa.
+
+Alguns rols només disposen d'un únic servei i, per tant, no tenen serveis de rol addicionals configurables. Per exemple:
+
+* DNS Server
+
+En canvi, altres rols inclouen diversos serveis de rol que es poden instal·lar de manera independent. Per exemple, el rol **Remote Access** permet instal·lar **serveis de rol** com:
+
+* DirectAccess i VPN (RAS)
+* Routing
+* Web Application Proxy
+
+### Característiques (Features)
+
+Les **característiques** són programes o components que no formen part directament d'un rol, però que poden:
+
+* Ampliar la funcionalitat d'un o diversos rols.
+* Millorar el funcionament general del servidor.
+* Afegir eines d'administració o compatibilitat.
+
+#### Exemple
+
+La característica **Failover Clustering** augmenta la disponibilitat de serveis com:
+
+* File Services
+* DHCP Server
+
+Permetent que diversos servidors treballin en clúster per:
+
+* Augmentar la redundància.
+* Millorar la disponibilitat dels serveis.
+* Reduir el temps d'inactivitat davant d'errors.
+
+#### Altres exemples de característiques
+
+* Mòduls de PowerShell.
+* Compatibilitat amb sistemes Linux.
+* .NET Framework.
+* Windows Server Backup.
+* Failover Clustering
+* BitLocker Drive Encryption
 
 ## Instal·lació del Directori Actiu
 
