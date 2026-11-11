@@ -7,7 +7,7 @@
 **Configurar el nom del servidor**
 
 {% hint style="danger" %}
-**ATENCIÓ**: és molt important assegurar-se que el nom del servidor sigui correcte, ja que un cop configurat com a controlador de domini, el nom no s'ha de canviar
+**ATENCIÓ**: És molt important assegurar-se que el nom del servidor sigui el correcte abans de promocionar-lo a controlador de domini. Un cop configurat com a controlador de domini, no és recomanable canviar-ne el nom, ja que això pot provocar incongruències en les bases de dades d'Active Directory, els fitxers de configuració i els registres DNS.
 {% endhint %}
 
 ## Rol, servei de rol i característiques
