@@ -170,7 +170,7 @@ Per poder canviar una propietat, abans cal seleccionar la casella que hi ha al d
 
 De forma similar als usuaris, hi ha **grups d’usuaris** que són emmagatzemats en el **Directori Actiu** i que per tant són visibles des de tots els ordinadors del domini.
 
-Els **grups d’usuaris** s’utilitzen per simplificar la gestió de permisos sobre els recursos del domini.
+Els **grups d’usuaris** s’utilitzen per simplificar la gestió de permisos sobre els recursos del domini. Per tant, permeten administrar permisos de manera centralitzada.
 
 Els **membres d’un grup d’usuaris** poden ser:
 
@@ -187,16 +187,17 @@ Windows Server té creats una sèrie de **grups d’usuaris predefinits** (_**To
 Al directori actiu es poden crear **dos tipus de grups**:
 
 * **Grups de seguretat**
-  * Aquests tipus de grups s'utilitzen per assignar permisos d’utilització de recursos del domini i així no cal fer-ho usuari per usuari.
+  * Aquests tipus de grups s'utilitzen per assignar permisos d’utilització de recursos del domini (carpetes, impressores, aplicacions,...) i així no cal fer-ho usuari per usuari.
   * És l'opció per defecte.
 * **Grups de distribució**:
-  * Aquets tipus de grups s'utilitzen per realitzar instal·lacions remotes de software en els equips client on es validin els usuaris del grup.
+  * S'utilitzen per crear llistes de distribució de correu electrònic.
+  * No es poden utilitzar per assignar permisos sobre recursos del domini.
 
 > Nosaltres utilitzarem, únicament, els grups de seguretat.
 
 ### Àmbit del grup
 
-Quan es crea un grup se li assigna un **àmbit** que determini la visibilitat dins del domini.
+Quan es crea un grup se li assigna un **àmbit**, que determina on serà visible i sobre quins recursos es podrà utilitzar.
 
 En dominis Windows Server els grups es poden definir en tres àmbits diferents:
 
@@ -204,12 +205,23 @@ En dominis Windows Server els grups es poden definir en tres àmbits diferents:
   * Només són visibles en el domini en què es creen.
   * Només es poden assignar permisos sobre **recursos del mateix domini** en el que es crea el grup.
 * **Grups d'àmbit global**:
-  * Són visibles en tots els dominis del bosc. Els permisos concedits a aquest grup tenen validesa en qualsevol domini.
-  * Només se li poden assignar permisos sobre **recursos que pertanyin a dominis del bosc**.
+  * Són visibles en tots els dominis del bosc.
+  * Només poden tenir membres del mateix domini on s'han creat.
+  * Es poden utilitzar per assignar permisos sobre **recursos de qualsevol domini del bosc**.
+  * Es poden utilitzar en entorns amb **relacions de confiança entre boscos**.
 * **Grups d'àmbit universal**:
   * Són visibles a tot el bosc.
   * Poden tenir membres procedents de qualsevol domini.
-  * Se li poden assignar permisos sobre **recursos de qualsevol domini o bosc.**
+  * Es poden assignar permisos sobre **recursos de qualsevol domini del bosc**.
+  * Es poden utilitzar en entorns amb r**elacions de confiança entre boscos.**
+
+#### **Taula d'àmbits de grup**
+
+<table><thead><tr><th>Àmbit</th><th>Possibles membres</th><th>Conversió d'àmbit</th><th>Pot assignar permisos</th><th width="134.828125">Pot ser membre de...</th></tr></thead><tbody><tr><td><strong>Universal</strong></td><td><p>Comptes de qualsevol domini del mateix bosc</p><p><br>Grups globals de qualsevol domini del mateix bosc</p><p><br>Altres grups universals de qualsevol domini del mateix bosc</p></td><td><p>Es pot convertir a àmbit local de domini si el grup no és membre de cap altre grup universal</p><p></p><p>Es pot convertir a àmbit global si el grup no conté cap altre grup universal</p></td><td>En qualsevol domini del mateix bosc o de boscos amb relació de confiança</td><td><p>Altres grups universals del mateix bosc</p><p></p><p>Grups locals de domini del mateix bosc o de boscos amb relació de confiança</p><p></p><p>Grups locals d'ordinadors del mateix bosc o de boscos amb relació de confiança</p></td></tr><tr><td><strong>Global</strong></td><td><p>Comptes del mateix domini</p><p></p><p>Altres grups globals del mateix domini</p></td><td>Es pot convertir a àmbit universal si el grup no és membre de cap altre grup global</td><td>En qualsevol domini del mateix bosc, o en dominis o boscos amb relació de confiança</td><td><p>Grups universals de qualsevol domini del mateix bosc</p><p>Altres grups globals del mateix domini</p><p>Grups locals de domini de qualsevol domini del mateix bosc o de qualsevol domini amb relació de confiança</p></td></tr><tr><td><strong>Local de domini</strong></td><td><p>Comptes de qualsevol domini o de qualsevol domini de confiança</p><p></p><p>Grups globals de qualsevol domini o de qualsevol domini de confiança</p><p></p><p>Grups universals de qualsevol domini del mateix bosc</p><p></p><p>Altres grups locals de domini del mateix domini</p><p></p><p>Comptes, grups globals i grups universals d'altres boscos i de dominis externs</p></td><td>Es pot convertir a àmbit universal si el grup no conté cap altre grup local de domini</td><td>Dins del mateix domini</td><td><p>Altres grups locals de domini del mateix domini</p><p></p><p>Grups locals d'ordinadors del mateix domini, excloent els grups integrats que tenen identificadors de seguretat (SID) coneguts</p></td></tr><tr><td colspan="5">Taula extreta de <em>learn.microsoft.com</em></td></tr></tbody></table>
+
+{% hint style="info" %}
+Més informació sobre els grups a [Grups de seguretat d'Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups)
+{% endhint %}
 
 ### Creació de grups
 
