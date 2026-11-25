@@ -207,7 +207,7 @@ Alguns errors que es poden produir són:
 
 ## Documentació i recursos
 
-* **Apunts d'Oriol Torres:** "How enable roaming profiles" ([https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing](https://docs.google.com/presentation/d/1FXAoqbO5kUT2Wyjsv9QQ5pD88fRkbb-QpJj7Ki2SJII/edit?usp=sharing))
+* **Apunts d'Oriol Torres:** "[How enable roaming profiles](https://docs.google.com/presentation/d/16dOIoHyGTRoZU5miooS1DjAZlvZEP_pl/edit?usp=sharing\&ouid=105545478030206326278\&rtpof=true\&sd=true)"
 * **Microsoft**: "Deploy Roaming User Profiles" ([https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles))
 * **Font d'informació:** Apunts SOX Pere Sánchez ([http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17](http://moodlecf.sapalomera.cat/apunts/smx/sox/index.html?tema=17))
 * **Somebooks:** Crear un perfil mòbil ([http://somebooks.es/5-7-crear-un-perfil-movil/](http://somebooks.es/5-7-crear-un-perfil-movil/))
