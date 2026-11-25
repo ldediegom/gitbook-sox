@@ -25,30 +25,33 @@ Si no es configura un perfil mòbil, en cada màquina on es validi l'usuari se l
 
 ## Tipus de perfils
 
+Independentment del tipus de perfil, els administradors poden definir determinades configuracions, com ara les impressores, els accessos directes, les aplicacions disponibles o determinades restriccions del sistema. En perfils de xarxa, també poden configurar unitats de xarxa compartides, entre d'altres.
+
 **Perfil local**:
 
-* Quan s'accedeix amb un usuari local, el perfil d'usuari que s'utilitzarà és el què hi ha la mateixa màquina.
-* Si encara no té cap perfil guardat, se li crea un per defecte.
-* Quan l'usuari tanca sessió, es guarden els canvis que ha fet (el seu perfil) en la mateixa màquina.
+* Quan s'accedeix amb un usuari local, el perfil d'usuari que s'utilitzarà és el que hi ha a la mateixa màquina.
+* Si encara no té cap perfil guardat, se'n crea un per defecte.
+* Quan l'usuari tanca la sessió, es guarden els canvis que ha fet (el seu perfil) a la mateixa màquina.
 
 **Perfil temporal**:
 
-* Es crea un perfil temporal quan no es pot carregar el perfil.
+* Es crea un perfil temporal quan no es pot carregar el perfil de l'usuari.
 * Els canvis que faci l'usuari s'esborren quan es tanca la sessió.
 
-**Perfils de xarxa**:
+**Perfils de xarxa (o domini)**:
 
-* Quan s'accedeix amb un usuari del domini, es carrega el perfil guardat en el servidor. D'aquesta forma, l'usuari tindrà la seva configuració en qualsevol ordinador.
-* Els canvis que faci (si és un perfil mòbil) també es guardaran al servidor quan tanqui la sessió.
-  * **Perfil Mòbil**: l'usuari pot fer canvis en el seu perfil.
-  * **Perfil Obligatori**: l'usuari pot fer canvis, però s'esborren en tancar la sessió.
-  * **Perfil Superobligatori**: si no es pot carregar el perfil, no es pot iniciar sessió.
+* Quan s'accedeix amb un usuari del domini, es carrega el perfil guardat al servidor. D'aquesta manera, l'usuari disposa de la seva configuració personal en qualsevol ordinador del domini al qual tingui accés.
+* Si l'usuari disposa d'un **perfil mòbil**, els canvis que hi faci es desaran al servidor en tancar la sessió.
+* Segons la configuració del perfil, es poden distingir els tipus següents:
+  * **Perfil mòbil**: l'usuari pot modificar la configuració i els canvis es desen al servidor en tancar la sessió.
+  * **Perfil obligatori**: l'usuari pot fer canvis durant la sessió, però aquests s'esborren en tancar-la (torna sempre a l'estat per defecte).
+  * **Perfil superobligatori**: és una variant del perfil obligatori en què, si el perfil no es pot carregar (per errada al servidor, xarxa...), l'usuari no pot iniciar sessió (no crea cap perfil temporal).
 
 > Els **perfils mòbils** són molt útils però també tenen **inconvenients**:
 >
-> * Si l'usuari té molts arxius o arxius molt grans, l'inici i tancament de sessió es ralentitza molt.
-> * Pot augmentar molt el tràfic de xarxa.
-> * Si falla la xarxa o el servidor, els usuaris no podran accedir als seus arxius.
+> * Lentitud: Si el perfil conté molts arxius o són molt pesants, l'inici i el tancament de sessió s'alenteixen molt.
+> * Sobrecàrrega: Pot augmentar molt el tràfic de xarxa.
+> * Dependència del servidor: Si falla la xarxa o el servidor, els usuaris no poden accedir als seus fitxers.
 
 ## Configuració de perfil mòbil d'usuari
 
